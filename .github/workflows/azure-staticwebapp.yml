@@ -42,4 +42,5 @@ jobs:
           skip_app_build: true
           skip_api_build: true
           output_location: ""
+          is_static_export: true
           ###### End of Repository/Build Configurations ######
