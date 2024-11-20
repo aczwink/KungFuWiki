@@ -4,7 +4,7 @@
   "description": "Some documentation on Kung Fu forms",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && cd dist && node src/main.js && ln -sf ../static/images ./out/images && ln -sf ../static/videos ./out/videos",
+    "build": "tsc && cd dist && node src/main.js",
     "run-dev-server": "nodemon --exec \"npm run build && cd dist/out && python3 -m http.server\""
   },
   "repository": {
