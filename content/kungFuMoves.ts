@@ -32,49 +32,37 @@ export const kungFuMoves: Exercise[] = [
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image",
+            fileName: "Fig.22-fanyao_waist-wheeling-ex.jpeg",
+            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-fan-yao/1151733105210177/">Demonstration von Meister Li (mit Dan pai jiao am Anfang)</a>
-            </div>
-            <div class="col-auto">
-                <a target="_blank" href="https://basia.blog/shaolin-kung-fu-basics/">
-                    <img src="images/Fig.22-fanyao_waist-wheeling-ex.jpeg" />
-                </a>
-            </div>
-        </div>
+        <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-fan-yao/1151733105210177/">Demonstration von Meister Li (mit Dan pai jiao am Anfang)</a>
         `,
         title: "翻腰",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image",
+            fileName: "Fig.-18-Qian-sao-tui.jpeg",
+            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Beinfeger gegen den Uhrzeigersinn</p>
-            </div>
-            <div class="col-auto">
-                <a target="_blank" href="https://basia.blog/shaolin-kung-fu-basics/">
-                    <img src="images/Fig.-18-Qian-sao-tui.jpeg" />
-                </a>
-            </div>
-        </div>
+        <p>Beinfeger gegen den Uhrzeigersinn</p>
         `,
         title: "前扫腿",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image",
+            fileName: "Fig.-19-Hou-sao-tui.jpeg",
+            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Beinfeger im Uhrzeigersinn</p>
-            </div>
-            <div class="col-auto">
-                <a target="_blank" href="https://basia.blog/shaolin-kung-fu-basics/">
-                    <img src="images/Fig.-19-Hou-sao-tui.jpeg" />
-                </a>
-            </div>
-        </div>
+        <p>Beinfeger im Uhrzeigersinn</p>
         `,
         title: "后扫腿",
         titleLang: "chinese"

@@ -20,67 +20,49 @@ import { Exercise } from "../src/contentDefinitions";
 
 export const kicks: Exercise[] = [
     {
+        media: {
+            type: "image",
+            fileName: "Fig.-11-Zheng-ti-tui.jpeg",
+            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Tritt nach vorne bis zum Kopf.</p>
-            </div>
-            <div class="col-auto">
-                <a target="_blank" href="https://basia.blog/shaolin-kung-fu-basics/">
-                    <img src="images/Fig.-11-Zheng-ti-tui.jpeg" />
-                </a>
-            </div>
-        </div>
+        <p>Tritt nach vorne bis zum Kopf.</p>
         `,
         title: "正踢腿",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image",
+            fileName: "Fig.-13-Li-he-tui..jpeg",
+            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Kreisender Tritt nach innen</p>
-            </div>
-            <div class="col-auto">
-                <a target="_blank" href="https://basia.blog/shaolin-kung-fu-basics/">
-                    <img src="images/Fig.-13-Li-he-tui..jpeg" />
-                </a>
-            </div>
-        </div>
+        <p>Kreisender Tritt nach innen</p>
         `,
         title: "里合腿",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image",
+            fileName: "Fig.-12-Wai-bai-tui.jpeg",
+            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Kreisender Tritt nach außen</p>
-            </div>
-            <div class="col-auto">
-                <a target="_blank" href="https://basia.blog/shaolin-kung-fu-basics/">
-                    <img src="images/Fig.-12-Wai-bai-tui.jpeg" />
-                </a>
-            </div>
-        </div>
+        <p>Kreisender Tritt nach außen</p>
         `,
         title: "外擺腿",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "video",
+            fileName: "caijiao.mp4",
+            sourceURL: "https://shaolinspirit.at/kungfu"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Gesteckter Tritt nach vorne mit Schlag auf den Fuß. Auch über kreuz.</p>
-            </div>
-            <div class="col-auto text-center">
-                <video controls muted autoplay>
-                    <source type="video/mp4" src="/videos/caijiao.mp4" />
-                </video>
-                <br />
-                <a class="small" target="_blank" href="https://shaolinspirit.at/kungfu">Quelle</a>
-            </div>
-        </div>
+        <p>Gesteckter Tritt nach vorne mit Schlag auf den Fuß. Auch über kreuz.</p>
         `,
         title: "踩脚",
         titleLang: "chinese"
@@ -93,33 +75,25 @@ export const kicks: Exercise[] = [
         titleLang: "german"
     },
     {
+        media: {
+            type: "image",
+            fileName: "Fig.-15-Tan-tui.jpg",
+            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Tritt geradeaus.</p>
-            </div>
-            <div class="col-auto">
-                <a target="_blank" href="https://basia.blog/shaolin-kung-fu-basics/">
-                    <img src="images/Fig.-15-Tan-tui.jpg" />
-                </a>
-            </div>
-        </div>
+        <p>Tritt geradeaus.</p>
         `,
         title: "弹腿",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image",
+            fileName: "Fig.-16-Deng-tui.jpeg",
+            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Wegdrücktritt mit der Hacke aber mit geradem Rücken.</p>
-            </div>
-            <div class="col-auto">
-                <a target="_blank" href="https://basia.blog/shaolin-kung-fu-basics/">
-                    <img src="images/Fig.-16-Deng-tui.jpeg" />
-                </a>
-            </div>
-        </div>
+        <p>Wegdrücktritt mit der Hacke aber mit geradem Rücken.</p>
         `,
         title: "蹬腿",
         titleLang: "chinese"

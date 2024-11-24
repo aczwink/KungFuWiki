@@ -20,39 +20,32 @@ import { Exercise } from "../src/contentDefinitions";
 
 export const jumps: Exercise[] = [
     {
+        media: {
+            type: "youtube",
+            url: "https://www.youtube-nocookie.com/embed/-qhz0sl1Zag?si=e9Np7YbTf1v2GHuR&amp;controls=0"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Sprungtritt.</p>
-            </div>
-            <div class="col-auto">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-qhz0sl1Zag?si=e9Np7YbTf1v2GHuR&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
+        Sprungtritt
         `,
         title: "二踢脚",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image",
+            fileName: "Fig.-22-Xuan-feng-jiao.jpeg",
+            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Bedeutet wortwörtlich Wirbelwindtritt.</p>
-                <p>Demonstration von Meister Li:</p>
-                <ul>
-                    <li><a target="_blank" href="https://www.instagram.com/p/CP0IVJtIxS5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">mit Butterfly und Rolle</a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/p/CCbsyKhI6vT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">mit Tritt am Ende</a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/p/B_0CpHbIk6P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">mit verschiedenen Schlüssen</a></li>
-                </ul>
-                <a target="_blank" href="https://www.instagram.com/p/B428hbnoJtM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Demonstration</a>
-                <a target="_blank" href="https://en.wikipedia.org/wiki/540_kick">Wikipedia</a>
-            </div>
-            <div class="col-auto">
-                <a target="_blank" href="https://basia.blog/shaolin-kung-fu-basics/">
-                    <img src="images/Fig.-22-Xuan-feng-jiao.jpeg" />
-                </a>
-            </div>
-        </div>
+        <p>Bedeutet wortwörtlich Wirbelwindtritt.</p>
+        <p>Demonstration von Meister Li:</p>
+        <ul>
+            <li><a target="_blank" href="https://www.instagram.com/p/CP0IVJtIxS5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">mit Butterfly und Rolle</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/p/CCbsyKhI6vT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">mit Tritt am Ende</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/p/B_0CpHbIk6P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">mit verschiedenen Schlüssen</a></li>
+        </ul>
+        <a target="_blank" href="https://www.instagram.com/p/B428hbnoJtM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Demonstration</a>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/540_kick">Wikipedia</a>
         `,
         title: "旋风脚",
         titleLang: "chinese"

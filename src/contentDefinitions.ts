@@ -15,9 +15,42 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
+interface ImageMedia
+{
+    type: "image";
+    fileName: string;
+    sourceURL: string;
+}
+
+interface ImageWithoutSourceMedia
+{
+    type: "image-no-src";
+    fileName: string;
+}
+
+interface ImagesMedia
+{
+    type: "images";
+    fileNames: string[];
+    sourceURL: string;
+}
+
+interface VideoMedia
+{
+    type: "video";
+    fileName: string;
+    sourceURL: string;
+}
+
+interface YoutubeMedia
+{
+    type: "youtube";
+    url: string;
+}
 
 export interface Exercise
 {
+    media?: ImageMedia | ImageWithoutSourceMedia | ImagesMedia | VideoMedia | YoutubeMedia;
     titleLang: "chinese" | "german";
     title: string;
     text: string;

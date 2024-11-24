@@ -20,69 +20,54 @@ import { Exercise } from "../src/contentDefinitions";
 
 export const stances: Exercise[] = [
     {
+        media: {
+            type: "image-no-src",
+            fileName: "gongbu.jpg",
+        },
         text: `
-        <div class="row">
-            <div class="col">
-            </div>
-            <div class="col-auto">
-                <img src="images/gongbu.jpg" />
-            </div>
-        </div>
         `,
         title: "弓步",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image-no-src",
+            fileName: "mabu.jpg",
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p>Bedeutet übersetzt Pferdestand.</p>
-            </div>
-            <div class="col-auto">
-                <img src="images/mabu.jpg" />
-            </div>
-        </div>
+        <p>Bedeutet übersetzt Pferdestand.</p>
         <a target="_blank" href="https://en.wikipedia.org/wiki/Horse_stance">Wikipedia</a>
         `,
         title: "馬步",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image-no-src",
+            fileName: "pubu.jpg"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-            </div>
-            <div class="col-auto">
-                <img src="images/pubu.jpg" />
-            </div>
-        </div>
         `,
         title: "仆步",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image-no-src",
+            fileName: "xubu.jpg"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-            </div>
-            <div class="col-auto">
-                <img src="images/xubu.jpg" />
-            </div>
-        </div>
         `,
         title: "虚步",
         titleLang: "chinese"
     },
     {
+        media: {
+            type: "image-no-src",
+            fileName: "dingbu.jpg"
+        },
         text: `
-        <div class="row">
-            <div class="col">
-                <p><strong class="text-danger">TODO: chinesisch und pinyin fehlt</strong></p>
-            </div>
-            <div class="col-auto">
-                <img src="images/dingbu.jpg" />
-            </div>
-        </div>
+        <p><strong class="text-danger">TODO: chinesisch und pinyin fehlt</strong></p>
         `,
         title: "Ding bu",
         titleLang: "german"

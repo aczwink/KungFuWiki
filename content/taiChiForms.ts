@@ -18,29 +18,16 @@
 
 import { Exercise } from "../src/contentDefinitions";
 
-export const punches: Exercise[] = [
+export const taiChiForms: Exercise[] = [
     {
         media: {
-            type: "images",
-            fileNames: ["Fig.-3-Horizontal-punch..jpeg", "Fig.-3-Horizontal-punch2.jpg"],
-            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+            type: "youtube",
+            url: "https://www.youtube-nocookie.com/embed/e4VIw41R-PU?si=Xk9zcowFulmZ2o2t&amp;controls=0"
         },
         text: `
-        <p>Faustschlag</p>
+        <strong class="text-danger">TODO</strong>
         `,
-        title: "冲床",
-        titleLang: "chinese"
+        title: "24",
+        titleLang: "german"
     },
-    {
-        media: {
-            type: "images",
-            fileNames: ["Fig.-4-Push-palm.jpg", "Fig.-4-Push-palm2.jpg"],
-            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
-        },
-        text: `
-        <p>Schlag mit Handfläche</p>
-        `,
-        title: "推掌",
-        titleLang: "chinese"
-    }
 ];

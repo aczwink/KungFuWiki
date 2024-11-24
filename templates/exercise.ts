@@ -19,6 +19,41 @@
 import { Exercise } from "../src/contentDefinitions";
 import { RenderChinese } from "./chinese";
 
+function RenderMedia(exercise: Exercise)
+{
+    if(exercise.media === undefined)
+        return "";
+
+    switch(exercise.media.type)
+    {
+        case "image":
+            return `
+            <a target="_blank" href="${exercise.media.sourceURL}">
+                <img src="images/${exercise.media.fileName}" />
+            </a>
+            `;
+        case "image-no-src":
+            return `<img src="images/${exercise.media.fileName}" />`;
+        case "images":
+            const images = exercise.media.fileNames.map(x => `<img src="images/${x}" />`);
+            return `
+            <a target="_blank" href="${exercise.media.sourceURL}">
+                ${images.join("")}
+            </a>
+            `;
+        case "video":
+            return `
+            <video controls muted autoplay>
+                <source type="video/mp4" src="videos/${exercise.media.fileName}" />
+            </video>
+            <br />
+            <a class="small" target="_blank" href="${exercise.media.sourceURL}">Quelle</a>
+            `;
+        case "youtube":
+            return `<iframe width="560" height="315" src="${exercise.media.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    }
+}
+
 function RenderTitle(title: string, language: "chinese" | "german")
 {
     if(language === "german")
@@ -30,6 +65,13 @@ export function RenderExercise(exercise: Exercise)
 {
     return `
     <h3>${RenderTitle(exercise.title, exercise.titleLang)}</h3>
-    <p>${exercise.text}</p>
+    <div class="row">
+        <div class="col">
+            <p>${exercise.text}</p>
+        </div>
+        <div class="col-auto text-center">
+            ${RenderMedia(exercise)}
+        </div>
+    </div>
     `;
 }

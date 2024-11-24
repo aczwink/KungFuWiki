@@ -25,6 +25,7 @@ import { kungFuMoves } from "./kungFuMoves";
 import { otherForms } from "./otherForms";
 import { punches } from "./punches";
 import { stances } from "./stances";
+import { taiChiForms } from "./taiChiForms";
 import { weaponForms } from "./weaponForms";
 
 export const categories: ExerciseCategory[] = [
@@ -78,7 +79,7 @@ export const categories: ExerciseCategory[] = [
     },
     {
         displayText: "Tai Chi Formen",
-        exercises: [],
+        exercises: taiChiForms,
         name: "tai-chi-forms"
     }
 ];
