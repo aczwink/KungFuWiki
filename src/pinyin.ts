@@ -22,6 +22,8 @@ function PinyinChar(char: string)
     {
         case "擺":
             return "bǎi";
+        case "爆":
+            return "bào";
         case "背":
             return "bèi";
         case "步":
@@ -42,6 +44,8 @@ function PinyinChar(char: string)
             return "dēng";
         case "二":
             return "èr";
+        case "发":
+            return "fā";
         case "翻":
             return "fān";
         case "风":
@@ -60,10 +64,14 @@ function PinyinChar(char: string)
             return "hòu";
         case "脚":
             return "jiǎo";
+        case "力":
+            return "lì";
         case "里":
             return "lǐ";
         case "连":
             return "lián";
+        case "林":
+            return "lín";
         case "六":
             return "liù";
         case "路":
@@ -82,10 +90,14 @@ function PinyinChar(char: string)
             return "qī";
         case "前":
             return "qián";
+        case "枪":
+            return "qiāng";
         case "拳":
             return "quán";
         case "扫":
             return "sǎo";
+        case "少":
+            return "shǎo";
         case "手":
             return "shǒu";
         case "四":

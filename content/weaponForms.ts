@@ -40,5 +40,14 @@ export const weaponForms: Exercise[] = [
         `,
         title: "Säbel (Shaolin Dan?)",
         titleLang: "german"
+    },
+    {
+        text: ``,
+        title: "少林枪",
+        titleLang: "chinese",
+        media: {
+            type: "youtube",
+            url: "https://www.youtube-nocookie.com/embed/GE_J8yEUYyQ?si=L6otgw1oGGwAIK52&amp;controls=0"
+        }
     }
 ];
