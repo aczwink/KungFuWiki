@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -60,11 +60,14 @@ export const fistForms: Exercise[] = [
     },
     {
         text: `
-        Demonstration von Meister Li in WhatsApp-Gruppe
         <p><strong class="text-danger">TODO: war das Tang Lang Quan?</strong></p>
         `,
         title: "Mantis",
-        titleLang: "german"
+        titleLang: "german",
+        media: {
+            type: "gdrive",
+            url: "https://drive.google.com/file/d/1IXuZyH0Y-QKFWnof0muZQ1h0O3ktPUY5/preview"
+        }
     },
     {
         text: `

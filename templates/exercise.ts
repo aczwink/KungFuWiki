@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -26,6 +26,8 @@ function RenderMedia(exercise: Exercise)
 
     switch(exercise.media.type)
     {
+        case "gdrive":
+            return `<iframe src="${exercise.media.url}" width="640" height="480" allow="autoplay"></iframe>`;
         case "image":
             return `
             <a target="_blank" href="${exercise.media.sourceURL}">
