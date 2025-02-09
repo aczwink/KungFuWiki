@@ -77,10 +77,12 @@ export const fistForms: Exercise[] = [
         titleLang: "chinese"
     },
     {
-        text: `
-        Demonstration von Meister Li in WhatsApp-Gruppe
-        `,
+        text: ``,
         title: "大洪拳",
-        titleLang: "chinese"
+        titleLang: "chinese",
+        media: {
+            type: "gdrive",
+            url: "https://drive.google.com/file/d/1wOATSQJg2QR1Qsa0hTpZdkICTeb_vdUz/preview"
+        }
     }
 ];
