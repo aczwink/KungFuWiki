@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -42,12 +42,12 @@ export const weaponForms: Exercise[] = [
         titleLang: "german"
     },
     {
-        text: ``,
+        text: `Speerform`,
         title: "少林枪",
         titleLang: "chinese",
         media: {
-            type: "youtube",
-            url: "https://www.youtube-nocookie.com/embed/GE_J8yEUYyQ?si=L6otgw1oGGwAIK52&amp;controls=0"
+            type: "gdrive",
+            url: "https://drive.google.com/file/d/1VQOBFIVwz6qWCkojRPOakqJr0_yR_LSp/preview"
         }
     }
 ];

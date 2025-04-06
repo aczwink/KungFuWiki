@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -21,12 +21,10 @@ import { Exercise } from "../src/contentDefinitions";
 export const taiChiForms: Exercise[] = [
     {
         media: {
-            type: "youtube",
-            url: "https://www.youtube-nocookie.com/embed/e4VIw41R-PU?si=Xk9zcowFulmZ2o2t&amp;controls=0"
+            type: "gdrive",
+            url: "https://drive.google.com/file/d/1v6ydXn54CT-wQho6iqrHVjb4FB6WIGp-/preview"
         },
-        text: `
-        <strong class="text-danger">TODO</strong>
-        `,
+        text: ``,
         title: "24",
         titleLang: "german"
     },
