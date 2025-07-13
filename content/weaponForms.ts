@@ -42,6 +42,17 @@ export const weaponForms: Exercise[] = [
         titleLang: "german"
     },
     {
+        text: `
+        <strong class="text-danger">TODO: Säbelform. Name nicht verständlich </strong>
+        `,
+        title: "??? Shaolin Ming Quan Dan Do ???",
+        titleLang: "german",
+        media: {
+            type: "youtube",
+            url: "https://youtu.be/DWDOQBfEc1U?si=ysZTybP15RaTN-Ko&t=625"
+        }
+    },
+    {
         text: `Speerform`,
         title: "少林枪",
         titleLang: "chinese",
