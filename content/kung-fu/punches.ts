@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-import { Exercise } from "../src/contentDefinitions";
+import { Exercise } from "../../src/contentDefinitions";
 
 export const punches: Exercise[] = [
     {
@@ -26,7 +26,7 @@ export const punches: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        <p>Faustschlag</p>
+        Punch and pull back other hand to waist.
         `,
         title: "冲床",
         titleLang: "chinese"
@@ -38,7 +38,7 @@ export const punches: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        <p>Schlag mit Handfläche</p>
+        Push palm of hand.
         `,
         title: "推掌",
         titleLang: "chinese"

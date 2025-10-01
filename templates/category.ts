@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,11 +17,12 @@
  * */
 
 import { ExerciseCategory } from "../src/contentDefinitions";
+import { RenderMarkdown } from "../src/markdown";
 import { RenderExercise } from "./exercise";
 
 export function RenderCategory(category: ExerciseCategory)
 {
-    const desc = (category.description === undefined) ? "" : `<p>${category.description}</p>`;
+    const desc = (category.description === undefined) ? "" : `<p>${RenderMarkdown(category.description)}</p>`;
     return `
     <h2 class="mt-5" id="${category.name}">${category.displayText}</h2>
     <hr />

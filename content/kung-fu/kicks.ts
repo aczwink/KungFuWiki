@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -16,7 +16,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-import { Exercise } from "../src/contentDefinitions";
+import { Exercise } from "../../src/contentDefinitions";
+import { RenderChinese } from "../../templates/chinese";
 
 export const kicks: Exercise[] = [
     {
@@ -26,7 +27,7 @@ export const kicks: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        <p>Tritt nach vorne bis zum Kopf.</p>
+        Straight kick to the front up until the head.
         `,
         title: "正踢腿",
         titleLang: "chinese"
@@ -38,11 +39,12 @@ export const kicks: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        <p>Kreisender Tritt nach innen</p>
+        Circular inside kick.
         `,
         title: "里合腿",
         titleLang: "chinese"
     },
+    //wài bǎi tuǐ
     {
         media: {
             type: "image",
@@ -50,11 +52,12 @@ export const kicks: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        <p>Kreisender Tritt nach außen</p>
+        Circular outside kick.
         `,
-        title: "外擺腿",
+        title: "外摆腿",
         titleLang: "chinese"
     },
+    //cǎi jiǎo
     {
         media: {
             type: "video",
@@ -62,9 +65,38 @@ export const kicks: Exercise[] = [
             sourceURL: "https://shaolinspirit.at/kungfu"
         },
         text: `
-        <p>Gesteckter Tritt nach vorne mit Schlag auf den Fuß. Auch über kreuz.</p>
+        Knee gets up, hand on the same side as the leg goes straight to front, leg kicks the hand and then goes down while keeping it straight.
+        Hands and legs can also cross.
         `,
         title: "踩脚",
+        titleLang: "chinese"
+    },
+    //dān pāi jiǎo
+    {
+        text: `
+        The same as ${RenderChinese("踩脚")}.
+        `,
+        title: "单拍脚",
+        titleLang: "chinese"
+    },
+    {
+        media: {
+            type: "youtube",
+            url: "https://www.youtube-nocookie.com/embed/-qhz0sl1Zag?si=e9Np7YbTf1v2GHuR&amp;controls=0"
+        },
+        text: `
+        Jump kick
+        `,
+        title: "二起脚",
+        titleLang: "chinese"
+    },
+    //gāo pāi jiǎo
+    {
+        text: `
+        * [Demonstration with ${RenderChinese("砸拳")}](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-za-quan/913693459086584/)
+        * [Demonstration with ${RenderChinese("乌龙盘打")}](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-wu-long-pan-da/905080169943711/)
+        `,
+        title: "高拍脚",
         titleLang: "chinese"
     },
     {
@@ -81,7 +113,7 @@ export const kicks: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        <p>Tritt geradeaus.</p>
+        Knee gets up, leg kicks straight to the front together with punch on the opposite side and then leg goes down while keeping it straight.
         `,
         title: "弹腿",
         titleLang: "chinese"
@@ -93,9 +125,27 @@ export const kicks: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        <p>Wegdrücktritt mit der Hacke aber mit geradem Rücken.</p>
+        Knee gets up, kick straight to the front with the heel.
         `,
         title: "蹬腿",
         titleLang: "chinese"
+    },
+    //hòu bǎi tuǐ
+    {
+        media: {
+            type: "youtube",
+            url: "https://www.youtube-nocookie.com/embed/GyGuSqsN44w?si=g2Y9PNHxcfxc9-2a&amp;controls=0"
+        },
+        text: ``,
+        title: "后摆腿",
+        titleLang: "chinese",
+    },
+    //hòu liāo tuǐ
+    {
+        text: `
+        [Demonstration](https://youtube.com/shorts/pm6NAw_SRss?feature=shared)
+        `,
+        title: "后撩腿",
+        titleLang: "chinese",
     }
 ];

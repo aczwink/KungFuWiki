@@ -15,8 +15,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
-
 import { Exercise } from "../src/contentDefinitions";
+import { RenderMarkdown } from "../src/markdown";
 import { RenderChinese } from "./chinese";
 
 function RenderMedia(exercise: Exercise)
@@ -35,7 +35,7 @@ function RenderMedia(exercise: Exercise)
             </a>
             `;
         case "image-no-src":
-            return `<img src="images/${exercise.media.fileName}" />`;
+            return `<img style="max-width:50%" src="images/${exercise.media.fileName}" />`;
         case "images":
             const images = exercise.media.fileNames.map(x => `<img src="images/${x}" />`);
             return `
@@ -45,7 +45,7 @@ function RenderMedia(exercise: Exercise)
             `;
         case "video":
             return `
-            <video controls muted autoplay>
+            <video controls muted autoplay style="max-width:50%">
                 <source type="video/mp4" src="videos/${exercise.media.fileName}" />
             </video>
             <br />
@@ -69,9 +69,9 @@ export function RenderExercise(exercise: Exercise)
     <h3>${RenderTitle(exercise.title, exercise.titleLang)}</h3>
     <div class="row">
         <div class="col">
-            <p>${exercise.text}</p>
+            <p>${RenderMarkdown(exercise.text)}</p>
         </div>
-        <div class="col-auto text-center">
+        <div class="col-auto text-end">
             ${RenderMedia(exercise)}
         </div>
     </div>

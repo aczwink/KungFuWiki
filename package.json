@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && cd dist && node src/main.js && cp -r ../static/* ./out/",
-    "build-dev": "tsc && cd dist && node src/main.js && ln -sf ../static/images ./out/images && ln -sf ../static/videos ./out/videos",
+    "build-dev": "tsc && cd dist && node src/main.js && ln -sf ../../static/images ./out/images && ln -sf ../../static/videos ./out/videos",
     "run-dev-server": "nodemon --exec \"npm run build-dev && cd dist/out && python3 -m http.server\""
   },
   "repository": {
@@ -20,8 +20,13 @@
   },
   "homepage": "https://github.com/aczwink/KungFuWiki#readme",
   "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
     "@types/node": "^22.9.0",
     "nodemon": "^3.1.7",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0",
+    "markdown-it-mark": "^4.0.0"
   }
 }

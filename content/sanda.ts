@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -16,6 +16,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-export const welcomePage = `
-<a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/hier-ein-paar-%C3%BCbungen-damit-ihr-euch-zuhause-fit-halten-k%C3%B6nnt/221996235575367/">Daily exercises</a>
-`;
+import { Exercise } from "../src/contentDefinitions";
+
+export const sandaTechnique: Exercise[] = [
+    //biān tuǐ
+    {
+        text: `
+        Roundhouse kick.
+        [Wikipedia](https://en.wikipedia.org/wiki/Roundhouse_kick#Chinese_wushu:_sanshou/sanda_method)
+        `,
+        title: "鞭腿",
+        titleLang: "chinese"
+    },
+];

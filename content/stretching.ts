@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -16,6 +16,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-export const welcomePage = `
-<a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/hier-ein-paar-%C3%BCbungen-damit-ihr-euch-zuhause-fit-halten-k%C3%B6nnt/221996235575367/">Daily exercises</a>
-`;
+import { Exercise } from "../src/contentDefinitions";
+
+export const stretching: Exercise[] = [
+    {
+        text: `<strong class="text-danger">TODO: ein bein auf die hacke stellen, vorbeugen und dehnen. TODO: bild</strong>`,
+        title: "正压腿",
+        titleLang: "chinese"
+    },
+    {
+        text: `<strong class="text-danger">TODO: hände zu den füßen. TODO: bild</strong>`,
+        title: "下把筋",
+        titleLang: "chinese"
+    },
+    {
+        text: `<strong class="text-danger">TODO: hände nach oben strecken. TODO: bild</strong>`,
+        title: "上把筋",
+        titleLang: "chinese"
+    },
+];

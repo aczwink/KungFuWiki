@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -15,7 +15,20 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
+import markdownit from 'markdown-it';
 
-export const welcomePage = `
-<a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/hier-ein-paar-%C3%BCbungen-damit-ihr-euch-zuhause-fit-halten-k%C3%B6nnt/221996235575367/">Daily exercises</a>
-`;
+export function RenderMarkdown(markdown: string)
+{
+    const withoutPreLineWhitespace = markdown.split("\n").map(x => x.trimStart()).join("\n");
+
+    const md = markdownit({
+        html: false,
+        xhtmlOut: false,
+        breaks: false,
+        linkify: false,
+        typographer: false,
+    });
+    md.use(require('markdown-it-mark'));
+    const result = md.render(withoutPreLineWhitespace);
+    return result;
+}

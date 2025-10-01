@@ -84,5 +84,12 @@ export const fistForms: Exercise[] = [
             type: "gdrive",
             url: "https://drive.google.com/file/d/1wOATSQJg2QR1Qsa0hTpZdkICTeb_vdUz/preview"
         }
-    }
+    },
+    {
+        text: `
+        <strong class="text-danger">TODO</strong>
+        `,
+        title: "少林拳",
+        titleLang: "chinese"
+    },
 ];

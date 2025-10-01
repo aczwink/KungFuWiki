@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -19,17 +19,6 @@
 import { Exercise } from "../src/contentDefinitions";
 
 export const jumps: Exercise[] = [
-    {
-        media: {
-            type: "youtube",
-            url: "https://www.youtube-nocookie.com/embed/-qhz0sl1Zag?si=e9Np7YbTf1v2GHuR&amp;controls=0"
-        },
-        text: `
-        Sprungtritt
-        `,
-        title: "二踢脚",
-        titleLang: "chinese"
-    },
     {
         media: {
             type: "image",
@@ -73,5 +62,13 @@ export const jumps: Exercise[] = [
         `,
         title: "Umdrehsprungtritt",
         titleLang: "german"
+    },
+    //bèi yāo tuǐ 
+    {
+        text: `
+        # *==TODO: jump, knees up and look backwards==*
+        `,
+        title: "背腰腿",
+        titleLang: "chinese"
     }
 ];

@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -16,6 +16,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-export const welcomePage = `
-<a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/hier-ein-paar-%C3%BCbungen-damit-ihr-euch-zuhause-fit-halten-k%C3%B6nnt/221996235575367/">Daily exercises</a>
-`;
+import { Exercise } from "../../src/contentDefinitions";
+
+export const spearTechnique: Exercise[] = [
+    //lán ná zhā
+    {
+        text: `
+        <strong class="text-danger">TODO: lan: right arm up, spear down; na: right arm down, spear up, zha: spear in front with both hands touching the end</strong>
+        `,
+        title: "拦拿扎",
+        titleLang: "chinese"
+    },
+];

@@ -36,6 +36,13 @@ export const weaponForms: Exercise[] = [
     },
     {
         text: `
+        <strong class="text-danger">TODO: Shaolin gun</strong>
+        `,
+        title: "少林棍",
+        titleLang: "chinese"
+    },
+    {
+        text: `
         <strong class="text-danger">TODO</strong>
         `,
         title: "Säbel (Shaolin Dan?)",
@@ -60,5 +67,14 @@ export const weaponForms: Exercise[] = [
             type: "gdrive",
             url: "https://drive.google.com/file/d/1VQOBFIVwz6qWCkojRPOakqJr0_yR_LSp/preview"
         }
+    },
+    //shísān qiāng
+    {
+        text: `
+        13-form
+        # *==TODO: add video or so==*
+        `,
+        title: "十三枪",
+        titleLang: "chinese",
     }
 ];

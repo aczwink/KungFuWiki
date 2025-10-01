@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -18,14 +18,14 @@
 
 import { Exercise } from "../src/contentDefinitions";
 
-export const taiChiForms: Exercise[] = [
+export const qiGongForms: Exercise[] = [
+    //bā duàn jǐn
     {
-        media: {
-            type: "gdrive",
-            url: "https://drive.google.com/file/d/1v6ydXn54CT-wQho6iqrHVjb4FB6WIGp-/preview"
-        },
-        text: ``,
-        title: "24",
-        titleLang: "german"
+        text: `
+        <strong class="text-danger">TODO: Eight Pieces of Brocade form</strong>
+        <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/meister-li-zeigt-unsere-ba-duan-jin-form-aus-dem-qi-gong-training/795199790878487/">Qi Gong Form</a>
+        `,
+        title: "八段锦",
+        titleLang: "chinese"
     },
 ];
