@@ -17,7 +17,7 @@
  * */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { RenderChinese } from "../../templates/chinese";
+import { RenderChinese, RenderChineseOrdinalNumber } from "../../templates/chinese";
 
 export const taiChiForms: Exercise[] = [
     {
@@ -26,7 +26,7 @@ export const taiChiForms: Exercise[] = [
             url: "https://drive.google.com/file/d/1v6ydXn54CT-wQho6iqrHVjb4FB6WIGp-/preview"
         },
         text: ``,
-        title: "24",
+        title: RenderChineseOrdinalNumber(24),
         titleLang: "german"
     },
     {
@@ -41,7 +41,7 @@ export const taiChiForms: Exercise[] = [
         </ol>
         <strong class="text-danger">TODO</strong>
         `,
-        title: "38",
+        title: RenderChineseOrdinalNumber(38),
         titleLang: "german"
     },
 ];

@@ -16,9 +16,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-import { Exercise } from "../src/contentDefinitions";
+import { Exercise } from "../../src/contentDefinitions";
 
-export const weaponForms: Exercise[] = [
+export const stickForms: Exercise[] = [
     {
         text: `
         1. Stockform
@@ -41,40 +41,4 @@ export const weaponForms: Exercise[] = [
         title: "少林棍",
         titleLang: "chinese"
     },
-    {
-        text: `
-        <strong class="text-danger">TODO</strong>
-        `,
-        title: "Säbel (Shaolin Dan?)",
-        titleLang: "german"
-    },
-    {
-        text: `
-        <strong class="text-danger">TODO: Säbelform. Name nicht verständlich </strong>
-        `,
-        title: "??? Shaolin Ming Quan Dan Do ???",
-        titleLang: "german",
-        media: {
-            type: "youtube",
-            url: "https://youtu.be/DWDOQBfEc1U?si=ysZTybP15RaTN-Ko&t=625"
-        }
-    },
-    {
-        text: `Speerform`,
-        title: "少林枪",
-        titleLang: "chinese",
-        media: {
-            type: "gdrive",
-            url: "https://drive.google.com/file/d/1VQOBFIVwz6qWCkojRPOakqJr0_yR_LSp/preview"
-        }
-    },
-    //shísān qiāng
-    {
-        text: `
-        13-form
-        # *==TODO: add video or so==*
-        `,
-        title: "十三枪",
-        titleLang: "chinese",
-    }
 ];

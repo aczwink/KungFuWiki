@@ -16,6 +16,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-export const welcomePage = `
-<a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/hier-ein-paar-%C3%BCbungen-damit-ihr-euch-zuhause-fit-halten-k%C3%B6nnt/221996235575367/">Daily exercises</a>
-`;
+import { Exercise } from "../../src/contentDefinitions";
+
+export const sabreForms: Exercise[] = [
+    {
+        text: `
+        <strong class="text-danger">TODO</strong>
+        `,
+        title: "Säbel (Shaolin Dan?)",
+        titleLang: "german"
+    },
+    {
+        text: `
+        <strong class="text-danger">TODO: Säbelform. Name nicht verständlich </strong>
+        `,
+        title: "??? Shaolin Ming Quan Dan Do ???",
+        titleLang: "german",
+        media: {
+            type: "youtube",
+            url: "https://youtu.be/DWDOQBfEc1U?si=ysZTybP15RaTN-Ko&t=625"
+        }
+    },
+];

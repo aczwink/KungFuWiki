@@ -51,6 +51,16 @@ export const chineseLang: Exercise[] = [
         title: "后",
         titleLang: "chinese"
     },
+    //huàn
+    {
+        text: `
+        Change.
+
+        In Kung Fu often used in imperative to change from one leg to another for example.
+        `,
+        title: "换",
+        titleLang: "chinese"
+    },
     //jiāyóu
     {
         text: `

@@ -19,6 +19,8 @@
 const pinyinDict = {
     //3-char compound words
     "爆发力": "bàofālì",
+    "二十四": "èrshísì",
+    "三十八": "sānshíbā",
     "少林拳": "shàolínquán",
     //2-char compound words
     "白鹤": "báihè",
@@ -26,6 +28,7 @@ const pinyinDict = {
     "冲床": "chōngchuáng",
     "打挺": "dǎtǐng",
     "蹬腿": "dēngtuǐ",
+    "交叉": "jiāochā",
     "加油": "jiāyóu",
     "金刚": "jīngāng",
     "连环": "liánhuán",
@@ -72,7 +75,7 @@ const pinyinDict = {
     "合": "hé",
     "洪": "hóng",
     "后": "hòu",
-    "交叉": "jiāochā",
+    "换": "huàn",
     "脚": "jiǎo",
     "搅": "jiǎo",
     "剑": "jiàn",

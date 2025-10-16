@@ -69,3 +69,10 @@ export interface ExerciseCategory
     exercises: Exercise[];
     name: string;
 }
+
+export interface MainCategory
+{
+    displayText: string;
+    categories: ExerciseCategory[];
+    name: string;
+}

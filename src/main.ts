@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -18,9 +18,32 @@
 import fs from "fs";
 import path from "path";
 import { RenderMain } from "../templates/main";
-import { welcomePage } from "../templates/welcomePage";
 import { categories } from "../content/categories";
+import { RenderMainCategory } from "../templates/mainCategory";
+import { MainCategory } from "./contentDefinitions";
 import { RenderCategory } from "../templates/category";
+
+async function BuildMainCatStaticSite(cat: MainCategory, outDirPath: string)
+{
+    const catPath = path.join(outDirPath, cat.name + ".html");
+    const content = RenderMain({
+        categories,
+        pageContent: RenderMainCategory(cat),
+        activeCategory: cat
+    });
+    await fs.promises.writeFile(catPath, content, "utf-8");
+
+    for (const subCat of cat.categories)
+    {    
+        const catPath = path.join(outDirPath, subCat.name + ".html");
+        const content = RenderMain({
+            categories,
+            pageContent: RenderCategory(subCat),
+            activeCategory: cat
+        });
+        await fs.promises.writeFile(catPath, content, "utf-8");
+    }
+}
 
 async function BuildStaticSite(outDirPath: string)
 {
@@ -29,21 +52,16 @@ async function BuildStaticSite(outDirPath: string)
 
     for (const cat of categories)
     {
-        const catPath = path.join(outDirPath, cat.name + ".html");
-        const content = RenderMain({
-            categories,
-            pageContent: RenderCategory(cat),
-            activeCategory: cat
-        });
-        await fs.promises.writeFile(catPath, content, "utf-8");
+        await BuildMainCatStaticSite(cat, outDirPath);
     }
 
     const indexPath = path.join(outDirPath, "index.html");
-    await fs.promises.writeFile(indexPath, RenderMain({
-        activeCategory: undefined,
-        categories: categories,
-        pageContent: welcomePage
-    }), "utf-8");
+    const content = RenderMain({
+        categories,
+        pageContent: RenderMainCategory(categories[0]),
+        activeCategory: categories[0]
+    });
+    await fs.promises.writeFile(indexPath, content, "utf-8");
 }
 
 BuildStaticSite("./out");

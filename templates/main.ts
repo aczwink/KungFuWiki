@@ -16,16 +16,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-import { ExerciseCategory } from "../src/contentDefinitions";
+import { MainCategory } from "../src/contentDefinitions";
 
 interface MainPageParams
 {
-	activeCategory?: ExerciseCategory;
-	categories: ExerciseCategory[];
+	activeCategory?: MainCategory;
+	categories: MainCategory[];
 	pageContent: string;
 }
 
-function RenderNav(categories: ExerciseCategory[], activeCategory?: ExerciseCategory)
+function RenderNav(categories: MainCategory[], activeCategory?: MainCategory)
 {
 	function GetClassName(isActive: boolean)
 	{
@@ -38,7 +38,6 @@ function RenderNav(categories: ExerciseCategory[], activeCategory?: ExerciseCate
 	});
 
 	return `<nav class="nav nav-pills flex-column flex-sm-row sticky-top bg-body">
-		<a class="${GetClassName(activeCategory === undefined)}" aria-current="page" href="index.html"><i class="bi bi-house"></i></a>
 		${cats.join("")}
 	</nav>`;
 }

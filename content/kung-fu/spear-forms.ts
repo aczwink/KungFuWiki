@@ -15,29 +15,26 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
-import { Pinyin } from "../src/pinyin";
 
-export function RenderChinese(text: string)
-{
-    return Pinyin(text) + " (" + text + ")";
-}
+import { Exercise } from "../../src/contentDefinitions";
+import { RenderChineseOrdinalNumber } from "../../templates/chinese";
 
-export function RenderChineseOrdinalNumber(n: number)
-{
-    function MapNumber()
+export const spearForms: Exercise[] = [
     {
-        switch(n)
-        {
-            case 13:
-                return "十三";
-            case 24:
-                return "二十四";
-            case 38:
-                return "三十八";
-            default:
-                throw new Error("NOT IMPLEMENTED: " + n);
+        text: `Speerform`,
+        title: "少林枪",
+        titleLang: "chinese",
+        media: {
+            type: "gdrive",
+            url: "https://drive.google.com/file/d/1VQOBFIVwz6qWCkojRPOakqJr0_yR_LSp/preview"
         }
+    },
+    //shísān qiāng
+    {
+        text: `
+        # *==TODO: add video or so==*
+        `,
+        title: RenderChineseOrdinalNumber(13),
+        titleLang: "german",
     }
-
-    return n + " -> " + RenderChinese(MapNumber());
-}
+];

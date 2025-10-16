@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-import { ExerciseCategory } from "../src/contentDefinitions";
+import { ExerciseCategory, MainCategory } from "../src/contentDefinitions";
 import { RenderChinese } from "../templates/chinese";
 import { fistForms } from "./fistForms";
 import { jumps } from "./jumps";
@@ -24,7 +24,7 @@ import { kicks } from "./kung-fu/kicks";
 import { stretching } from "./stretching";
 import { taiChiMoves } from "./tai-chi/moves";
 import { taiChiForms } from "./tai-chi/forms";
-import { weaponForms } from "./weaponForms";
+import { spearForms } from "./kung-fu/spear-forms";
 import { taiChiSteps } from "./tai-chi/steps";
 import { qiGongForms } from "./qiGongForms";
 import { chineseLang } from "./chinese";
@@ -35,98 +35,135 @@ import { kungFuMoves } from "./kung-fu/moves";
 import { stances } from "./kung-fu/stances";
 import { punches } from "./kung-fu/punches";
 import { sandaTechnique } from "./sanda";
+import { stickForms } from "./kung-fu/stick-forms";
+import { sabreForms } from "./kung-fu/sabre-forms";
 
-export const categories: ExerciseCategory[] = [
+export const categories: MainCategory[] = [
     {
-        description: `
-        To stretch in a certain stance you add "${RenderChinese("压腿")}" to the name of the stance.
-        E.g.: ${RenderChinese("馬步压腿")}.
-        `,
-        displayText: "Stances",
-        exercises: stances,
-        name: "stances",
+        //TODO: add this here somewhere <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/hier-ein-paar-%C3%BCbungen-damit-ihr-euch-zuhause-fit-halten-k%C3%B6nnt/221996235575367/">Daily exercises</a>
+        categories: [
+            {
+                description: `
+                To stretch in a certain stance you add "${RenderChinese("压腿")}" to the name of the stance.
+                E.g.: ${RenderChinese("馬步压腿")}.
+                `,
+                displayText: "Stances",
+                exercises: stances,
+                name: "stances",
+            },
+            {
+                displayText: "Hand technique",
+                exercises: handTechnique,
+                name: "hand-technique"
+            },
+            {
+                displayText: "Strechting exercises",
+                exercises: stretching,
+                name: "streching-exercises",
+            },
+            {
+                displayText: "Kicks",
+                exercises: kicks,
+                name: "kicks"
+            },
+            {
+                displayText: "Punches",
+                exercises: punches,
+                name: "punches"
+            },
+            {
+                description: `
+                <a target="_blank" href="https://www.instagram.com/p/B-OnNIxIP9V/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Demonstration verschiedener Sprünge von Meister Li</a>
+                `,
+                displayText: "Jumps",
+                exercises: jumps,
+                name: "jumps",
+            },
+            {
+                displayText: "Exercises",
+                exercises: kungFuMoves,
+                name: "kung-fu-moves",
+            },
+            {
+                displayText: "Stick technique",
+                exercises: stickTechnique,
+                name: "stick-technique",
+            },
+            {
+                displayText: "Spear technique",
+                exercises: spearTechnique,
+                name: "spear-technique",
+            },
+        ],
+        displayText: "Basics",
+        name: "basics"
     },
     {
-        displayText: "Hand technique",
-        exercises: handTechnique,
-        name: "hand-technique"
+        categories: [
+            {
+                displayText: "Fist forms",
+                exercises: fistForms,
+                name: "fist-forms"
+            },
+            {
+                displayText: "Sabre forms",
+                exercises: sabreForms,
+                name: "sabre-forms",
+            },
+            {
+                displayText: "Spear forms",
+                exercises: spearForms,
+                name: "spear-forms"
+            },
+            {
+                displayText: "Stick forms",
+                exercises: stickForms,
+                name: "stick-forms",
+            },
+        ],
+        displayText: "Forms",
+        name: "forms"
     },
     {
-        displayText: "Kicks",
-        exercises: kicks,
-        name: "kicks"
+        categories: [
+            {
+                displayText: "Tai Chi Steps",
+                exercises: taiChiSteps,
+                name: "tai-chi-steps"
+            },
+            {
+                displayText: "Tai Chi Moves",
+                exercises: taiChiMoves,
+                name: "tai-chi-moves"
+            },
+            {
+                displayText: "Tai Chi Formen",
+                exercises: taiChiForms,
+                name: "tai-chi-forms"
+            },
+        ],
+        displayText: "Tai Chi",
+        name: "tai-chi"
     },
     {
-        displayText: "Punches",
-        exercises: punches,
-        name: "punches"
-    },
-    {
-        description: `
-        <a target="_blank" href="https://www.instagram.com/p/B-OnNIxIP9V/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Demonstration verschiedener Sprünge von Meister Li</a>
-        `,
-        displayText: "Jumps",
-        exercises: jumps,
-        name: "jumps",
-    },
-    {
-        displayText: "Exercises",
-        exercises: kungFuMoves,
-        name: "kung-fu-moves",
-    },
-    {
-        displayText: "Strechting exercises",
-        exercises: stretching,
-        name: "streching-exercises",
-    },
-    {
-        displayText: "Stick technique",
-        exercises: stickTechnique,
-        name: "stick-technique",
-    },
-    {
-        displayText: "Spear technique",
-        exercises: spearTechnique,
-        name: "spear-technique",
-    },
-    {
-        displayText: "Fist forms",
-        exercises: fistForms,
-        name: "fist-forms"
-    },
-    {
-        displayText: "Weapon forms",
-        exercises: weaponForms,
-        name: "weapon-forms"
-    },
-    {
-        displayText: "Tai Chi Steps",
-        exercises: taiChiSteps,
-        name: "tai-chi-steps"
-    },
-    {
-        displayText: "Tai Chi Moves",
-        exercises: taiChiMoves,
-        name: "tai-chi-moves"
-    },
-    {
-        displayText: "Tai Chi Formen",
-        exercises: taiChiForms,
-        name: "tai-chi-forms"
-    },
-    {
-        displayText: "Qi Gong forms",
-        exercises: qiGongForms,
-        name: "qi-gong-forms"
-    },
-    {
-        displayText: "Sanda",
-        exercises: sandaTechnique,
-        name: "sanda"
-    },
-    {
-        displayText: "Chinese vocabulary",
-        exercises: chineseLang,
-        name: "chinese"
-    },
+        categories: [
+            {
+                displayText: "Qi Gong forms",
+                exercises: qiGongForms,
+                name: "qi-gong-forms"
+            },
+            {
+                displayText: "Sanda",
+                exercises: sandaTechnique,
+                name: "sanda"
+            },
+            {
+                displayText: "Chinese vocabulary",
+                exercises: chineseLang,
+                name: "chinese"
+            },
+        ],
+        displayText: "Other",
+        name: "other"
+    }
 ];
