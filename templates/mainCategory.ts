@@ -29,6 +29,8 @@ function FindImage(x: ExerciseCategory)
                 case "image":
                 case "image-no-src":
                     return exercise.media.fileName;
+                case "images":
+                    return exercise.media.fileNames[0];
             }
         }        
     }

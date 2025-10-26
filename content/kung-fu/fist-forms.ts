@@ -16,30 +16,34 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-import { Exercise } from "../src/contentDefinitions";
+import { Exercise } from "../../src/contentDefinitions";
 
 export const fistForms: Exercise[] = [
     {
         text: `
-        1. Form
-        <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/lian-huan-quan/893760527704697/">Demonstration von Meister Li</a>
+        Translation: "chain fist".
+
+        [Demonstration](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/lian-huan-quan/893760527704697/)
         `,
         title: "连环拳",
         titleLang: "chinese"
     },
     {
         text: `
-        2. Form
-        <a target="_blank" href="https://www.instagram.com/tv/B-Zh3DjI6kS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Demonstration von Meister Li</a>
-        <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/tong-bei-quan/860566334458352/">Demonstration von Meister Li</a>
+        Translation: "spreading power from the back fist".
+
+        * [Demonstration](https://www.instagram.com/tv/B-Zh3DjI6kS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
+        * [Demonstration](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/tong-bei-quan/860566334458352/)
+        * [Wikipedia](https://en.wikipedia.org/wiki/Tongbeiquan)
         `,
         title: "通背拳",
         titleLang: "chinese"
     },
     {
         text: `
-        7-Sterne-Form
-        <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/meister-li-zeigt-uns-hier-die-7-sterne-form-/1526028037427702/">Demonstration von Meister Li</a>
+        Translation: "7-star fist"
+
+        [Demonstration](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/meister-li-zeigt-uns-hier-die-7-sterne-form-/1526028037427702/)
         `,
         title: "七星拳",
         titleLang: "chinese"

@@ -16,9 +16,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-import { ExerciseCategory, MainCategory } from "../src/contentDefinitions";
+import { MainCategory } from "../src/contentDefinitions";
 import { RenderChinese } from "../templates/chinese";
-import { fistForms } from "./fistForms";
+import { fistForms } from "./kung-fu/fist-forms";
 import { jumps } from "./jumps";
 import { kicks } from "./kung-fu/kicks";
 import { stretching } from "./stretching";
