@@ -29,6 +29,10 @@ export const chineseLang: Exercise[] = [
     },
     //dāo
     {
+        media: {
+            type: "image-no-src",
+            fileName: "dao.jpg"
+        },
         text: `
         Sabre
         `,

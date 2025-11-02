@@ -45,7 +45,7 @@ export const kungFuMoves: Exercise[] = [
     {
         media: {
             type: "youtube",
-            url: "https://www.youtube-nocookie.com/embed/_1UJzVsYj7A?si=iW1JRDa4euZMM8yq&amp;controls=0"
+            videoId: "_1UJzVsYj7A?si=iW1JRDa4euZMM8yq"
         },
         text: `
         # *==TODO: like xié xíng but arms left and right (careful! video is wrong because arms go front and back but instead should go left and right!!!)==*
@@ -163,7 +163,7 @@ export const kungFuMoves: Exercise[] = [
     {
         media: {
             type: "youtube",
-            url: "https://www.youtube-nocookie.com/embed/_1UJzVsYj7A?si=iW1JRDa4euZMM8yq&amp;controls=0"
+            videoId: "_1UJzVsYj7A?si=iW1JRDa4euZMM8yq"
         },
         text: `
         # *==TODO: gong bu and arms left and and straight==*

@@ -16,9 +16,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-import { ExerciseCategory, MainCategory } from "../src/contentDefinitions";
+import { ExerciseCategory, MainCategory, MediaDefinition } from "../src/contentDefinitions";
+import { RenderOptionalMedia } from "./media";
 
-function FindImage(x: ExerciseCategory)
+function FindImage(x: ExerciseCategory): MediaDefinition | undefined
 {
     for (const exercise of x.exercises)
     {
@@ -28,25 +29,27 @@ function FindImage(x: ExerciseCategory)
             {
                 case "image":
                 case "image-no-src":
-                    return exercise.media.fileName;
+                    return exercise.media;
                 case "images":
-                    return exercise.media.fileNames[0];
+                    return {
+                        type: "image-no-src",
+                        fileName: exercise.media.fileNames[0]
+                    };
             }
         }        
     }
 }
 
-function RenderSubCategoryLink(x: ExerciseCategory)
+function RenderSubCategoryLink(category: ExerciseCategory)
 {    
-    const img = FindImage(x);
-    const medium = (img === undefined) ? "" : `<img src="images/${img}" />`;
+    const media = category.media ?? FindImage(category);
     return `
         <div class="row mb-5">
             <div class="col text-end">
-                <h3><a href="${x.name}.html">${x.displayText}</a></h3>
+                <h3><a href="${category.name}.html">${category.displayText}</a></h3>
             </div>
             <div class="col">
-                ${medium}
+                ${RenderOptionalMedia(media)}
             </div>
         </div>
     `;

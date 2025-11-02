@@ -51,12 +51,14 @@ interface VideoMedia
 interface YoutubeMedia
 {
     type: "youtube";
-    url: string;
+    videoId: string;
 }
+
+export type MediaDefinition = GoogleDriveMedia | ImageMedia | ImageWithoutSourceMedia | ImagesMedia | VideoMedia | YoutubeMedia;
 
 export interface Exercise
 {
-    media?: GoogleDriveMedia | ImageMedia | ImageWithoutSourceMedia | ImagesMedia | VideoMedia | YoutubeMedia;
+    media?: MediaDefinition;
     titleLang: "chinese" | "german";
     title: string;
     text: string;
@@ -67,6 +69,7 @@ export interface ExerciseCategory
     description?: string;
     displayText: string;
     exercises: Exercise[];
+    media?: MediaDefinition;
     name: string;
 }
 

@@ -34,7 +34,7 @@ export const sabreForms: Exercise[] = [
         titleLang: "german",
         media: {
             type: "youtube",
-            url: "https://youtu.be/DWDOQBfEc1U?si=ysZTybP15RaTN-Ko&t=625"
+            videoId: "DWDOQBfEc1U?si=ysZTybP15RaTN-Ko&t=625"
         }
     },
 ];

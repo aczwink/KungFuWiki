@@ -18,43 +18,7 @@
 import { Exercise } from "../src/contentDefinitions";
 import { RenderMarkdown } from "../src/markdown";
 import { RenderChinese } from "./chinese";
-
-function RenderMedia(exercise: Exercise)
-{
-    if(exercise.media === undefined)
-        return "";
-
-    switch(exercise.media.type)
-    {
-        case "gdrive":
-            return `<iframe src="${exercise.media.url}" width="640" height="480" allow="autoplay"></iframe>`;
-        case "image":
-            return `
-            <a target="_blank" href="${exercise.media.sourceURL}">
-                <img src="images/${exercise.media.fileName}" />
-            </a>
-            `;
-        case "image-no-src":
-            return `<img style="max-width:50%" src="images/${exercise.media.fileName}" />`;
-        case "images":
-            const images = exercise.media.fileNames.map(x => `<img src="images/${x}" />`);
-            return `
-            <a target="_blank" href="${exercise.media.sourceURL}">
-                ${images.join("")}
-            </a>
-            `;
-        case "video":
-            return `
-            <video controls muted autoplay style="max-width:50%">
-                <source type="video/mp4" src="videos/${exercise.media.fileName}" />
-            </video>
-            <br />
-            <a class="small" target="_blank" href="${exercise.media.sourceURL}">Quelle</a>
-            `;
-        case "youtube":
-            return `<iframe width="560" height="315" src="${exercise.media.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-    }
-}
+import { RenderOptionalMedia } from "./media";
 
 function RenderTitle(title: string, language: "chinese" | "german")
 {
@@ -72,7 +36,7 @@ export function RenderExercise(exercise: Exercise)
             <p>${RenderMarkdown(exercise.text)}</p>
         </div>
         <div class="col-auto text-end">
-            ${RenderMedia(exercise)}
+            ${RenderOptionalMedia(exercise.media)}
         </div>
     </div>
     `;

@@ -79,10 +79,11 @@ export const kicks: Exercise[] = [
         title: "单拍脚",
         titleLang: "chinese"
     },
+    //èr qǐ jiǎo
     {
         media: {
             type: "youtube",
-            url: "https://www.youtube-nocookie.com/embed/-qhz0sl1Zag?si=e9Np7YbTf1v2GHuR&amp;controls=0"
+            videoId: "-qhz0sl1Zag?si=e9Np7YbTf1v2GHuR"
         },
         text: `
         Jump kick
@@ -134,7 +135,7 @@ export const kicks: Exercise[] = [
     {
         media: {
             type: "youtube",
-            url: "https://www.youtube-nocookie.com/embed/GyGuSqsN44w?si=g2Y9PNHxcfxc9-2a&amp;controls=0"
+            videoId: "GyGuSqsN44w?si=g2Y9PNHxcfxc9-2a"
         },
         text: ``,
         title: "后摆腿",

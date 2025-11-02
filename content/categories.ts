@@ -103,11 +103,20 @@ export const categories: MainCategory[] = [
             {
                 displayText: "Fist forms",
                 exercises: fistForms,
+                media: {
+                    type: "image",
+                    fileName: "quan.png",
+                    sourceURL: "https://www.instagram.com/p/CBYvCYDptPB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                },
                 name: "fist-forms"
             },
             {
                 displayText: "Sabre forms",
                 exercises: sabreForms,
+                media: {
+                    type: "image-no-src",
+                    fileName: "dao.jpg"
+                },
                 name: "sabre-forms",
             },
             {
