@@ -32,14 +32,13 @@ export const taiChiForms: Exercise[] = [
     {
         text: `
         Moves:
-        <ol>
-            <li>${RenderChinese("起势")}</li>
-            <li>${RenderChinese("金刚倒锥")}</li>
-            <li>${RenderChinese("白鹤亮翅")}</li>
-            <li>${RenderChinese("上三步")}</li>
-            <li>${RenderChinese("斜行")}</li>
-        </ol>
-        <strong class="text-danger">TODO</strong>
+        * ${RenderChinese("起势")}
+        * ${RenderChinese("金刚倒锥")}
+        * ${RenderChinese("白鹤亮翅")}
+        * ${RenderChinese("上三步")}
+        * ${RenderChinese("斜行")}
+
+        <strong class="text-danger">TODO rest</strong>
         `,
         title: RenderChineseOrdinalNumber(38),
         titleLang: "german"

@@ -19,7 +19,7 @@
 import { MainCategory } from "../src/contentDefinitions";
 import { RenderChinese } from "../templates/chinese";
 import { fistForms } from "./kung-fu/fist-forms";
-import { jumps } from "./jumps";
+import { jumps } from "./kung-fu/jumps";
 import { kicks } from "./kung-fu/kicks";
 import { stretching } from "./stretching";
 import { taiChiMoves } from "./tai-chi/moves";
@@ -73,7 +73,7 @@ export const categories: MainCategory[] = [
             },
             {
                 description: `
-                <a target="_blank" href="https://www.instagram.com/p/B-OnNIxIP9V/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Demonstration verschiedener Sprünge von Meister Li</a>
+                [Demonstration of different jumps](https://www.instagram.com/p/B-OnNIxIP9V/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
                 `,
                 displayText: "Jumps",
                 exercises: jumps,

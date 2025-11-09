@@ -79,6 +79,10 @@ export const chineseLang: Exercise[] = [
     },
     //jiàn
     {
+        media: {
+            type: "image-no-src",
+            fileName: "jian.jpg"
+        },
         text: `
         Sword
         `,
@@ -119,6 +123,10 @@ export const chineseLang: Exercise[] = [
     },
     //shànzǐ
     {
+        media: {
+            type: "image-no-src",
+            fileName: "fan.jpg"
+        },
         text: `
         The Tai Ji fan
         `,
