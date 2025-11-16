@@ -20,7 +20,7 @@ import { RenderMarkdown } from "../src/markdown";
 import { RenderChinese } from "./chinese";
 import { RenderOptionalMedia } from "./media";
 
-function RenderTitle(title: string, language: "chinese" | "german")
+export function RenderTitle(title: string, language: "chinese" | "german")
 {
     if(language === "german")
         return title;
@@ -29,11 +29,13 @@ function RenderTitle(title: string, language: "chinese" | "german")
 
 export function RenderExercise(exercise: Exercise)
 {
+    const text = (typeof exercise.text === "string") ? exercise.text : exercise.text();
+
     return `
     <h3>${RenderTitle(exercise.title, exercise.titleLang)}</h3>
     <div class="row">
         <div class="col">
-            <p>${RenderMarkdown(exercise.text)}</p>
+            <p>${RenderMarkdown(text)}</p>
         </div>
         <div class="col-auto text-end">
             ${RenderOptionalMedia(exercise.media)}

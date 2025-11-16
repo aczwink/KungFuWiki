@@ -61,7 +61,7 @@ export interface Exercise
     media?: MediaDefinition;
     titleLang: "chinese" | "german";
     title: string;
-    text: string;
+    text: string | (() => string);
 }
 
 export interface ExerciseCategory

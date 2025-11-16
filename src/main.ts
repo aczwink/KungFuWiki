@@ -22,6 +22,7 @@ import { categories } from "../content/categories";
 import { RenderMainCategory } from "../templates/mainCategory";
 import { MainCategory } from "./contentDefinitions";
 import { RenderCategory } from "../templates/category";
+import { AddReference } from "./references";
 
 async function BuildMainCatStaticSite(cat: MainCategory, outDirPath: string)
 {
@@ -34,7 +35,10 @@ async function BuildMainCatStaticSite(cat: MainCategory, outDirPath: string)
     await fs.promises.writeFile(catPath, content, "utf-8");
 
     for (const subCat of cat.categories)
-    {    
+    {
+        for (const exercise of subCat.exercises)
+            AddReference(exercise, subCat);
+
         const catPath = path.join(outDirPath, subCat.name + ".html");
         const content = RenderMain({
             categories,

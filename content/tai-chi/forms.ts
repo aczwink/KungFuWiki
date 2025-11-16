@@ -17,7 +17,9 @@
  * */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { RenderChinese, RenderChineseOrdinalNumber } from "../../templates/chinese";
+import { ReferenceExercise } from "../../src/references";
+import { RenderChineseOrdinalNumber } from "../../templates/chinese";
+import { baiheLiangChi, jingangDaoZhui, qiShi, shangSanBu, xieXing } from "./moves";
 
 export const taiChiForms: Exercise[] = [
     {
@@ -30,13 +32,13 @@ export const taiChiForms: Exercise[] = [
         titleLang: "german"
     },
     {
-        text: `
+        text: () => `
         Moves:
-        * ${RenderChinese("起势")}
-        * ${RenderChinese("金刚倒锥")}
-        * ${RenderChinese("白鹤亮翅")}
-        * ${RenderChinese("上三步")}
-        * ${RenderChinese("斜行")}
+        * ${ReferenceExercise(qiShi)}
+        * ${ReferenceExercise(jingangDaoZhui)}
+        * ${ReferenceExercise(baiheLiangChi)}
+        * ${ReferenceExercise(shangSanBu)}
+        * ${ReferenceExercise(xieXing)}
 
         <strong class="text-danger">TODO rest</strong>
         `,
