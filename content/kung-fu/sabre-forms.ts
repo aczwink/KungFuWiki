@@ -21,17 +21,16 @@ import { Exercise } from "../../src/contentDefinitions";
 export const sabreForms: Exercise[] = [
     {
         text: `
-        <strong class="text-danger">TODO</strong>
+        <strong class="text-danger">TODO: video</strong>
         `,
-        title: "Säbel (Shaolin Dan?)",
-        titleLang: "german"
+        title: "少林刀",
+        titleLang: "chinese"
     },
     {
         text: `
-        <strong class="text-danger">TODO: Säbelform. Name nicht verständlich </strong>
         `,
-        title: "??? Shaolin Ming Quan Dan Do ???",
-        titleLang: "german",
+        title: "少林梅花单刀",
+        titleLang: "chinese",
         media: {
             type: "youtube",
             videoId: "DWDOQBfEc1U?si=ysZTybP15RaTN-Ko&t=625"
