@@ -41,6 +41,12 @@ interface ImagesMedia
     sourceURL: string;
 }
 
+interface ImagesNoSrcMedia
+{
+    type: "images-no-src";
+    fileNames: string[];
+}
+
 interface VideoMedia
 {
     type: "video";
@@ -54,7 +60,7 @@ interface YoutubeMedia
     videoId: string;
 }
 
-export type MediaDefinition = GoogleDriveMedia | ImageMedia | ImageWithoutSourceMedia | ImagesMedia | VideoMedia | YoutubeMedia;
+export type MediaDefinition = GoogleDriveMedia | ImageMedia | ImageWithoutSourceMedia | ImagesMedia | ImagesNoSrcMedia | VideoMedia | YoutubeMedia;
 
 export interface Exercise
 {

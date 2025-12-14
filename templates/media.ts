@@ -38,6 +38,11 @@ export function RenderMedia(media: MediaDefinition)
                 ${images.join("")}
             </a>
             `;
+        case "images-no-src":
+        {
+            const images = media.fileNames.map(x => `<img style="max-width:50%" src="images/${x}" />`);
+            return `${images.join("")}`;
+        }
         case "video":
             return `
             <video controls muted autoplay style="max-width:50%">
