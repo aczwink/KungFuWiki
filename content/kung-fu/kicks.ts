@@ -17,14 +17,48 @@
  * */
 
 import { Exercise } from "../../src/contentDefinitions";
+import { ReferenceExercise } from "../../src/references";
 import { RenderChinese } from "../../templates/chinese";
+
+const liHeTue: Exercise = {
+    media: {
+        type: "image",
+        fileName: "Fig.-13-Li-he-tui..jpeg",
+        sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+    },
+    text: `
+    Circular inside kick.
+    `,
+    title: "里合腿",
+    titleLang: "chinese"
+};
+
+const houBaiTui: Exercise = {
+    media: {
+        type: "youtube",
+        videoId: "GyGuSqsN44w?si=g2Y9PNHxcfxc9-2a"
+    },
+    text: ``,
+    title: "后摆腿",
+    titleLang: "chinese",
+};
 
 export const kicks: Exercise[] = [
     {
         media: {
-            type: "image",
-            fileName: "Fig.-11-Zheng-ti-tui.jpeg",
-            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+            type: "gallery",
+            composition: "carousel",
+            items: [
+                {
+                    type: "image",
+                    fileName: "Fig.-11-Zheng-ti-tui.jpeg",
+                    sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+                },
+                {
+                    type: "video-no-src",
+                    fileName: "zheng_ti_tui.mp4"
+                }
+            ],
         },
         text: `
         Straight kick to the front up until the head.
@@ -32,18 +66,7 @@ export const kicks: Exercise[] = [
         title: "正踢腿",
         titleLang: "chinese"
     },
-    {
-        media: {
-            type: "image",
-            fileName: "Fig.-13-Li-he-tui..jpeg",
-            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
-        },
-        text: `
-        Circular inside kick.
-        `,
-        title: "里合腿",
-        titleLang: "chinese"
-    },
+    liHeTue,    
     //wài bǎi tuǐ
     {
         media: {
@@ -57,33 +80,36 @@ export const kicks: Exercise[] = [
         title: "外摆腿",
         titleLang: "chinese"
     },
-    //cǎi jiǎo
+    //cǎi jiǎo or dān pāi jiǎo
     {
         media: {
-            type: "video",
-            fileName: "caijiao.mp4",
-            sourceURL: "https://shaolinspirit.at/kungfu"
+            type: "video-no-src",
+            fileName: "dan_pai_jiao.mp4",
         },
         text: `
         Knee gets up, hand on the same side as the leg goes straight to front, leg kicks the hand and then goes down while keeping it straight.
         Hands and legs can also cross.
+        
+        Both names ${RenderChinese("踩脚")} and ${RenderChinese("单拍脚")} are used.
         `,
-        title: "踩脚",
-        titleLang: "chinese"
-    },
-    //dān pāi jiǎo
-    {
-        text: `
-        The same as ${RenderChinese("踩脚")}.
-        `,
-        title: "单拍脚",
-        titleLang: "chinese"
+        title: RenderChinese("踩脚") + " / " + RenderChinese("单拍脚"),
+        titleLang: "german"
     },
     //èr qǐ jiǎo
     {
         media: {
-            type: "youtube",
-            videoId: "-qhz0sl1Zag?si=e9Np7YbTf1v2GHuR"
+            type: "gallery",
+            composition: "carousel",
+            items: [
+                {
+                    type: "video-no-src",
+                    fileName: "er_qi_jiao.mp4"
+                },
+                {
+                    type: "youtube",
+                    videoId: "-qhz0sl1Zag?si=e9Np7YbTf1v2GHuR"
+                }
+            ]
         },
         text: `
         Jump kick
@@ -100,12 +126,17 @@ export const kicks: Exercise[] = [
         title: "高拍脚",
         titleLang: "chinese"
     },
+    //lǐ hé wài bǎi
     {
-        text: `
-        <p><strong class="text-danger">TODO</strong></p>
+        media: {
+            type: "video-no-src",
+            fileName: "li_he_wai_bai.mp4",
+        },
+        text: () => `
+        ${ReferenceExercise(liHeTue)} followed by ${ReferenceExercise(houBaiTui)}.
         `,
-        title: "Li chue bai",
-        titleLang: "german"
+        title: "里合外摆",
+        titleLang: "chinese"
     },
     {
         media: {
@@ -131,18 +162,13 @@ export const kicks: Exercise[] = [
         title: "蹬腿",
         titleLang: "chinese"
     },
-    //hòu bǎi tuǐ
-    {
-        media: {
-            type: "youtube",
-            videoId: "GyGuSqsN44w?si=g2Y9PNHxcfxc9-2a"
-        },
-        text: ``,
-        title: "后摆腿",
-        titleLang: "chinese",
-    },
+    houBaiTui,    
     //hòu liāo tuǐ
     {
+        media: {
+            type: "video-no-src",
+            fileName: "hou_liao_tui.mp4",
+        },
         text: `
         [Demonstration](https://youtube.com/shorts/pm6NAw_SRss?feature=shared)
         `,

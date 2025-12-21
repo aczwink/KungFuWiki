@@ -19,6 +19,30 @@
 import { Exercise } from "../../src/contentDefinitions";
 
 export const stickTechnique: Exercise[] = [
+    //wǔhuā gùn
+    {
+        media: {
+            type: "video-no-src",
+            fileName: "wuhua_gun.mp4"
+        },
+        text: `
+        Forward stick flower
+        `,
+        title: "舞花棍",
+        titleLang: "chinese"
+    },
+    //liāo huā gùn
+    {
+        media: {
+            type: "video-no-src",
+            fileName: "liaohua_gun.mp4"
+        },
+        text: `
+        Backwards stick flower
+        `,
+        title: "撩花棍",
+        titleLang: "chinese"
+    },
     //cì gùn
     {
         text: `
@@ -53,8 +77,12 @@ export const stickTechnique: Exercise[] = [
     },
     //sǎo gùn
     {
+        media: {
+            type: "video-no-src",
+            fileName: "sao_gun.mp4"
+        },
         text: `
-        # *==TODO: sweep with stick at floor==*
+        Sweep with stick on the floor
         `,
         title: "扫棍",
         titleLang: "chinese"
@@ -69,8 +97,12 @@ export const stickTechnique: Exercise[] = [
     },
     //tiāo gùn
     {
+        media: {
+            type: "video-no-src",
+            fileName: "tiao_gun.mp4"
+        },
         text: `
-        # *==TODO: stick from bottom to top==*
+        Stick from bottom to top.
         `,
         title: "挑棍",
         titleLang: "chinese"

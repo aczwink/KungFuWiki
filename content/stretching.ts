@@ -39,8 +39,12 @@ export const stretching: Exercise[] = [
     },
     {
         media: {
-            type: "images-no-src",
-            fileNames: ["xia_ba_jin.JPEG", "xia_ba_jin2.JPEG"],
+            type: "gallery",
+            composition: "row",
+            items: [
+                { type: "image-no-src", fileName: "xia_ba_jin.JPEG" },
+                { type: "image-no-src", fileName: "xia_ba_jin2.JPEG" },
+            ],
         },
         text: `Bend down with straight back to the front and reach for the feet`,
         title: "下把筋",

@@ -17,7 +17,7 @@
  * */
 import { MediaDefinition } from "../src/contentDefinitions";
 
-export function RenderMedia(media: MediaDefinition)
+export function RenderMedia(media: MediaDefinition): string
 {
     switch(media.type)
     {
@@ -38,10 +38,36 @@ export function RenderMedia(media: MediaDefinition)
                 ${images.join("")}
             </a>
             `;
-        case "images-no-src":
+        case "gallery":
         {
-            const images = media.fileNames.map(x => `<img style="max-width:50%" src="images/${x}" />`);
-            return `${images.join("")}`;
+            const items = media.items.map(RenderMedia);
+            if(media.composition === "carousel")
+            {
+                const id = "gallery_" + Math.random();
+                const carouselIndicators = items.map((x,i) => `<button type="button" data-bs-target="#${id}" data-bs-slide-to="${i}"${(i === 0) ? ' class="active" aria-current="true"' : ''} aria-label="Slide 1"></button>`);
+                /*
+                <div class="carousel-indicators">
+                        ${carouselIndicators.join("\n")}
+                    </div>
+                */
+                const carouselItems = items.map((x,i) => `<div class="carousel-item${(i === 0) ? ' active' : ''}">${x}</div>`);
+                return `
+                <div id="${id}" class="carousel slide" style="width: 50rem;">
+                    <div class="carousel-inner">
+                        ${carouselItems.join("\n")}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#${id}" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#${id}" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                `;
+            }
+            return `${items.join("")}`;
         }
         case "video":
             return `
@@ -50,6 +76,13 @@ export function RenderMedia(media: MediaDefinition)
             </video>
             <br />
             <a class="small" target="_blank" href="${media.sourceURL}">Quelle</a>
+            `;
+        case "video-no-src":
+            return `
+            <video controls muted autoplay style="max-width:50%">
+                <source type="video/mp4" src="videos/${media.fileName}" />
+            </video>
+            <br />
             `;
         case "youtube":
             const url = "https://www.youtube-nocookie.com/embed/" + media.videoId + "&amp;controls=0";

@@ -41,10 +41,11 @@ interface ImagesMedia
     sourceURL: string;
 }
 
-interface ImagesNoSrcMedia
+interface GalleryMedia
 {
-    type: "images-no-src";
-    fileNames: string[];
+    type: "gallery";
+    composition: "carousel" | "row";
+    items: SingleMediaDefinition[];
 }
 
 interface VideoMedia
@@ -54,13 +55,21 @@ interface VideoMedia
     sourceURL: string;
 }
 
+interface VideoNoSrcMedia
+{
+    type: "video-no-src";
+    fileName: string;
+}
+
 interface YoutubeMedia
 {
     type: "youtube";
     videoId: string;
 }
 
-export type MediaDefinition = GoogleDriveMedia | ImageMedia | ImageWithoutSourceMedia | ImagesMedia | ImagesNoSrcMedia | VideoMedia | YoutubeMedia;
+type SingleMediaDefinition = GoogleDriveMedia | ImageMedia | ImageWithoutSourceMedia | ImagesMedia | VideoMedia | VideoNoSrcMedia| YoutubeMedia;
+
+export type MediaDefinition = SingleMediaDefinition | GalleryMedia;
 
 export interface Exercise
 {

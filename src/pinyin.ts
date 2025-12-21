@@ -43,6 +43,7 @@ const pinyinDict = {
     "四六": "sìliù",
     "套路": "tàolù",
     "推掌": "tuīzhǎng",
+    "舞花": "wǔhuā",
     "旋风": "xuànfēng",
     "旋子": "xuànzǐ",
     //single
@@ -77,6 +78,7 @@ const pinyinDict = {
     "合": "hé",
     "洪": "hóng",
     "后": "hòu",
+    "花": "huā",
     "换": "huàn",
     "脚": "jiǎo",
     "搅": "jiǎo",
