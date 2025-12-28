@@ -107,8 +107,12 @@ export const kungFuMoves: Exercise[] = [
     },
     //jiāochā bù
     {
+        media: {
+            type: "video-no-src",
+            fileName: "jiaocha_bu.mp4"
+        },
         text: `
-        <p><strong class="text-danger">TODO: walk sideways</strong></p>
+        Walking sideways while swapping front and back leg.
         `,
         title: "交叉步",
         titleLang: "chinese"
