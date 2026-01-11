@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2026 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -32,6 +32,7 @@ const pinyinDict = {
     "交叉": "jiāochā",
     "加油": "jiāyóu",
     "金刚": "jīngāng",
+    "集体": "jítǐ",
     "连环": "liánhuán",
     "鲤鱼": "lǐyú",
     "梅花": "méihuā",
