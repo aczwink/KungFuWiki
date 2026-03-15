@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && cd dist && node src/main.js && cp -r ../static/* ./out/",
-    "build-dev": "tsc && cd dist && node src/main.js && ln -sf --no-dereference ../../static/images ./out/images && ln -sf --no-dereference ../../static/videos ./out/videos",
-    "run-dev-server": "nodemon --exec \"npm run build-dev && cd dist/out && python3 -m http.server\""
+    "dev-server": "nodemon --exec \"tsc && cd dist && node src/main.js && ln -sf --no-dereference ../../static/images ./out/images && ln -sf --no-dereference ../../static/videos ./out/videos && cd dist/out && python3 -m http.server\"",
+    "dev-server-win": "nodemon --exec \"npm run build && npx serve dist/out/\""
   },
   "repository": {
     "type": "git",

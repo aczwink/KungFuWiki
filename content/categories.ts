@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2026 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -37,6 +37,8 @@ import { punches } from "./kung-fu/punches";
 import { sandaTechnique } from "./sanda";
 import { stickForms } from "./kung-fu/stick-forms";
 import { sabreForms } from "./kung-fu/sabre-forms";
+import { masters } from "./masters";
+import { swordForms } from "./kung-fu/sword-forms";
 
 export const categories: MainCategory[] = [
     {
@@ -129,6 +131,11 @@ export const categories: MainCategory[] = [
                 exercises: stickForms,
                 name: "stick-forms",
             },
+            {
+                displayText: "Sword forms",
+                exercises: swordForms,
+                name: "sword-forms",
+            }
         ],
         displayText: "Forms",
         name: "forms"
@@ -171,6 +178,12 @@ export const categories: MainCategory[] = [
                 exercises: chineseLang,
                 name: "chinese"
             },
+            {
+                displayText: "Masters",
+                exercises: masters,
+                name: "masters",
+                description: "This documentation page was written based on the training received from the following masters."
+            }
         ],
         displayText: "Other",
         name: "other"

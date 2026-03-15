@@ -17,9 +17,11 @@
  * */
 
 import { Exercise } from "../../src/contentDefinitions";
+import { chenYunLi, huShifu } from "../masters";
 
 export const fistForms: Exercise[] = [
     {
+        taughtBy: chenYunLi,
         text: `
         Translation: "chain fist".
 
@@ -29,6 +31,7 @@ export const fistForms: Exercise[] = [
         titleLang: "chinese"
     },
     {
+        taughtBy: chenYunLi,
         text: `
         Translation: "spreading power from the back fist".
 
@@ -49,6 +52,7 @@ export const fistForms: Exercise[] = [
         titleLang: "chinese"
     },
     {
+        taughtBy: chenYunLi,
         text: `
         <strong class="text-danger">TODO first form of the two</strong>
         `,
@@ -56,6 +60,7 @@ export const fistForms: Exercise[] = [
         titleLang: "chinese"
     },
     {
+        taughtBy: chenYunLi,
         text: `
         <strong class="text-danger">TODO second form of the two</strong>
         `,
@@ -63,6 +68,7 @@ export const fistForms: Exercise[] = [
         titleLang: "chinese"
     },
     {
+        taughtBy: chenYunLi,
         text: `
         <p><strong class="text-danger">TODO: war das Tang Lang Quan?</strong></p>
         `,
@@ -74,6 +80,7 @@ export const fistForms: Exercise[] = [
         }
     },
     {
+        taughtBy: chenYunLi,
         text: `
         <strong class="text-danger">TODO</strong>
         `,
@@ -81,6 +88,7 @@ export const fistForms: Exercise[] = [
         titleLang: "chinese"
     },
     {
+        taughtBy: chenYunLi,
         text: ``,
         title: "大洪拳",
         titleLang: "chinese",
@@ -90,6 +98,7 @@ export const fistForms: Exercise[] = [
         }
     },
     {
+        taughtBy: huShifu,
         text: `
         <strong class="text-danger">TODO</strong>
         `,

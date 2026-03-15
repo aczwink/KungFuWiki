@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2026 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -24,6 +24,15 @@ import { MainCategory } from "./contentDefinitions";
 import { RenderCategory } from "../templates/category";
 import { AddReference } from "./references";
 
+function CollectExercises(cat: MainCategory)
+{
+    for (const subCat of cat.categories)
+    {
+        for (const exercise of subCat.exercises)
+            AddReference(exercise, subCat);
+    }
+}
+
 async function BuildMainCatStaticSite(cat: MainCategory, outDirPath: string)
 {
     const catPath = path.join(outDirPath, cat.name + ".html");
@@ -36,9 +45,6 @@ async function BuildMainCatStaticSite(cat: MainCategory, outDirPath: string)
 
     for (const subCat of cat.categories)
     {
-        for (const exercise of subCat.exercises)
-            AddReference(exercise, subCat);
-
         const catPath = path.join(outDirPath, subCat.name + ".html");
         const content = RenderMain({
             categories,
@@ -55,9 +61,10 @@ async function BuildStaticSite(outDirPath: string)
         await fs.promises.mkdir(outDirPath);
 
     for (const cat of categories)
-    {
+        CollectExercises(cat);
+
+    for (const cat of categories)
         await BuildMainCatStaticSite(cat, outDirPath);
-    }
 
     const indexPath = path.join(outDirPath, "index.html");
     const content = RenderMain({

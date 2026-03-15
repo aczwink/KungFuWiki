@@ -20,6 +20,7 @@ const pinyinDict = {
     //3-char compound words
     "爆发力": "bàofālì",
     "二十四": "èrshísì",
+    "胡宾超": "húbīnchāo",
     "三十八": "sānshíbā",
     "少林拳": "shàolínquán",
     //2-char compound words

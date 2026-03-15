@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2026 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2026 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,27 +17,6 @@
  * */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { RenderChineseOrdinalNumber } from "../../templates/chinese";
-import { chenYunLi, huShifu } from "../masters";
 
-export const spearForms: Exercise[] = [
-    {
-        taughtBy: chenYunLi,
-        text: `Speerform`,
-        title: "少林枪",
-        titleLang: "chinese",
-        media: {
-            type: "gdrive",
-            url: "https://drive.google.com/file/d/1VQOBFIVwz6qWCkojRPOakqJr0_yR_LSp/preview"
-        }
-    },
-    //shísān qiāng
-    {
-        taughtBy: huShifu,
-        text: `
-        # *==TODO: add video or so==*
-        `,
-        title: RenderChineseOrdinalNumber(13),
-        titleLang: "german",
-    }
+export const swordForms: Exercise[] = [
 ];

@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2026 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,9 +17,11 @@
  * */
 
 import { Exercise } from "../../src/contentDefinitions";
+import { chenYunLi, shiYanYo } from "../masters";
 
 export const sabreForms: Exercise[] = [
     {
+        taughtBy: chenYunLi,
         text: `
         <strong class="text-danger">TODO: video</strong>
         `,
@@ -27,8 +29,8 @@ export const sabreForms: Exercise[] = [
         titleLang: "chinese"
     },
     {
-        text: `
-        `,
+        taughtBy: shiYanYo,
+        text: ``,
         title: "少林梅花单刀",
         titleLang: "chinese",
         media: {

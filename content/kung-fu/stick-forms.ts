@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2026 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,9 +17,11 @@
  * */
 
 import { Exercise } from "../../src/contentDefinitions";
+import { chenYunLi, huShifu } from "../masters";
 
 export const stickForms: Exercise[] = [
     {
+        taughtBy: chenYunLi,
         text: `
         1. Stockform
         <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/yin-shou-gun/504257803580436/">Demonstration von Meister Li</a>
@@ -28,6 +30,7 @@ export const stickForms: Exercise[] = [
         titleLang: "chinese"
     },
     {
+        taughtBy: huShifu,
         text: `
         <strong class="text-danger">TODO</strong>
         `,
@@ -35,6 +38,7 @@ export const stickForms: Exercise[] = [
         titleLang: "chinese"
     },
     {
+        taughtBy: huShifu,
         text: `
         <strong class="text-danger">TODO: Shaolin gun</strong>
         `,
