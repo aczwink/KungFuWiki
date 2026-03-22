@@ -1,6 +1,6 @@
 /**
  * KungFuWiki
- * Copyright (C) 2024-2025 Amir Czwink (amir130@hotmail.de)
+ * Copyright (C) 2024-2026 Amir Czwink (amir130@hotmail.de)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -19,6 +19,7 @@
 import { Exercise } from "../../src/contentDefinitions";
 import { ReferenceExercise } from "../../src/references";
 import { RenderChineseOrdinalNumber } from "../../templates/chinese";
+import { chenYunLi, yaoShifu } from "../masters";
 import { baiheLiangChi, jingangDaoZhui, qiShi, shangSanBu, xieXing } from "./moves";
 
 export const taiChiForms: Exercise[] = [
@@ -27,11 +28,13 @@ export const taiChiForms: Exercise[] = [
             type: "gdrive",
             url: "https://drive.google.com/file/d/1v6ydXn54CT-wQho6iqrHVjb4FB6WIGp-/preview"
         },
+        taughtBy: chenYunLi,
         text: ``,
         title: RenderChineseOrdinalNumber(24),
         titleLang: "german"
     },
     {
+        taughtBy: yaoShifu,
         text: () => `
         Moves:
         * ${ReferenceExercise(qiShi)}

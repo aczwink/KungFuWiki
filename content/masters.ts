@@ -57,6 +57,18 @@ export const shiYanYo: Exercise = {
     titleLang: "german"
 };
 
+export const yaoShifu: Exercise = {
+    media: {
+        type: "image-no-src",
+        fileName: "yaoshifu.png",
+    },
+    text: `
+    Tai Chi trainer at [YunTai Shan International Culture And Martial Arts School](https://shaolin-yuntai.com).
+    `,
+    title: "姚烜",
+    titleLang: "chinese",
+};
+
 export const masters: Exercise[] = [
     chenYunLi,
     huShifu,
@@ -74,4 +86,5 @@ export const masters: Exercise[] = [
         title: "Nadim Sarrouh",
         titleLang: "german"
     },
+    yaoShifu,
 ];
