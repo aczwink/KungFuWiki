@@ -48,6 +48,7 @@ const pinyinDict = {
     "舞花": "wǔhuā",
     "旋风": "xuànfēng",
     "旋子": "xuànzǐ",
+    "预备": "yùbèi",
     //single
     "八": "bā",
     "把": "bǎ",
