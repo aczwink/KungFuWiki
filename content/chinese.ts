@@ -134,6 +134,14 @@ export const chineseLang: Exercise[] = [
         title: "扇子",
         titleLang: "chinese"
     },
+    //shàolínsì
+    {
+        text: `
+        The Shaolin Monastery
+        `,
+        title: "少林寺",
+        titleLang: "chinese"
+    },
     //shīlǐ
     {
         text: `

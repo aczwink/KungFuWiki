@@ -23,6 +23,7 @@ const pinyinDict = {
     "胡宾超": "húbīnchāo",
     "三十八": "sānshíbā",
     "少林拳": "shàolínquán",
+    "少林寺": "shàolínsì",
     //2-char compound words
     "白鹤": "báihè",
     "抱拳": "bàoquán",
