@@ -18,6 +18,10 @@ export function RenderChineseOrdinalNumber(n: number)
     {
         switch(n)
         {
+            case 3:
+                return "三";
+            case 7:
+                return "七";
             case 13:
                 return "十三";
             case 24:

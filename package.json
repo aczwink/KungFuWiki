@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && cd dist && node src/main.js && cp -r ../static/* ./out/",
-    "dev-server": "nodemon --exec \"tsc && cd dist && node src/main.js && ln -sf --no-dereference ../../static/images ./out/images && ln -sf --no-dereference ../../static/videos ./out/videos && cd dist/out && python3 -m http.server\"",
+    "dev-server": "nodemon --exec \"tsc && cd dist && node src/main.js && ln -sf --no-dereference ../../static/images ./out/images && ln -sf --no-dereference ../../static/videos ./out/videos && cd out && python3 -m http.server\"",
     "dev-server-win": "nodemon --exec \"npm run build && npx serve dist/out/\""
   },
   "repository": {

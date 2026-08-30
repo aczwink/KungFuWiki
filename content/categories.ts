@@ -15,7 +15,7 @@ import { stretching } from "./stretching";
 import { taiChiMoves } from "./tai-chi/moves";
 import { taiChiForms } from "./tai-chi/forms";
 import { spearForms } from "./kung-fu/spear-forms";
-import { taiChiSteps } from "./tai-chi/steps";
+import { taiChiBasics } from "./tai-chi/basics";
 import { qiGongForms } from "./qiGongForms";
 import { chineseLang } from "./chinese";
 import { handTechnique } from "./general/hand-technique";
@@ -133,9 +133,9 @@ export const categories: MainCategory[] = [
     {
         categories: [
             {
-                displayText: "Tai Chi Steps",
-                exercises: taiChiSteps,
-                name: "tai-chi-steps"
+                displayText: "Tai Chi Basics",
+                exercises: taiChiBasics,
+                name: "tai-chi-basics"
             },
             {
                 displayText: "Tai Chi Moves",

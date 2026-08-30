@@ -98,6 +98,10 @@ export const chineseLang: Exercise[] = [
     },
     //qiāng
     {
+        media: {
+            type: "image-no-src",
+            fileName: "spear.jpg"
+        },
         text: `
         Spear
         `,
