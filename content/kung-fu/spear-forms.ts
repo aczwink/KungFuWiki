@@ -13,7 +13,7 @@ import { chenYunLi, huShifu } from "../masters";
 export const spearForms: Exercise[] = [
     {
         taughtBy: chenYunLi,
-        text: `Speerform`,
+        text: ``,
         title: "少林枪",
         titleLang: "chinese",
         media: {

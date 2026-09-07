@@ -7,9 +7,21 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
+import { ReferenceExercise } from "../../src/references";
 import { RenderChinese } from "../../templates/chinese";
+import { caiJiao } from "./kicks/cai-jiao";
+import { chongchuang } from "./punches/chongchuang";
 
-export const kungFuMoves: Exercise[] = [
+//tī xī
+const tixi: Exercise = {
+    text: `
+    Knee up
+    `,
+    title: "踢膝",
+    titleLang: "chinese"
+};
+
+export const kungFuExercises: Exercise[] = [
     //chuān zhǎng
     {
         media: {
@@ -25,44 +37,62 @@ export const kungFuMoves: Exercise[] = [
     },
     //dà kuà bù
     {
+        media: {
+            type: "video-no-src",
+            fileName: "da_kua_bu.mp4"
+        },
         text: `
-        Running ${RenderChinese("弓步")} with big steps.
+        Running ${RenderChinese("弓步")} with big steps and straight arms.
         `,
         title: "大跨步",
         titleLang: "chinese"
     },
-    //dān biān
+    //mǎ bù dān biān
     {
         media: {
-            type: "youtube",
-            videoId: "_1UJzVsYj7A?si=iW1JRDa4euZMM8yq"
+            type: "gallery",
+            composition: "carousel",
+            items: [
+                {
+                    type: "video-no-src",
+                    fileName: "mabu_danbien_front.mp4"
+                },
+                {
+                    type: "video-no-src",
+                    fileName: "mabu_danbien_side.mp4"
+                }
+            ]
         },
-        text: `
-        # *==TODO: like xié xíng but arms left and right (careful! video is wrong because arms go front and back but instead should go left and right!!!)==*
-        `,
-        title: "单边",
+        text: ``,
+        title: "馬步单边",
         titleLang: "chinese"
     },
+    //fān yāo
     {
         media: {
             type: "image",
             fileName: "Fig.22-fanyao_waist-wheeling-ex.jpeg",
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
-        text: `
-        <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-fan-yao/1151733105210177/">Demonstration von Meister Li (mit Dan pai jiao am Anfang)</a>
+        text: () => `
+        [Demonstration with ${ReferenceExercise(caiJiao)}](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-fan-yao/1151733105210177/)
         `,
         title: "翻腰",
         titleLang: "chinese"
     },
     //gāo tái tuǐ
     {
+        media: {
+            type: "video-no-src",
+            fileName: "gao_tai_tui.mp4"
+        },
         text: `
         Get knees up
         `,
         title: "高抬腿",
         titleLang: "chinese",
     },
+    //qián sǎo tuǐ
     {
         media: {
             type: "image",
@@ -70,11 +100,12 @@ export const kungFuMoves: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        <p>Beinfeger gegen den Uhrzeigersinn</p>
+        counterclockwise leg sweep
         `,
         title: "前扫腿",
         titleLang: "chinese"
     },
+    //hòu sǎo tuǐ
     {
         media: {
             type: "image",
@@ -82,15 +113,19 @@ export const kungFuMoves: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        <p>Beinfeger im Uhrzeigersinn</p>
+        clockwise leg sweep
         `,
         title: "后扫腿",
         titleLang: "chinese"
     },
     //jī bù
     {
+        media: {
+            type: "video-no-src",
+            fileName: "jibu.mp4"
+        },
         text: `
-        # *==TODO: sideways walk with arms opening and closing and feet touching together==*
+        Jump sideways with arms opening and closing and in the middle of the jump the feet should touch each other.
         `,
         title: "击步",
         titleLang: "chinese"
@@ -107,12 +142,17 @@ export const kungFuMoves: Exercise[] = [
         title: "交叉步",
         titleLang: "chinese"
     },
-    //tī xī
+    tixi,
+    //tī xī chōngchuáng
     {
-        text: `
-        Knee up
+        media: {
+            type: "video-no-src",
+            fileName: "tixi-chongchuang.mp4"
+        },
+        text: () => `
+        Combination of ${ReferenceExercise(tixi)} and ${ReferenceExercise(chongchuang)}.
         `,
-        title: "踢膝",
+        title: "踢膝冲床",
         titleLang: "chinese"
     },
     //cè shuāi
@@ -147,22 +187,45 @@ export const kungFuMoves: Exercise[] = [
     },
     //wū lóng pán dǎ
     {
-        text: `
-        # *==TODO: whirlwind with arms==*
-        `,
+        media: {
+            type: "gallery",
+            composition: "carousel",
+            items: [
+                {
+                    type: "video-no-src",
+                    fileName: "wulongpanda-front.mp4"
+                },
+                {
+                    type: "video-no-src",
+                    fileName: "wulongpanda-side.mp4"
+                }
+            ]
+        },
+        text: ``,
         title: "乌龙盘打",
         titleLang: "chinese"
     },
-    //xié xíng
+    //gōng bù xié xíng
     {
         media: {
-            type: "youtube",
-            videoId: "_1UJzVsYj7A?si=iW1JRDa4euZMM8yq"
+            type: "gallery",
+            composition: "carousel",
+            items: [
+                {
+                    type: "video-no-src",
+                    fileName: "gongbu_xiexing_front.mp4"
+                },
+                {
+                    type: "video-no-src",
+                    fileName: "gongbu_xiexing_side.mp4"
+                }
+            ]
         },
         text: `
-        # *==TODO: gong bu and arms left and and straight==*
+        One arm goes directly front and the other one 90 degrees to one of the two sides.
+        In the video, this might be a bit off due to the position of the camera lens.
         `,
-        title: "斜行",
+        title: "弓步斜行",
         titleLang: "chinese"
     },
 ];

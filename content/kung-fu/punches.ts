@@ -7,20 +7,10 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
+import { chongchuang } from "./punches/chongchuang";
 
 export const punches: Exercise[] = [
-    {
-        media: {
-            type: "images",
-            fileNames: ["Fig.-3-Horizontal-punch..jpeg", "Fig.-3-Horizontal-punch2.jpg"],
-            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
-        },
-        text: `
-        Punch and pull back other hand to waist.
-        `,
-        title: "冲床",
-        titleLang: "chinese"
-    },
+    chongchuang,
     {
         media: {
             type: "images",

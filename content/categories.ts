@@ -21,7 +21,7 @@ import { chineseLang } from "./chinese";
 import { handTechnique } from "./general/hand-technique";
 import { spearTechnique } from "./kung-fu/spear-technique";
 import { stickTechnique } from "./kung-fu/stick-technique";
-import { kungFuMoves } from "./kung-fu/moves";
+import { kungFuExercises } from "./kung-fu/excercises";
 import { stances } from "./kung-fu/stances";
 import { punches } from "./kung-fu/punches";
 import { sandaTechnique } from "./sanda";
@@ -32,7 +32,6 @@ import { swordForms } from "./kung-fu/sword-forms";
 
 export const categories: MainCategory[] = [
     {
-        //TODO: add this here somewhere <a target="_blank" href="https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/hier-ein-paar-%C3%BCbungen-damit-ihr-euch-zuhause-fit-halten-k%C3%B6nnt/221996235575367/">Daily exercises</a>
         categories: [
             {
                 description: `
@@ -73,15 +72,23 @@ export const categories: MainCategory[] = [
             },
             {
                 displayText: "Exercises",
-                exercises: kungFuMoves,
+                exercises: kungFuExercises,
                 name: "kung-fu-moves",
             },
             {
+                media: {
+                    type: "image-no-src",
+                    fileName: "gun.jpg"
+                },
                 displayText: "Stick technique",
                 exercises: stickTechnique,
                 name: "stick-technique",
             },
             {
+                media: {
+                    type: "image-no-src",
+                    fileName: "spear.jpg"
+                },
                 displayText: "Spear technique",
                 exercises: spearTechnique,
                 name: "spear-technique",
@@ -114,9 +121,17 @@ export const categories: MainCategory[] = [
             {
                 displayText: "Spear forms",
                 exercises: spearForms,
+                media: {
+                    type: "image-no-src",
+                    fileName: "spear.jpg"
+                },
                 name: "spear-forms"
             },
             {
+                media: {
+                    type: "image-no-src",
+                    fileName: "gun.jpg"
+                },
                 displayText: "Stick forms",
                 exercises: stickForms,
                 name: "stick-forms",
@@ -124,6 +139,10 @@ export const categories: MainCategory[] = [
             {
                 displayText: "Sword forms",
                 exercises: swordForms,
+                media: {
+                    type: "image-no-src",
+                    fileName: "jian.jpg"
+                },
                 name: "sword-forms",
             }
         ],

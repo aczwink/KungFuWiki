@@ -9,6 +9,7 @@
 import { Exercise } from "../../src/contentDefinitions";
 import { ReferenceExercise } from "../../src/references";
 import { RenderChinese } from "../../templates/chinese";
+import { caiJiao } from "./kicks/cai-jiao";
 
 const liHeTue: Exercise = {
     media: {
@@ -70,21 +71,7 @@ export const kicks: Exercise[] = [
         title: "外摆腿",
         titleLang: "chinese"
     },
-    //cǎi jiǎo or dān pāi jiǎo
-    {
-        media: {
-            type: "video-no-src",
-            fileName: "dan_pai_jiao.mp4",
-        },
-        text: `
-        Knee gets up, hand on the same side as the leg goes straight to front, leg kicks the hand and then goes down while keeping it straight.
-        Hands and legs can also cross.
-        
-        Both names ${RenderChinese("踩脚")} and ${RenderChinese("单拍脚")} are used.
-        `,
-        title: RenderChinese("踩脚") + " / " + RenderChinese("单拍脚"),
-        titleLang: "german"
-    },
+    caiJiao,
     //èr qǐ jiǎo
     {
         media: {

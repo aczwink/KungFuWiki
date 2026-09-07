@@ -32,9 +32,11 @@ export const chineseLang: Exercise[] = [
     },
     //gùn
     {
-        text: `
-        Stick
-        `,
+        media: {
+            type: "image-no-src",
+            fileName: "gun.jpg"
+        },
+        text: `Stick`,
         title: "棍",
         titleLang: "chinese"
     },
