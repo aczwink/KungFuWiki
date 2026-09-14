@@ -8,7 +8,7 @@
 
 import { MainCategory } from "../src/contentDefinitions";
 import { RenderChinese } from "../templates/chinese";
-import { fistForms } from "./kung-fu/fist-forms";
+import { fistForms } from "./kung-fu/forms/fist-forms";
 import { jumps } from "./kung-fu/jumps";
 import { kicks } from "./kung-fu/kicks";
 import { stretching } from "./stretching";
@@ -25,7 +25,7 @@ import { kungFuExercises } from "./kung-fu/excercises";
 import { stances } from "./kung-fu/stances";
 import { punches } from "./kung-fu/punches";
 import { sandaTechnique } from "./sanda";
-import { stickForms } from "./kung-fu/stick-forms";
+import { stickForms } from "./kung-fu/forms/stick-forms";
 import { sabreForms } from "./kung-fu/sabre-forms";
 import { masters } from "./masters";
 import { swordForms } from "./kung-fu/sword-forms";

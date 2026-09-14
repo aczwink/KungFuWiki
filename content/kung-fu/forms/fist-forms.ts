@@ -6,10 +6,11 @@
  * See the LICENSE file in the project root for license information.
  */
 
-import { Exercise } from "../../src/contentDefinitions";
-import { chenYunLi, huShifu } from "../masters";
+import { Exercise } from "../../../src/contentDefinitions";
+import { chenYunLi, huShifu } from "../../masters";
 
 export const fistForms: Exercise[] = [
+    //liánhuán quán
     {
         taughtBy: chenYunLi,
         text: `
@@ -20,6 +21,7 @@ export const fistForms: Exercise[] = [
         title: "连环拳",
         titleLang: "chinese"
     },
+    //tōng bèi quán
     {
         taughtBy: chenYunLi,
         text: `
@@ -32,7 +34,9 @@ export const fistForms: Exercise[] = [
         title: "通背拳",
         titleLang: "chinese"
     },
+    //qīxīng quán
     {
+        taughtBy: chenYunLi,
         text: `
         Translation: "7-star fist"
 
@@ -41,6 +45,7 @@ export const fistForms: Exercise[] = [
         title: "七星拳",
         titleLang: "chinese"
     },
+    //jítǐ quán
     {
         taughtBy: chenYunLi,
         text: `
@@ -49,6 +54,7 @@ export const fistForms: Exercise[] = [
         title: "集体拳",
         titleLang: "chinese"
     },
+    //jítǐ quán
     {
         taughtBy: chenYunLi,
         text: `
@@ -57,18 +63,18 @@ export const fistForms: Exercise[] = [
         title: "集体拳",
         titleLang: "chinese"
     },
+    //tángláng quán
     {
         taughtBy: chenYunLi,
-        text: `
-        <p><strong class="text-danger">TODO: war das Tang Lang Quan?</strong></p>
-        `,
-        title: "Mantis",
-        titleLang: "german",
+        text: `The Mantis form.`,
+        title: "螳螂拳",
+        titleLang: "chinese",
         media: {
             type: "gdrive",
             url: "https://drive.google.com/file/d/1IXuZyH0Y-QKFWnof0muZQ1h0O3ktPUY5/preview"
         }
     },
+    //xiǎo hóng quán
     {
         taughtBy: chenYunLi,
         text: `
@@ -77,6 +83,7 @@ export const fistForms: Exercise[] = [
         title: "小洪拳",
         titleLang: "chinese"
     },
+    //dà hóng quán
     {
         taughtBy: chenYunLi,
         text: ``,
@@ -87,6 +94,7 @@ export const fistForms: Exercise[] = [
             url: "https://drive.google.com/file/d/1wOATSQJg2QR1Qsa0hTpZdkICTeb_vdUz/preview"
         }
     },
+    //shàolínquán
     {
         taughtBy: huShifu,
         text: `

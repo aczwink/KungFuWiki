@@ -35,6 +35,7 @@ const pinyinDict = {
     "施礼": "shīlǐ",
     "十三": "shísān",
     "四六": "sìliù",
+    "螳螂": "tángláng",
     "套路": "tàolù",
     "推掌": "tuīzhǎng",
     "舞花": "wǔhuā",

@@ -7,6 +7,8 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
+import { ReferenceExercise } from "../../src/references";
+import { lanNaZha } from "./spear-technique/lan-na-zha";
 
 export const stickTechnique: Exercise[] = [
     //wǔhuā gùn
@@ -51,16 +53,21 @@ export const stickTechnique: Exercise[] = [
     },
     //diǎn gùn
     {
+        media: {
+            type: "video-no-src",
+            fileName: "dian_gun.mp4"
+        },
         text: `
-        # *==TODO: stick over wrists left and right on the floor==*
+        Hit stick left and right over the wrists on the floor.
         `,
         title: "点棍",
         titleLang: "chinese"
     },
     //lán ná zhā
     {
-        text: `
+        text: () => `
         Borrowed from spear technique and executed likewise.
+        See: ${ReferenceExercise(lanNaZha)}
         `,
         title: "拦拿扎",
         titleLang: "chinese"
@@ -79,8 +86,13 @@ export const stickTechnique: Exercise[] = [
     },
     //shuāi gùn
     {
+        media: {
+            type: "video-no-src",
+            fileName: "shuai_gun.mp4"
+        },
         text: `
-        # *==TODO: hit stick on the floor==*
+        Hit the floor with the whole stick excluding the lower hand holding the stick.
+        The other hand is used to press with the palm on the stick.
         `,
         title: "摔棍",
         titleLang: "chinese"
@@ -99,8 +111,12 @@ export const stickTechnique: Exercise[] = [
     },
     //yā gùn
     {
+        media: {
+            type: "video-no-src",
+            fileName: "ya_gun.mp4"
+        },
         text: `
-        # *==TODO: stick from top to bottom==*
+        Stick from top to bottom
         `,
         title: "压棍",
         titleLang: "chinese"
