@@ -8,7 +8,7 @@
 
 import { Exercise } from "../../src/contentDefinitions";
 import { ReferenceExercise } from "../../src/references";
-import { RenderChinese } from "../../templates/chinese";
+import { RenderSimplifiedChinese } from "../../templates/chinese";
 import { caiJiao } from "./kicks/cai-jiao";
 
 const liHeTue: Exercise = {
@@ -26,8 +26,18 @@ const liHeTue: Exercise = {
 
 const houBaiTui: Exercise = {
     media: {
-        type: "youtube",
-        videoId: "GyGuSqsN44w?si=g2Y9PNHxcfxc9-2a"
+        type: "gallery",
+        composition: "carousel",
+        items: [
+            {
+                type: "video-no-src",
+                fileName: "hou_bai_tue.mp4"
+            },
+            {
+                type: "youtube",
+                videoId: "GyGuSqsN44w?si=g2Y9PNHxcfxc9-2a"
+            }
+        ]
     },
     text: ``,
     title: "后摆腿",
@@ -97,8 +107,8 @@ export const kicks: Exercise[] = [
     //gāo pāi jiǎo
     {
         text: `
-        * [Demonstration with ${RenderChinese("砸拳")}](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-za-quan/913693459086584/)
-        * [Demonstration with ${RenderChinese("乌龙盘打")}](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-wu-long-pan-da/905080169943711/)
+        * [Demonstration with ${RenderSimplifiedChinese("砸拳")}](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-za-quan/913693459086584/)
+        * [Demonstration with ${RenderSimplifiedChinese("乌龙盘打")}](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-wu-long-pan-da/905080169943711/)
         `,
         title: "高拍脚",
         titleLang: "chinese"

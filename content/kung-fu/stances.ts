@@ -7,6 +7,7 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
+import { RenderChineseOrdinalNumber } from "../../templates/chinese";
 
 export const stances: Exercise[] = [
     {
@@ -34,7 +35,7 @@ export const stances: Exercise[] = [
 
         [Wikipedia](https://en.wikipedia.org/wiki/Horse_stance)
         `,
-        title: "馬步",
+        title: "马步", //TODO traditional: 馬步
         titleLang: "chinese"
     },
     {
@@ -92,13 +93,27 @@ export const stances: Exercise[] = [
         title: "并步",
         titleLang: "chinese"
     },
+    //sìliù bù
     {
         media: {
             type: "image-no-src",
             fileName: "siliubu.jpg"
         },
-        text: ``,
+        text: `
+        Called 4-6-stance [${RenderChineseOrdinalNumber(4)} and ${RenderChineseOrdinalNumber(6)}], because of its weight distribution.
+        40% of weight is on the front leg and 60% on the back leg.
+        `,
         title: "四六步",
         titleLang: "chinese"
-    }
+    },
+    //sānqī bù
+    {
+        text: `
+        Called 3-7-stance [${RenderChineseOrdinalNumber(3)} and ${RenderChineseOrdinalNumber(7)}], because of its weight distribution.
+        30% of weight is on the front leg and 70% on the back leg.
+        TODO: video
+        `,
+        title: "三七步",
+        titleLang: "chinese"
+    },
 ];

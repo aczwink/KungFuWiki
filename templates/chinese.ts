@@ -5,10 +5,22 @@
  * Licensed under the MIT License.
  * See the LICENSE file in the project root for license information.
  */
+import { Converter } from "opencc-js";
 import { Pinyin } from "../src/pinyin";
 
-export function RenderChinese(text: string)
+function AssertSimplified(text: string): void
 {
+    const t2s = Converter({ from: "tw", to: "cn" });
+
+    const simplified = t2s(text);
+    if(simplified !== text)
+        throw new Error(`Traditional characters detected! Got: "${text}" Expected: ${simplified}`);
+}
+
+export function RenderSimplifiedChinese(text: string)
+{
+    AssertSimplified(text);
+
     return Pinyin(text) + " (" + text + ")";
 }
 
@@ -20,6 +32,10 @@ export function RenderChineseOrdinalNumber(n: number)
         {
             case 3:
                 return "三";
+            case 4:
+                return "四";
+            case 6:
+                return "六";
             case 7:
                 return "七";
             case 13:
@@ -33,5 +49,5 @@ export function RenderChineseOrdinalNumber(n: number)
         }
     }
 
-    return n + " -> " + RenderChinese(MapNumber());
+    return n + " -> " + RenderSimplifiedChinese(MapNumber());
 }

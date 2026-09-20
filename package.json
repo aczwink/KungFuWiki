@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "markdown-it": "^14.1.0",
-    "markdown-it-mark": "^4.0.0"
+    "markdown-it-mark": "^4.0.0",
+    "opencc-js": "^1.4.2",
+    "pinyin": "^4.0.0"
   }
 }

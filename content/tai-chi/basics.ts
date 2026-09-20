@@ -26,13 +26,4 @@ export const taiChiBasics: Exercise[] = [
         title: "扣脚",
         titleLang: "chinese"
     },
-    //sānqī bù
-    {
-        text: `
-        Called 3-7-stance [${RenderChineseOrdinalNumber(3)} and ${RenderChineseOrdinalNumber(7)}], because 30% of weight is on one leg and 70% on the other.
-        TODO: video
-        `,
-        title: "三七步",
-        titleLang: "chinese"
-    },
 ];

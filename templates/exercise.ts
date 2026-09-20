@@ -8,14 +8,14 @@
 import { Exercise } from "../src/contentDefinitions";
 import { RenderMarkdown } from "../src/markdown";
 import { ReferenceExercise } from "../src/references";
-import { RenderChinese } from "./chinese";
+import { RenderSimplifiedChinese } from "./chinese";
 import { RenderOptionalMedia } from "./media";
 
 export function RenderTitle(title: string, language: "chinese" | "german")
 {
     if(language === "german")
         return title;
-    return RenderChinese(title);
+    return RenderSimplifiedChinese(title);
 }
 
 export function RenderExercise(exercise: Exercise)

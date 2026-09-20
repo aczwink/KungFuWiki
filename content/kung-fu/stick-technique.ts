@@ -37,16 +37,25 @@ export const stickTechnique: Exercise[] = [
     },
     //cì gùn
     {
+        media: {
+            type: "video-no-src",
+            fileName: "ci_gun.mp4"
+        },
         text: `
-        # *==TODO: pierce with stick==*
+        Pierce with the stick
         `,
         title: "刺棍",
         titleLang: "chinese"
     },
     //dāo gùn
     {
+        media: {
+            type: "video-no-src",
+            fileName: "dao_gun.mp4"
+        },
         text: `
-        <strong class="text-danger">TODO: To slide the stick with the rear hand through the front hand. Somehow like billiard</strong>
+        The front hand forms a hole through which the stick slides. The rear hand pushes the stick.
+        It is somehow comparable to when playing pool except that the stick is lead through the hole of the front hand.
         `,
         title: "刀棍",
         titleLang: "chinese"

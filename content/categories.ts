@@ -7,7 +7,7 @@
  */
 
 import { MainCategory } from "../src/contentDefinitions";
-import { RenderChinese } from "../templates/chinese";
+import { RenderSimplifiedChinese } from "../templates/chinese";
 import { fistForms } from "./kung-fu/forms/fist-forms";
 import { jumps } from "./kung-fu/jumps";
 import { kicks } from "./kung-fu/kicks";
@@ -35,8 +35,8 @@ export const categories: MainCategory[] = [
         categories: [
             {
                 description: `
-                To stretch in a certain stance you add "${RenderChinese("压腿")}" to the name of the stance.
-                E.g.: ${RenderChinese("馬步压腿")}.
+                To stretch in a certain stance you add "${RenderSimplifiedChinese("压腿")}" to the name of the stance.
+                E.g.: ${RenderSimplifiedChinese("马步压腿")}.
                 `,
                 displayText: "Stances",
                 exercises: stances,

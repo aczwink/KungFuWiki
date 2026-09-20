@@ -7,7 +7,7 @@
  */
 
 import { Exercise } from "../src/contentDefinitions";
-import { RenderChinese } from "../templates/chinese";
+import { RenderSimplifiedChinese } from "../templates/chinese";
 
 export const chineseLang: Exercise[] = [
     //bàofālì
@@ -183,7 +183,7 @@ export const chineseLang: Exercise[] = [
         text: `
         be ready! get ready! ready!
 
-        In Kung Fu, often used as a command together with ${RenderChinese("走")} i.e. “${RenderChinese("预备")}! ${RenderChinese("走")}” which translates into "Ready! Go!"
+        In Kung Fu, often used as a command together with ${RenderSimplifiedChinese("走")} i.e. “${RenderSimplifiedChinese("预备")}! ${RenderSimplifiedChinese("走")}” which translates into "Ready! Go!"
         `,
         title: "预备",
         titleLang: "chinese"

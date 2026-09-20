@@ -7,9 +7,33 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { RenderChinese } from "../../templates/chinese";
+import { RenderSimplifiedChinese } from "../../templates/chinese";
 
 export const jumps: Exercise[] = [
+    //bèi yāo tuǐ 
+    {
+        media: {
+            type: "video-no-src",
+            fileName: "bei_yao_tui.mp4"
+        },
+        text: `
+        Jump with both legs, feet go to the butt, arms up and to the back and head looks over the left shoulder.
+        `,
+        title: "背腰腿",
+        titleLang: "chinese"
+    },
+    //bào xī tiào
+    {
+        media: {
+            type: "video-no-src",
+            fileName: "bao_xi_tiao.mp4"
+        },
+        text: `
+        Jump with both legs and pull the knees to the torso.
+        `,
+        title: "抱膝跳",
+        titleLang: "chinese"
+    },
     {
         media: {
             type: "image",
@@ -44,19 +68,11 @@ export const jumps: Exercise[] = [
     //
     {
         text: `
-        ${RenderChinese("外摆腿")} but with jump.
+        ${RenderSimplifiedChinese("外摆腿")} but with jump.
         
         * [Demonstration](https://www.instagram.com/p/By3P9wZA487/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
         `,
         title: "Outside jump kick",
         titleLang: "german"
     },
-    //bèi yāo tuǐ 
-    {
-        text: `
-        # *==TODO: jump, knees up and look backwards==*
-        `,
-        title: "背腰腿",
-        titleLang: "chinese"
-    }
 ];

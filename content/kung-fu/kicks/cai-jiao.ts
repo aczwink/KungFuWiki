@@ -7,7 +7,7 @@
  */
 
 import { Exercise } from "../../../src/contentDefinitions"
-import { RenderChinese } from "../../../templates/chinese";
+import { RenderSimplifiedChinese } from "../../../templates/chinese";
 
 //cǎi jiǎo or dān pāi jiǎo
 export const caiJiao: Exercise = {
@@ -19,8 +19,8 @@ export const caiJiao: Exercise = {
     Knee gets up, hand on the same side as the leg goes straight to front, leg kicks the hand and then goes down while keeping it straight.
     Hands and legs can also cross.
     
-    Both names ${RenderChinese("踩脚")} and ${RenderChinese("单拍脚")} are used.
+    Both names ${RenderSimplifiedChinese("踩脚")} and ${RenderSimplifiedChinese("单拍脚")} are used.
     `,
-    title: RenderChinese("踩脚") + " / " + RenderChinese("单拍脚"),
+    title: RenderSimplifiedChinese("踩脚") + " / " + RenderSimplifiedChinese("单拍脚"),
     titleLang: "german"
 };

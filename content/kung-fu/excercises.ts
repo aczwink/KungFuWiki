@@ -8,7 +8,7 @@
 
 import { Exercise } from "../../src/contentDefinitions";
 import { ReferenceExercise } from "../../src/references";
-import { RenderChinese } from "../../templates/chinese";
+import { RenderSimplifiedChinese } from "../../templates/chinese";
 import { caiJiao } from "./kicks/cai-jiao";
 import { chongchuang } from "./punches/chongchuang";
 
@@ -30,7 +30,7 @@ export const kungFuExercises: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        In the picture with ${RenderChinese("仆步")}.
+        In the picture with ${RenderSimplifiedChinese("仆步")}.
         `,
         title: "穿掌",
         titleLang: "chinese"
@@ -42,7 +42,7 @@ export const kungFuExercises: Exercise[] = [
             fileName: "da_kua_bu.mp4"
         },
         text: `
-        Running ${RenderChinese("弓步")} with big steps and straight arms.
+        Running ${RenderSimplifiedChinese("弓步")} with big steps and straight arms.
         `,
         title: "大跨步",
         titleLang: "chinese"
@@ -64,7 +64,7 @@ export const kungFuExercises: Exercise[] = [
             ]
         },
         text: ``,
-        title: "馬步单边",
+        title: "马步单边",
         titleLang: "chinese"
     },
     //fān yāo
