@@ -7,6 +7,7 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
+import { gouShou } from "./hand-technique/gou-shou";
 
 export const handTechnique: Exercise[] = [
     //bàoquán lǐ
@@ -60,17 +61,18 @@ export const handTechnique: Exercise[] = [
         title: "掌",
         titleLang: "chinese"
     },
-    //gōu shǒu
+    gouShou,
+    //jiàn zhǐ
     {
         media: {
             type: "image",
-            fileName: "goushou.png",
+            fileName: "jian_zhi.png",
             sourceURL: "https://www.instagram.com/p/CBYvCYDptPB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         text: `
-        Hook hand.
+        Used with the straight sword.
         `,
-        title: "勾手",
+        title: "剑指",
         titleLang: "chinese"
     },
 ];

@@ -13,6 +13,7 @@ import { RenderMainCategory } from "../templates/mainCategory";
 import { MainCategory } from "./contentDefinitions";
 import { RenderCategory } from "../templates/category";
 import { AddReference } from "./references";
+import { RenderAbout } from "../templates/about";
 
 function CollectExercises(cat: MainCategory)
 {
@@ -59,8 +60,8 @@ async function BuildStaticSite(outDirPath: string)
     const indexPath = path.join(outDirPath, "index.html");
     const content = RenderMain({
         categories,
-        pageContent: RenderMainCategory(categories[0]),
-        activeCategory: categories[0]
+        pageContent: RenderAbout(),
+        activeCategory: undefined
     });
     await fs.promises.writeFile(indexPath, content, "utf-8");
 }

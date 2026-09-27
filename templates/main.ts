@@ -65,7 +65,9 @@ export function RenderMain(params: MainPageParams)
 		document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
 		</script>
 		<div class="container" id="home">
-			<img src="images/logo.png" style="position: absolute; top: 0; left: 0; height: 10rem" />
+			<a href="index.html">
+				<img src="images/logo.png" style="position: absolute; top: 0; left: 0; height: 10rem" />
+			</a>
 			${RenderNav(params.categories, params.activeCategory)}
 
 			${params.pageContent}

@@ -75,4 +75,19 @@ export const jumps: Exercise[] = [
         title: "Outside jump kick",
         titleLang: "german"
     },
+    //dān fēi jiǎo
+    {
+        media: {
+            type: "video-no-src",
+            fileName: "dan_fei_jiao.mp4"
+        },
+        text: `
+        Back straight up.
+        Kick up left leg and hold up.
+        Then kick right leg and slap on the hand.
+        Pull the right leg fast downwards and land on it.
+        `,
+        title: "单飞脚",
+        titleLang: "chinese"
+    },
 ];

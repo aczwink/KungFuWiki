@@ -9,6 +9,7 @@
 import { Exercise } from "../../src/contentDefinitions";
 import { ReferenceExercise } from "../../src/references";
 import { RenderSimplifiedChinese } from "../../templates/chinese";
+import { gouShou } from "../general/hand-technique/gou-shou";
 import { caiJiao } from "./kicks/cai-jiao";
 import { chongchuang } from "./punches/chongchuang";
 
@@ -153,6 +154,19 @@ export const kungFuExercises: Exercise[] = [
         Combination of ${ReferenceExercise(tixi)} and ${ReferenceExercise(chongchuang)}.
         `,
         title: "踢膝冲床",
+        titleLang: "chinese"
+    },
+    //tí xī shuǎi jiān
+    {
+        media: {
+            type: "video-no-src",
+            fileName: "ti_xi_shuai_jian.mp4"
+        },
+        text: () => `
+        Combination of ${ReferenceExercise(tixi)} and ${RenderSimplifiedChinese("甩肩")}.
+        Back hand is ${ReferenceExercise(gouShou)}
+        `,
+        title: "提膝甩肩",
         titleLang: "chinese"
     },
     //cè shuāi
