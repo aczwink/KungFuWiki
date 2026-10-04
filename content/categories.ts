@@ -19,7 +19,6 @@ import { taiChiBasics } from "./tai-chi/basics";
 import { qiGongForms } from "./qiGongForms";
 import { chineseLang } from "./chinese";
 import { handTechnique } from "./general/hand-technique";
-import { spearTechnique } from "./kung-fu/spear-technique";
 import { stickTechnique } from "./kung-fu/stick-technique";
 import { kungFuExercises } from "./kung-fu/excercises";
 import { stances } from "./kung-fu/stances";
@@ -29,6 +28,7 @@ import { stickForms } from "./kung-fu/forms/stick-forms";
 import { sabreForms } from "./kung-fu/sabre-forms";
 import { masters } from "./masters";
 import { swordForms } from "./kung-fu/sword-forms";
+import { SelectExcersises } from "../src/excersises";
 
 export const categories: MainCategory[] = [
     {
@@ -80,8 +80,17 @@ export const categories: MainCategory[] = [
                     type: "image-no-src",
                     fileName: "gun.jpg"
                 },
-                displayText: "Stick technique",
+                displayText: "(TODO: legacy) Stick technique",
                 exercises: stickTechnique,
+                name: "stick-technique-legacy",
+            },
+            {
+                media: {
+                    type: "image-no-src",
+                    fileName: "gun.jpg"
+                },
+                displayText: "Stick technique",
+                exercises: SelectExcersises("kung-fu/stick-technique"),
                 name: "stick-technique",
             },
             {
@@ -90,9 +99,18 @@ export const categories: MainCategory[] = [
                     fileName: "spear.jpg"
                 },
                 displayText: "Spear technique",
-                exercises: spearTechnique,
+                exercises: SelectExcersises("kung-fu/spear-technique"),
                 name: "spear-technique",
             },
+            {
+                media: {
+                    type: "image-no-src",
+                    fileName: "jian.jpg"
+                },
+                displayText: "Sword technique",
+                exercises: SelectExcersises("kung-fu/sword-technique"),
+                name: "sword-technique",
+            }
         ],
         displayText: "Basics",
         name: "basics"

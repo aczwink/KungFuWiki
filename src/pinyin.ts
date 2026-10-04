@@ -26,7 +26,7 @@ function PinyinizeWord(word: string)
     return result;
 }
 
-function SegmentWords(chinese: string)
+function SegmentWordsBasedOnDict(chinese: string)
 {   
     let nextWord = "";
     const words = [];
@@ -62,6 +62,6 @@ function SegmentWords(chinese: string)
 
 export function Pinyin(chinese: string)
 {
-    const words = SegmentWords(chinese);
+    const words = SegmentWordsBasedOnDict(chinese);
     return words.map(PinyinizeWord).join(" ");
 }

@@ -10,8 +10,8 @@ export function RenderAbout()
 {
     return `
     <div class="row m-5">
-        <div class="col-md-4 text-center">
-            TODO: photo
+        <div class="col-md-4">
+            <img src="images/amir.jpg" style="max-width: 20rem" class="img-fluid shadow-lg rounded" />
         </div>
         <div class="col-md-8">
             <h4>Hi, I'm Amir,</h4>
@@ -53,7 +53,7 @@ export function RenderAbout()
                 have encountered during my studies.
             </p>
             
-            <h5>Safety note!</h5>
+            <h5>Safety note</h5>
             <p>
                 Martial arts training involves physical activity and carries an inherent
                 risk of injury. Anyone wishing to learn or practice the exercises shown

@@ -70,11 +70,21 @@ export interface Exercise
     text: string | (() => string);
 }
 
+export interface ContentEntryDefinition
+{
+    description: string;
+    media?: MediaDefinition;
+    tags: string[];
+    title: {
+        ["simplified-chinese"]: string;
+    };
+}
+
 export interface ExerciseCategory
 {
     description?: string;
     displayText: string;
-    exercises: Exercise[];
+    exercises: Exercise[] | Promise<Exercise[]>;
     media?: MediaDefinition;
     name: string;
 }

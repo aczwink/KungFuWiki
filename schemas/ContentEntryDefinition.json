@@ -1,0 +1,51 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Main content entry definition",
+    "description": "JSON Schema for main content entry definitions",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "description": {
+            "type": "string"
+        },
+        "media": {
+            "oneOf": [
+                {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "type": {
+                            "const": "video-no-src"
+                        },
+                        "fileName": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["type", "fileName"]
+                }
+            ]
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "kung-fu/spear-technique",
+                    "kung-fu/stick-technique",
+                    "kung-fu/sword-technique"
+                ]
+            }
+        },
+        "title": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "simplified-chinese": {
+                    "type": "string"
+                }
+            },
+            "required": ["simplified-chinese"]
+        }
+    },
+    "required": ["description", "tags", "title"]
+}

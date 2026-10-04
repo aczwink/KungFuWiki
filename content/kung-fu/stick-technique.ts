@@ -7,8 +7,6 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { ReferenceExercise } from "../../src/references";
-import { lanNaZha } from "./spear-technique/lan-na-zha";
 
 export const stickTechnique: Exercise[] = [
     //wǔhuā gùn
@@ -72,15 +70,6 @@ export const stickTechnique: Exercise[] = [
         title: "点棍",
         titleLang: "chinese"
     },
-    //lán ná zhā
-    {
-        text: () => `
-        Borrowed from spear technique and executed likewise.
-        See: ${ReferenceExercise(lanNaZha)}
-        `,
-        title: "拦拿扎",
-        titleLang: "chinese"
-    },
     //sǎo gùn
     {
         media: {
@@ -116,18 +105,6 @@ export const stickTechnique: Exercise[] = [
         Stick from bottom to top.
         `,
         title: "挑棍",
-        titleLang: "chinese"
-    },
-    //yā gùn
-    {
-        media: {
-            type: "video-no-src",
-            fileName: "ya_gun.mp4"
-        },
-        text: `
-        Stick from top to bottom
-        `,
-        title: "压棍",
         titleLang: "chinese"
     },
 ];

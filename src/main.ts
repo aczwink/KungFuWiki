@@ -15,11 +15,11 @@ import { RenderCategory } from "../templates/category";
 import { AddReference } from "./references";
 import { RenderAbout } from "../templates/about";
 
-function CollectExercises(cat: MainCategory)
+async function CollectExercises(cat: MainCategory)
 {
     for (const subCat of cat.categories)
     {
-        for (const exercise of subCat.exercises)
+        for (const exercise of await subCat.exercises)
             AddReference(exercise, subCat);
     }
 }
@@ -29,7 +29,7 @@ async function BuildMainCatStaticSite(cat: MainCategory, outDirPath: string)
     const catPath = path.join(outDirPath, cat.name + ".html");
     const content = RenderMain({
         categories,
-        pageContent: RenderMainCategory(cat),
+        pageContent: await RenderMainCategory(cat),
         activeCategory: cat
     });
     await fs.promises.writeFile(catPath, content, "utf-8");
@@ -39,7 +39,7 @@ async function BuildMainCatStaticSite(cat: MainCategory, outDirPath: string)
         const catPath = path.join(outDirPath, subCat.name + ".html");
         const content = RenderMain({
             categories,
-            pageContent: RenderCategory(subCat),
+            pageContent: await RenderCategory(subCat),
             activeCategory: cat
         });
         await fs.promises.writeFile(catPath, content, "utf-8");
@@ -52,7 +52,7 @@ async function BuildStaticSite(outDirPath: string)
         await fs.promises.mkdir(outDirPath);
 
     for (const cat of categories)
-        CollectExercises(cat);
+        await CollectExercises(cat);
 
     for (const cat of categories)
         await BuildMainCatStaticSite(cat, outDirPath);

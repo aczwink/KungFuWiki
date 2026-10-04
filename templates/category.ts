@@ -10,13 +10,15 @@ import { ExerciseCategory } from "../src/contentDefinitions";
 import { RenderMarkdown } from "../src/markdown";
 import { RenderExercise } from "./exercise";
 
-export function RenderCategory(category: ExerciseCategory)
+export async function RenderCategory(category: ExerciseCategory)
 {
+    const exercises = await category.exercises;
+    
     const desc = (category.description === undefined) ? "" : `<p>${RenderMarkdown(category.description)}</p>`;
     return `
     <h2 class="mt-5" id="${category.name}">${category.displayText}</h2>
     <hr />
     ${desc}
-    ${category.exercises.map(RenderExercise).join(`<div class="mt-5"></div>`)}
+    ${exercises.map(RenderExercise).join(`<div class="mt-5"></div>`)}
     `;
 }

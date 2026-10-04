@@ -79,7 +79,7 @@ export const chineseLang: Exercise[] = [
         text: `
         Sword
         `,
-        title: "剑",
+        title: "剑", //TODO: traditional: 劍
         titleLang: "chinese"
     },
     //qí bù

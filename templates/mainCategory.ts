@@ -9,9 +9,9 @@
 import { ExerciseCategory, MainCategory, MediaDefinition } from "../src/contentDefinitions";
 import { RenderOptionalMedia } from "./media";
 
-function FindImage(x: ExerciseCategory): MediaDefinition | undefined
+async function FindImage(x: ExerciseCategory): Promise<MediaDefinition | undefined>
 {
-    for (const exercise of x.exercises)
+    for (const exercise of await x.exercises)
     {
         if(exercise.media !== undefined)
         {
@@ -30,9 +30,9 @@ function FindImage(x: ExerciseCategory): MediaDefinition | undefined
     }
 }
 
-function RenderSubCategoryLink(category: ExerciseCategory)
+async function RenderSubCategoryLink(category: ExerciseCategory)
 {    
-    const media = category.media ?? FindImage(category);
+    const media = category.media ?? await FindImage(category);
     return `
         <div class="row mb-5">
             <div class="col text-end">
@@ -45,11 +45,12 @@ function RenderSubCategoryLink(category: ExerciseCategory)
     `;
 }
 
-export function RenderMainCategory(category: MainCategory)
+export async function RenderMainCategory(category: MainCategory)
 {
+    const mapped = await category.categories.map(RenderSubCategoryLink).Values().PromiseAll();
     return `
         <div class="col">
-        ${category.categories.map(RenderSubCategoryLink).join("")}
+        ${mapped.join("")}
         </div>
     `;
 }
