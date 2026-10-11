@@ -7,21 +7,28 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { RenderChineseOrdinalNumber } from "../../templates/chinese";
 
 export const taiChiBasics: Exercise[] = [
     //bǎi jiǎo
     {
+        media: {
+            type: "video-no-src",
+            fileName: "bai_jiao.mp4"
+        },
         text: `
-        <strong class="text-danger">TODO</strong>
+        Turn foot with pivot being on the heel.
         `,
         title: "摆脚",
         titleLang: "chinese"
     },
     //kòu jiǎo
     {
+        media: {
+            type: "video-no-src",
+            fileName: "kou_jiao.mp4"
+        },
         text: `
-        <strong class="text-danger">TODO</strong>
+        Turn foot with pivot being on the toes.
         `,
         title: "扣脚",
         titleLang: "chinese"

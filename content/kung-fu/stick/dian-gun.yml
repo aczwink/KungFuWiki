@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Hit stick left and right over the wrists on the floor.
+media:
+  type: video-no-src
+  fileName: dian_gun.mp4
+tags:
+  - kung-fu/stick-technique
+title:
+  simplified-chinese: 点棍

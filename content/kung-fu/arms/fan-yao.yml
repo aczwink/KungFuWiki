@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: | #TODO: FIX REFS :-)
+  [Demonstration with ${ReferenceExercise(caiJiao)}](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-fan-yao/1151733105210177/)
+media:
+  type: image
+  fileName: "Fig.22-fanyao_waist-wheeling-ex.jpeg"
+  sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+tags:
+  - kung-fu/arms-technique
+title:
+  simplified-chinese: 翻腰

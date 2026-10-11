@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Tai Chi trainer at [YunTai Shan International Culture And Martial Arts School](https://shaolin-yuntai.com).
+media:
+  type: image-no-src
+  fileName: yaoshifu.png
+tags:
+  - misc/masters
+title:
+  simplified-chinese: 姚烜

@@ -1,0 +1,19 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: ""
+media:
+  type: gallery
+  composition: carousel
+  items:
+    - type: video-no-src
+      fileName: wulongpanda-front.mp4
+    - type: video-no-src
+      fileName: wulongpanda-side.mp4
+tags:
+  - kung-fu/arms-technique
+title:
+  simplified-chinese: 乌龙盘打

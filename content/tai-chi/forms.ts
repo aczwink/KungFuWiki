@@ -7,10 +7,8 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { ReferenceExercise } from "../../src/references";
 import { RenderChineseOrdinalNumber } from "../../templates/chinese";
-import { chenYunLi, yaoShifu } from "../masters";
-import { baiheLiangChi, jingangDaoZhui, qiShi, shangSanBu, xieXing } from "./moves";
+import { chenYunLi } from "../masters";
 
 export const taiChiForms: Exercise[] = [
     {
@@ -21,21 +19,6 @@ export const taiChiForms: Exercise[] = [
         taughtBy: chenYunLi,
         text: ``,
         title: RenderChineseOrdinalNumber(24),
-        titleLang: "german"
-    },
-    {
-        taughtBy: yaoShifu,
-        text: () => `
-        Moves:
-        * ${ReferenceExercise(qiShi)}
-        * ${ReferenceExercise(jingangDaoZhui)}
-        * ${ReferenceExercise(baiheLiangChi)}
-        * ${ReferenceExercise(shangSanBu)}
-        * ${ReferenceExercise(xieXing)}
-
-        <strong class="text-danger">TODO rest</strong>
-        `,
-        title: RenderChineseOrdinalNumber(38),
         titleLang: "german"
     },
 ];

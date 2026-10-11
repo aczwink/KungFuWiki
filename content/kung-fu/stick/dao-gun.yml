@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  The front hand forms a hole through which the stick slides. The rear hand pushes the stick.
+  It is somehow comparable to when playing pool except that the stick is lead through the hole of the front hand.
+media:
+  type: video-no-src
+  fileName: dao_gun.mp4
+tags:
+  - kung-fu/stick-technique
+title:
+  simplified-chinese: 刀棍

@@ -75,8 +75,11 @@ export interface ContentEntryDefinition
     description: string;
     media?: MediaDefinition;
     tags: string[];
+    ["taught-by"]?: string;
     title: {
-        ["simplified-chinese"]: string;
+        english?: string;
+        ["chinese-ordinal"]?: number;
+        ["simplified-chinese"]?: string;
     };
 }
 

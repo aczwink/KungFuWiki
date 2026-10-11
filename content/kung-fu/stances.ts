@@ -7,7 +7,24 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { RenderChineseOrdinalNumber } from "../../templates/chinese";
+import { ReferenceExercise } from "../../src/references";
+import { RenderChineseOrdinalNumber, RenderTraditionalChinese } from "../../templates/chinese";
+
+const mabu: Exercise = {
+    media: {
+        type: "image",
+        fileName: "mabu.jpg",
+        sourceURL: "https://www.instagram.com/p/CBVK6c6pOjY/?utm_source=ig_web_copy_link"
+    },
+    text: `
+    Horse stance.
+    It is called liked that, because one stands as if sitting on a horse.
+
+    [Wikipedia](https://en.wikipedia.org/wiki/Horse_stance)
+    `,
+    title: "马步", //TODO traditional: 馬步
+    titleLang: "chinese"
+};
 
 export const stances: Exercise[] = [
     {
@@ -23,21 +40,7 @@ export const stances: Exercise[] = [
         title: "弓步",
         titleLang: "chinese"
     },
-    {
-        media: {
-            type: "image",
-            fileName: "mabu.jpg",
-            sourceURL: "https://www.instagram.com/p/CBVK6c6pOjY/?utm_source=ig_web_copy_link"
-        },
-        text: `
-        Horse stance.
-        It is called liked that, because one stands as if sitting on a horse.
-
-        [Wikipedia](https://en.wikipedia.org/wiki/Horse_stance)
-        `,
-        title: "马步", //TODO traditional: 馬步
-        titleLang: "chinese"
-    },
+    mabu,
     {
         media: {
             type: "image",
@@ -99,19 +102,28 @@ export const stances: Exercise[] = [
             type: "image-no-src",
             fileName: "siliubu.jpg"
         },
-        text: `
+        text: () => `
         Called 4-6-stance [${RenderChineseOrdinalNumber(4)} and ${RenderChineseOrdinalNumber(6)}], because of its weight distribution.
         40% of weight is on the front leg and 60% on the back leg.
+
+        Also called ${RenderTraditionalChinese("半碼步")}, i.e., "half mǎ bù", because the back leg is like in ${ReferenceExercise(mabu)} but the front foot is pointing forward instead.
         `,
         title: "四六步",
         titleLang: "chinese"
     },
     //sānqī bù
     {
-        text: `
+        media: {
+            type: "video-no-src",
+            fileName: "sanqi_bu.mp4"
+        },
+        text: () => `
         Called 3-7-stance [${RenderChineseOrdinalNumber(3)} and ${RenderChineseOrdinalNumber(7)}], because of its weight distribution.
         30% of weight is on the front leg and 70% on the back leg.
-        TODO: video
+
+        Used in Tai Chi all the time.
+
+        The video starts in ${ReferenceExercise(mabu)} and then switches to sānqī bù while switching from one leg to the other.
         `,
         title: "三七步",
         titleLang: "chinese"

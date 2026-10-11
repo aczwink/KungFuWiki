@@ -1,0 +1,21 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: | #TODO: repair references
+  Moves:
+  * ${ReferenceExercise(qiShi)}
+  * ${ReferenceExercise(jingangDaoZhui)}
+  * ${ReferenceExercise(baiheLiangChi)}
+  * ${ReferenceExercise(shangSanBu)}
+  * ${ReferenceExercise(xieXing)}
+
+  <strong class="text-danger">TODO rest</strong>
+#taught-by: yao-xuan #TODO
+#media: #TODO
+tags:
+  - tai-chi/fist-forms
+title:
+  chinese-ordinal: 38

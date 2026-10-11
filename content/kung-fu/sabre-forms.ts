@@ -18,14 +18,4 @@ export const sabreForms: Exercise[] = [
         title: "少林刀",
         titleLang: "chinese"
     },
-    {
-        taughtBy: shiYanYo,
-        text: ``,
-        title: "少林梅花单刀",
-        titleLang: "chinese",
-        media: {
-            type: "youtube",
-            videoId: "DWDOQBfEc1U?si=ysZTybP15RaTN-Ko&t=625"
-        }
-    },
 ];

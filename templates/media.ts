@@ -16,11 +16,11 @@ export function RenderMedia(media: MediaDefinition): string
         case "image":
             return `
             <a target="_blank" href="${media.sourceURL}">
-                <img src="images/${media.fileName}" />
+                <img class="img-fluid shadow rounded" style="max-height: 25rem; max-width: 25rem;" src="images/${media.fileName}" />
             </a>
             `;
         case "image-no-src":
-            return `<img style="max-width:50%" src="images/${media.fileName}" />`;
+            return `<img class="img-fluid shadow rounded" style="max-height: 25rem; max-width: 25rem;" src="images/${media.fileName}" />`;
         case "images":
             const images = media.fileNames.map(x => `<img src="images/${x}" />`);
             return `
@@ -76,7 +76,7 @@ export function RenderMedia(media: MediaDefinition): string
             `;
         case "youtube":
             const url = "https://www.youtube-nocookie.com/embed/" + media.videoId + "&amp;controls=0";
-            return `<iframe width="560" height="315" src="${url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+            return `<iframe width="560" height="315" src="${url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="shadow rounded" style="background: black;"></iframe>`;
     }
 }
 

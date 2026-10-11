@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Hit the floor with the whole stick excluding the lower hand holding the stick.
+  The other hand is used to press with the palm on the stick.
+media:
+  type: video-no-src
+  fileName: shuai_gun.mp4
+tags:
+  - kung-fu/stick-technique
+title:
+  simplified-chinese: 摔棍

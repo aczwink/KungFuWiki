@@ -8,18 +8,50 @@
 import { Converter } from "opencc-js";
 import { Pinyin } from "../src/pinyin";
 
-function AssertSimplified(text: string): void
+enum ScriptType
+{
+    SharedOnly,
+    Simplified,
+    Traditional,
+}
+
+function DetectScriptType(text: string): ScriptType
 {
     const t2s = Converter({ from: "tw", to: "cn" });
+    const s2t = Converter({ from: "cn", to: "tw" });
 
     const simplified = t2s(text);
-    if(simplified !== text)
-        throw new Error(`Traditional characters detected! Got: "${text}" Expected: ${simplified}`);
+    const traditional = s2t(text);
+    const isSimplified = text === simplified;
+    const isTraditional = text === traditional;
+
+    if(isSimplified)
+    {
+        if(isTraditional)
+            return ScriptType.SharedOnly;
+        return ScriptType.Simplified;
+    }
+    else if(isTraditional)
+        return ScriptType.Traditional;
+
+    throw new Error("Mixed simplified and traditional chars detected in one string: " + text);
 }
 
 export function RenderSimplifiedChinese(text: string)
 {
-    AssertSimplified(text);
+    const scriptType = DetectScriptType(text);
+    const isSimplified = (scriptType === ScriptType.SharedOnly) || (scriptType === ScriptType.Simplified);
+    if(!isSimplified)
+        throw new Error(`Traditional characters detected in simplified string: "${text}"`);
+
+    return Pinyin(text) + " (" + text + ")";
+}
+
+export function RenderTraditionalChinese(text: string)
+{
+    const scriptType = DetectScriptType(text);
+    if(scriptType !== ScriptType.Traditional)
+        throw new Error(`Simplified characters detected in traditional string: "${text}"`);
 
     return Pinyin(text) + " (" + text + ")";
 }

@@ -47,34 +47,8 @@ export const shiYanYo: Exercise = {
     titleLang: "german"
 };
 
-export const yaoShifu: Exercise = {
-    media: {
-        type: "image-no-src",
-        fileName: "yaoshifu.png",
-    },
-    text: `
-    Tai Chi trainer at [YunTai Shan International Culture And Martial Arts School](https://shaolin-yuntai.com).
-    `,
-    title: "姚烜",
-    titleLang: "chinese",
-};
-
 export const masters: Exercise[] = [
     chenYunLi,
     huShifu,
     shiYanYo,
-    {
-        media: {
-            type: "image",
-            fileName: "nadim_sarrouh.jpg",
-            sourceURL: "https://syndicate-berlin.de/shaolin-kung-fu/"
-        },
-        text: `
-        * Trainer at [Syndicate Berlin](https://syndicate-berlin.de/).
-        * Used to be trainer at [Randori Berlin](https://www.randori-berlin.de/).
-        `,
-        title: "Nadim Sarrouh",
-        titleLang: "german"
-    },
-    yaoShifu,
 ];

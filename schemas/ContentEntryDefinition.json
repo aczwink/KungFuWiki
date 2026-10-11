@@ -15,6 +15,35 @@
                     "additionalProperties": false,
                     "properties": {
                         "type": {
+                            "const": "image"
+                        },
+                        "fileName": {
+                            "type": "string"
+                        },
+                        "sourceURL": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["type", "fileName", "sourceURL"]
+                },
+                {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "type": {
+                            "const": "image-no-src"
+                        },
+                        "fileName": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["type", "fileName"]
+                },
+                {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "type": {
                             "const": "video-no-src"
                         },
                         "fileName": {
@@ -22,6 +51,19 @@
                         }
                     },
                     "required": ["type", "fileName"]
+                },
+                {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "type": {
+                            "const": "youtube"
+                        },
+                        "videoId": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["type", "videoId"]
                 }
             ]
         },
@@ -30,21 +72,59 @@
             "items": {
                 "type": "string",
                 "enum": [
+                    "kung-fu/arms-technique",
+                    "kung-fu/fist-forms",
+                    "kung-fu/sabre-forms",
+                    "kung-fu/spear-forms",
                     "kung-fu/spear-technique",
+                    "kung-fu/stick-forms",
                     "kung-fu/stick-technique",
-                    "kung-fu/sword-technique"
+                    "kung-fu/sword-forms",
+                    "kung-fu/sword-technique",
+                    "misc/chinese",
+                    "misc/masters",
+                    "qi-gong/forms",
+                    "sanda/kicks",
+                    "tai-chi/fist-forms"
                 ]
             }
         },
+        "taught-by": {
+            "type": "string"
+        },
         "title": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "simplified-chinese": {
-                    "type": "string"
+            "oneOf": [
+                {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "english": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["english"]
+                },
+                {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "chinese-ordinal": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": ["chinese-ordinal"]
+                },
+                {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "simplified-chinese": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["simplified-chinese"]
                 }
-            },
-            "required": ["simplified-chinese"]
+            ]
         }
     },
     "required": ["description", "tags", "title"]

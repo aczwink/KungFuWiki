@@ -1,0 +1,19 @@
+# KungFuWiki
+# Copyright (c) 2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  My very first Kung Fu trainer.
+
+  * Trainer at [Syndicate Berlin](https://syndicate-berlin.de/).
+  * Used to be trainer at [Randori Berlin](https://www.randori-berlin.de/).
+media:
+  type: image
+  fileName: nadim_sarrouh.jpg
+  sourceURL: "https://syndicate-berlin.de/shaolin-kung-fu/"
+tags:
+  - misc/masters
+title:
+  english: Nadim Sarrouh

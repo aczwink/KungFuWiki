@@ -4,10 +4,22 @@
 # Licensed under the MIT License.
 # See the LICENSE file in the project root for license information.
 
-description: |
-    <strong class="text-danger">TODO: lan: right arm up, spear down; na: right arm down, spear up, zha: spear in front with both hands touching the end</strong>
+description: | #TODO: inline chinese popups
+    * 拦: Right arm up, spear tip goes down
+    * 拿: Push right arm down with power, spear tip goes up
+    * 扎: Thrust spear to front with both hands touching the end
 
     Is also performed in the same manner with the stick.
+media:
+    type: gallery
+    composition: carousel
+    items:
+        - type: video-no-src
+          fileName: lannazha_plain.mp4
+        - type: video-no-src
+          fileName: lannazha_stance.mp4
+        - type: video-no-src
+          fileName: lannazha_jump.mp4
 tags:
     - kung-fu/spear-technique
     - kung-fu/stick-technique

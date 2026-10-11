@@ -27,12 +27,4 @@ export const stickForms: Exercise[] = [
         title: "齐眉棍",
         titleLang: "chinese"
     },
-    {
-        taughtBy: huShifu,
-        text: `
-        <strong class="text-danger">TODO: Shaolin gun</strong>
-        `,
-        title: "少林棍",
-        titleLang: "chinese"
-    },
 ];

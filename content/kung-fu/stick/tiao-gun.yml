@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Stick from bottom to top.
+media:
+  type: video-no-src
+  fileName: tiao_gun.mp4
+tags:
+  - kung-fu/stick-technique
+title:
+  simplified-chinese: 挑棍

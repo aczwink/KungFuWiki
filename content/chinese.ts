@@ -188,14 +188,4 @@ export const chineseLang: Exercise[] = [
         title: "预备",
         titleLang: "chinese"
     },
-    //zǒu
-    {
-        text: `
-        to walk, to go, to move.
-
-        In Kung Fu, often used in imperative i.e. “Go!”
-        `,
-        title: "走",
-        titleLang: "chinese"
-    },
 ];

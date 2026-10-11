@@ -68,19 +68,6 @@ export const kungFuExercises: Exercise[] = [
         title: "马步单边",
         titleLang: "chinese"
     },
-    //fān yāo
-    {
-        media: {
-            type: "image",
-            fileName: "Fig.22-fanyao_waist-wheeling-ex.jpeg",
-            sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
-        },
-        text: () => `
-        [Demonstration with ${ReferenceExercise(caiJiao)}](https://www.facebook.com/Shaolin.Kungfu.Institut.eV/videos/dan-pai-jiao-fan-yao/1151733105210177/)
-        `,
-        title: "翻腰",
-        titleLang: "chinese"
-    },
     //gāo tái tuǐ
     {
         media: {
@@ -197,26 +184,6 @@ export const kungFuExercises: Exercise[] = [
         [Demonstration with some other techniques](https://www.instagram.com/p/CEwMK90IDM7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
         `,
         title: "乌龙搅柱",
-        titleLang: "chinese"
-    },
-    //wū lóng pán dǎ
-    {
-        media: {
-            type: "gallery",
-            composition: "carousel",
-            items: [
-                {
-                    type: "video-no-src",
-                    fileName: "wulongpanda-front.mp4"
-                },
-                {
-                    type: "video-no-src",
-                    fileName: "wulongpanda-side.mp4"
-                }
-            ]
-        },
-        text: ``,
-        title: "乌龙盘打",
         titleLang: "chinese"
     },
     //gōng bù xié xíng
