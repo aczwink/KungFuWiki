@@ -12,15 +12,18 @@ import { categories } from "../content/categories";
 import { RenderMainCategory } from "../templates/mainCategory";
 import { MainCategory } from "./contentDefinitions";
 import { RenderCategory } from "../templates/category";
-import { AddReference } from "./references";
 import { RenderAbout } from "../templates/about";
+import { GlobalInjector } from "@aczwink/acts-util-node";
+import { ReferencesManager } from "./ReferencesManager";
 
 async function CollectExercises(cat: MainCategory)
 {
+    const refMgr = GlobalInjector().Resolve(ReferencesManager);
+
     for (const subCat of cat.categories)
     {
         for (const exercise of await subCat.exercises)
-            AddReference(exercise, subCat);
+            refMgr.DiscoverReferences(exercise);
     }
 }
 

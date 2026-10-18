@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Punch and pull back other hand to waist.
+media:
+  type: "images"
+  fileNames: ["Fig.-3-Horizontal-punch..jpeg", "Fig.-3-Horizontal-punch2.jpg"]
+  sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+tags:
+  - kung-fu/punches
+title:
+  simplified-chinese: 冲床

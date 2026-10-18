@@ -1,0 +1,21 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Straight kick to the front up until the head.
+media:
+  type: "gallery"
+  composition: "carousel"
+  items:
+    - type: "image"
+      fileName: "Fig.-11-Zheng-ti-tui.jpeg"
+      sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+    - type: "video-no-src"
+      fileName: "zheng_ti_tui.mp4"
+tags:
+  - kung-fu/kicks
+title:
+  simplified-chinese: 正踢腿

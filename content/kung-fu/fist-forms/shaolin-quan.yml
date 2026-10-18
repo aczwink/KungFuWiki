@@ -4,11 +4,9 @@
 # Licensed under the MIT License.
 # See the LICENSE file in the project root for license information.
 
-description: |
-  <strong class="text-danger">TODO</strong>
-#taught-by: huShifu #TODO
-#TODO: media
+description: ""
 tags:
   - kung-fu/fist-forms
+taught-by: hu-bin-chao
 title:
   simplified-chinese: 少林拳

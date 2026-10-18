@@ -1,0 +1,20 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Jump kick
+media:
+  type: "gallery"
+  composition: "carousel"
+  items:
+    - type: "video-no-src"
+      fileName: "er_qi_jiao.mp4"
+    - type: "youtube"
+      videoId: "-qhz0sl1Zag?si=e9Np7YbTf1v2GHuR"
+tags:
+  - kung-fu/kicks
+title:
+  simplified-chinese: 二起脚

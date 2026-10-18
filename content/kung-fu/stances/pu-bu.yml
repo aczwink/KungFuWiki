@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Both feet need to be completely on the floor and the balance should be in the middle, not on the bent leg.
+media:
+  type: "image"
+  fileName: "pubu.jpg"
+  sourceURL: "https://www.instagram.com/p/CBVK6c6pOjY/?utm_source=ig_web_copy_link"
+tags:
+  - kung-fu/stances
+title:
+  simplified-chinese: 仆步

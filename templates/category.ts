@@ -6,13 +6,18 @@
  * See the LICENSE file in the project root for license information.
  */
 
-import { ExerciseCategory } from "../src/contentDefinitions";
+import { GlobalInjector } from "@aczwink/acts-util-node";
+import { ContentCategoryPresentationData } from "../src/contentDefinitions";
 import { RenderMarkdown } from "../src/markdown";
 import { RenderExercise } from "./exercise";
+import { ReferencesManager } from "../src/ReferencesManager";
 
-export async function RenderCategory(category: ExerciseCategory)
+export async function RenderCategory(category: ContentCategoryPresentationData)
 {
+    const refMgr = GlobalInjector().Resolve(ReferencesManager);
+
     const exercises = await category.exercises;
+    exercises.forEach(x => refMgr.ResolveReferences(x));
     
     const desc = (category.description === undefined) ? "" : `<p>${RenderMarkdown(category.description)}</p>`;
     return `

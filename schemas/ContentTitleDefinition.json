@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Title of content entry definition",
+    "description": "JSON Schema for title of content entry definitions",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "chinese-ordinal": {
+            "type": "integer"
+        },
+        "english": {
+            "type": "string"
+        },
+        "simplified-chinese": {
+            "type": "string"
+        },
+        "traditional-chinese": {
+            "type": "string"
+        }
+    },
+    "required": []
+}

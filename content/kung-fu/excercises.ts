@@ -7,20 +7,6 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { ReferenceExercise } from "../../src/references";
-import { RenderSimplifiedChinese } from "../../templates/chinese";
-import { gouShou } from "../general/hand-technique/gou-shou";
-import { caiJiao } from "./kicks/cai-jiao";
-import { chongchuang } from "./punches/chongchuang";
-
-//tī xī
-const tixi: Exercise = {
-    text: `
-    Knee up
-    `,
-    title: "踢膝",
-    titleLang: "chinese"
-};
 
 export const kungFuExercises: Exercise[] = [
     //chuān zhǎng
@@ -31,7 +17,7 @@ export const kungFuExercises: Exercise[] = [
             sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
         },
         text: `
-        In the picture with ${RenderSimplifiedChinese("仆步")}.
+        In the picture with <ref>/kung-fu/stances/pu-bu</ref>.
         `,
         title: "穿掌",
         titleLang: "chinese"
@@ -43,7 +29,7 @@ export const kungFuExercises: Exercise[] = [
             fileName: "da_kua_bu.mp4"
         },
         text: `
-        Running ${RenderSimplifiedChinese("弓步")} with big steps and straight arms.
+        Running <ref>/kung-fu/stances/gong-bu</ref> with big steps and straight arms.
         `,
         title: "大跨步",
         titleLang: "chinese"
@@ -130,32 +116,6 @@ export const kungFuExercises: Exercise[] = [
         title: "交叉步",
         titleLang: "chinese"
     },
-    tixi,
-    //tī xī chōngchuáng
-    {
-        media: {
-            type: "video-no-src",
-            fileName: "tixi-chongchuang.mp4"
-        },
-        text: () => `
-        Combination of ${ReferenceExercise(tixi)} and ${ReferenceExercise(chongchuang)}.
-        `,
-        title: "踢膝冲床",
-        titleLang: "chinese"
-    },
-    //tí xī shuǎi jiān
-    {
-        media: {
-            type: "video-no-src",
-            fileName: "ti_xi_shuai_jian.mp4"
-        },
-        text: () => `
-        Combination of ${ReferenceExercise(tixi)} and ${RenderSimplifiedChinese("甩肩")}.
-        Back hand is ${ReferenceExercise(gouShou)}
-        `,
-        title: "提膝甩肩",
-        titleLang: "chinese"
-    },
     //cè shuāi
     {
         text: `
@@ -179,7 +139,7 @@ export const kungFuExercises: Exercise[] = [
     //wū lóng jiǎo zhù
     {
         text: `
-        # *==TODO: Tornado whirlwind stand up.==*
+        Twisting and rotating kick up move.
 
         [Demonstration with some other techniques](https://www.instagram.com/p/CEwMK90IDM7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
         `,

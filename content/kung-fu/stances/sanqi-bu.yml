@@ -1,0 +1,20 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Called 3-7-stance (3 = 三 and 7 = 七), because of its weight distribution.
+  30% of weight is on the front leg and 70% on the back leg.
+
+  Used in Tai Chi all the time.
+
+  The video starts in <ref>/kung-fu/stances/ma-bu</ref> and then switches to sānqī bù while switching from one leg to the other.
+media:
+  type: "video-no-src"
+  fileName: "sanqi_bu.mp4"
+tags:
+  - kung-fu/stances
+title:
+  simplified-chinese: 三七步

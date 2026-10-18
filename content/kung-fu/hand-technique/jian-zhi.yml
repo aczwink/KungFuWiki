@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Used with the straight sword.
+media:
+  type: "image"
+  fileName: "jian_zhi.png"
+  sourceURL: "https://www.instagram.com/p/CBYvCYDptPB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+tags:
+  - kung-fu/hand-technique
+title:
+  simplified-chinese: 剑指

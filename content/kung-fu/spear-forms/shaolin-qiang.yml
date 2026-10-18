@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: ""
+media:
+  type: "gdrive"
+  url: "https://drive.google.com/file/d/1VQOBFIVwz6qWCkojRPOakqJr0_yR_LSp/preview"
+tags:
+  - kung-fu/spear-forms
+taught-by: li-chen-yun
+title:
+  simplified-chinese: 少林枪

@@ -4,11 +4,9 @@
 # Licensed under the MIT License.
 # See the LICENSE file in the project root for license information.
 
-description: |
-  <strong class="text-danger">TODO: Shaolin gun</strong>
-#taught-by: huShifu #TODO
-#media: #TODO
+description: ""
 tags:
   - kung-fu/stick-forms
+taught-by: hu-bin-chao
 title:
   simplified-chinese: 少林棍

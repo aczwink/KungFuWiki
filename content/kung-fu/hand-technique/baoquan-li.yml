@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Salutation that is used before starting a form for example.
+media:
+  type: "image"
+  fileName: "Fig.-2-Baoquan-ceremony.jpeg"
+  sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+tags:
+  - kung-fu/hand-technique
+title:
+  simplified-chinese: 抱拳礼

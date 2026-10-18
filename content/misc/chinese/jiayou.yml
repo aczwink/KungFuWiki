@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Encouragement/cheering phrase.
+
+  Literally: “add oil” or “put in more fuel.”
+
+  Figuratively: “keep it up!” / “let’s go!” / “you can do it!” / “come on!”
+tags:
+  - misc/chinese
+title:
+  simplified-chinese: 加油

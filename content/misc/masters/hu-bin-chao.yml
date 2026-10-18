@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Trainer at [YunTai Shan International Culture And Martial Arts School](https://shaolin-yuntai.com).
+media:
+  type: "image-no-src"
+  fileName: "hu_shifu.png"
+tags:
+  - misc/masters
+title:
+  simplified-chinese: 胡宾超

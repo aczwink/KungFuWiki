@@ -63,6 +63,11 @@ export function RenderMain(params: MainPageParams)
 	<body>
 		<script>
 		document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+		window.onload = function()
+		{
+			document.querySelectorAll('[data-bs-toggle="tooltip"]')
+			.forEach(el => new bootstrap.Tooltip(el));
+		}
 		</script>
 		<div class="container" id="home">
 			<a href="index.html">

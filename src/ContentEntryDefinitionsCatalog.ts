@@ -9,6 +9,7 @@ import fs from "fs";
 import path from "path";
 import { Injectable, Lock, ReadObjectFile } from "@aczwink/acts-util-node";
 import { ContentEntryDefinition } from "./contentDefinitions";
+import { ChineseScriptType, DetectChineseScriptType } from "./chinese";
 
 @Injectable
 export class ContentEntryDefinitionsCatalog
@@ -31,7 +32,10 @@ export class ContentEntryDefinitionsCatalog
     
     public GetEntry(id: string)
     {
-        return this.catalog.get(id)!;
+        const entry = this.catalog.get(id);
+        if(entry === undefined)
+            throw new Error("No entry with the following id exists: " + id);
+        return entry;
     }
 
     //Private methods
@@ -43,12 +47,15 @@ export class ContentEntryDefinitionsCatalog
         const lock = await this.lock.Lock();
 
         if(this.catalog.size === 0)
-            await this.LoadExcersisesDirectory("../content");
+        {
+            const contentDirPath = "../content";
+            await this.LoadExcersisesDirectory(contentDirPath, contentDirPath);
+        }
 
         lock.Release();
     }
 
-    private async LoadExcersisesDirectory(directoryPath: string): Promise<void>
+    private async LoadExcersisesDirectory(directoryPath: string, rootPath: string): Promise<void>
     {
         const children = await fs.promises.readdir(directoryPath, "utf-8");
         for (const child of children)
@@ -57,15 +64,44 @@ export class ContentEntryDefinitionsCatalog
             const stats = await fs.promises.stat(childPath);
             if(stats.isDirectory())
             {
-                await this.LoadExcersisesDirectory(childPath);
+                await this.LoadExcersisesDirectory(childPath, rootPath);
             }
             else if(path.extname(childPath) === ".yml")
             {
                 const data = await ReadObjectFile<ContentEntryDefinition>(childPath);
-                const parsed = path.parse(child);
-                this.catalog.set(parsed.name, data);
+                const parsed = path.parse(path.relative(rootPath, childPath));
+                this.ValidateDefinition(data);
+                this.catalog.set("/" + parsed.dir + "/" + parsed.name, data);
             }
         }
+    }
+
+    private ValidateDefinition(data: ContentEntryDefinition)
+    {
+        const titles = Array.isArray(data.title) ? data.title : [data.title];
+        for (const title of titles)
+        {
+            if(title["simplified-chinese"] !== undefined)
+                this.ValidateIsSimplifiedChinese(title["simplified-chinese"]);
+            if(title["traditional-chinese"] !== undefined)   
+                this.ValidateIsTraditionalChinese(title["traditional-chinese"]);
+        }
+    }
+
+    private ValidateIsSimplifiedChinese(text: string)
+    {
+        const scriptType = DetectChineseScriptType(text);
+        const isSimplified = (scriptType === ChineseScriptType.SharedOnly) || (scriptType === ChineseScriptType.Simplified);
+        if(!isSimplified)
+            throw new Error(`Traditional characters detected in simplified string: "${text}"`);
+    }
+
+    private ValidateIsTraditionalChinese(text: string)
+    {
+        const scriptType = DetectChineseScriptType(text);
+        const isTraditional = (scriptType === ChineseScriptType.SharedOnly) || (scriptType === ChineseScriptType.Traditional);
+        if(!isTraditional)
+            throw new Error(`Simplified characters detected in traditional string: "${text}"`);
     }
 
     //State

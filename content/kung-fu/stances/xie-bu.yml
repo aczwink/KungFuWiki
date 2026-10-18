@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Resting stance.
+media:
+  type: "image"
+  fileName: "xiebu.jpg"
+  sourceURL: "https://www.instagram.com/p/CBVK6c6pOjY/?utm_source=ig_web_copy_link"
+tags:
+  - kung-fu/stances
+title:
+  simplified-chinese: 歇步

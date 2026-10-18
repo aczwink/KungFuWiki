@@ -11,11 +11,8 @@ description: | #TODO: repair references
   * ${ReferenceExercise(baiheLiangChi)}
   * ${ReferenceExercise(shangSanBu)}
   * ${ReferenceExercise(xieXing)}
-
-  <strong class="text-danger">TODO rest</strong>
-#taught-by: yao-xuan #TODO
-#media: #TODO
 tags:
   - tai-chi/fist-forms
+taught-by: yao-xuan
 title:
   chinese-ordinal: 38

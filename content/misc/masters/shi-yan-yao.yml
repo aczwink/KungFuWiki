@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Trainer at [Shaolin Tempel Deutschland](https://www.shaolin-tempel.eu/).
+media:
+  type: "image"
+  fileName: "shiyanyao.jpg"
+  sourceURL: "https://www.instagram.com/yanyao_shi"
+tags:
+  - misc/masters
+title:
+  english: Shi Yan Yao

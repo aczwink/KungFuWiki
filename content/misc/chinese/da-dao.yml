@@ -4,8 +4,8 @@
 # Licensed under the MIT License.
 # See the LICENSE file in the project root for license information.
 
-description: | #TODO reference to Puda
-  The big version of the Pudao.
+description: |
+  The big version of the <ref>/misc/chinese/pu-dao</ref>.
 media:
   type: image-no-src
   fileName: dadao.jpg

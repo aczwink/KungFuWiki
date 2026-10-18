@@ -1,0 +1,19 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: ""
+media:
+  type: gallery
+  composition: "carousel"
+  items: 
+    - type: "video-no-src"
+      fileName: "hou_bai_tue.mp4"
+    - type: "youtube"
+      videoId: "GyGuSqsN44w?si=g2Y9PNHxcfxc9-2a"
+tags:
+  - kung-fu/kicks
+title:
+  simplified-chinese: 后摆腿

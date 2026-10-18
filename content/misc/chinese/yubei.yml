@@ -1,0 +1,14 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  be ready! get ready! ready!
+
+  In Kung Fu, often used as a command together with "走", i.e., "预备! 走!" which translates into "Ready! Go!"
+tags:
+  - misc/chinese
+title:
+  simplified-chinese: 预备

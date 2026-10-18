@@ -61,13 +61,21 @@ type SingleMediaDefinition = GoogleDriveMedia | ImageMedia | ImageWithoutSourceM
 
 export type MediaDefinition = SingleMediaDefinition | GalleryMedia;
 
-export interface Exercise
+export interface Exercise //TODO: this must die
 {
     media?: MediaDefinition;
-    taughtBy?: Exercise;
-    titleLang: "chinese" | "german";
+    teacherId?: string;
+    titleLang: "chinese" | "german"; //TODO: this must die
     title: string;
     text: string | (() => string);
+}
+
+export interface ContentTitleDefinition
+{
+    english?: string;
+    ["chinese-ordinal"]?: number;
+    ["simplified-chinese"]?: string;
+    ["traditional-chinese"]?: string;
 }
 
 export interface ContentEntryDefinition
@@ -76,14 +84,10 @@ export interface ContentEntryDefinition
     media?: MediaDefinition;
     tags: string[];
     ["taught-by"]?: string;
-    title: {
-        english?: string;
-        ["chinese-ordinal"]?: number;
-        ["simplified-chinese"]?: string;
-    };
+    title: ContentTitleDefinition | ContentTitleDefinition[];
 }
 
-export interface ExerciseCategory
+export interface ContentCategoryPresentationData
 {
     description?: string;
     displayText: string;
@@ -95,6 +99,6 @@ export interface ExerciseCategory
 export interface MainCategory
 {
     displayText: string;
-    categories: ExerciseCategory[];
+    categories: ContentCategoryPresentationData[];
     name: string;
 }

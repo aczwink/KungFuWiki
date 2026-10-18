@@ -12,7 +12,7 @@ export function RenderMedia(media: MediaDefinition): string
     switch(media.type)
     {
         case "gdrive":
-            return `<iframe src="${media.url}" width="640" height="480" allow="autoplay"></iframe>`;
+            return `<iframe src="${media.url}" width="640" height="480" allow="autoplay" class="shadow rounded" style="background: black;"></iframe>`;
         case "image":
             return `
             <a target="_blank" href="${media.sourceURL}">

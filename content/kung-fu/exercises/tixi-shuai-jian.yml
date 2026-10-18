@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Kick knee up and do 甩肩.
+  Back hand is <ref>/kung-fu/hand-technique/gou-shou</ref>.
+media:
+  type: video-no-src
+  fileName: ti_xi_shuai_jian.mp4
+tags:
+  - kung-fu/exercises
+title:
+  simplified-chinese: 提膝甩肩

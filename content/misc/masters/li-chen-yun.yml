@@ -1,0 +1,17 @@
+# KungFuWiki
+# Copyright (c) 2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  * Until 2023 trainer at Shaolin Kung Fu Institut (Berlin, Germany).
+  * Since 2023 trainer at [Fei Long Kung Fu](https://feilongkungfu.com/).
+media:
+  type: "image"
+  fileName: "chenyun_li.jpeg"
+  sourceURL: "https://feilongkungfu.com/"
+tags:
+  - misc/masters
+title:
+  english: "Chen Yun Li"

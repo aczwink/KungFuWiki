@@ -1,0 +1,18 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Called 4-6-stance (4 = 四 and 6 = 六), because of its weight distribution.
+  40% of weight is on the front leg and 60% on the back leg.
+
+  Also called "半碼步", i.e., "half 碼步", because the back leg is like in <ref>/kung-fu/stances/ma-bu</ref> but the front foot is pointing forward instead.
+media:
+  type: "image-no-src"
+  fileName: "siliubu.jpg"
+tags:
+  - kung-fu/stances
+title:
+  simplified-chinese: 四六步

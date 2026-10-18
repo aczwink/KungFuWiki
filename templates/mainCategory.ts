@@ -6,10 +6,10 @@
  * See the LICENSE file in the project root for license information.
  */
 
-import { ExerciseCategory, MainCategory, MediaDefinition } from "../src/contentDefinitions";
+import { ContentCategoryPresentationData, MainCategory, MediaDefinition } from "../src/contentDefinitions";
 import { RenderOptionalMedia } from "./media";
 
-async function FindImage(x: ExerciseCategory): Promise<MediaDefinition | undefined>
+async function FindImage(x: ContentCategoryPresentationData): Promise<MediaDefinition | undefined>
 {
     for (const exercise of await x.exercises)
     {
@@ -30,7 +30,7 @@ async function FindImage(x: ExerciseCategory): Promise<MediaDefinition | undefin
     }
 }
 
-async function RenderSubCategoryLink(category: ExerciseCategory)
+async function RenderSubCategoryLink(category: ContentCategoryPresentationData)
 {    
     const media = category.media ?? await FindImage(category);
     return `

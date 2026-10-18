@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Knee gets up, leg kicks straight to the front together with punch on the opposite side and then leg goes down while keeping it straight.
+media:
+  type: "image"
+  fileName: "Fig.-15-Tan-tui.jpg"
+  sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+tags:
+  - kung-fu/kicks
+title:
+  simplified-chinese: 弹腿

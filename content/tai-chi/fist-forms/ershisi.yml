@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: ""
+media:
+  type: gdrive
+  url: "https://drive.google.com/file/d/1v6ydXn54CT-wQho6iqrHVjb4FB6WIGp-/preview"
+tags:
+  - tai-chi/fist-forms
+taught-by: li-chen-yun
+title:
+  chinese-ordinal: 24

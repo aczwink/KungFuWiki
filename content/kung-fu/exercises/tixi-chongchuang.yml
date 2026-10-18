@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Kick knee up and do <ref>/kung-fu/punches/chong-chuang</ref>.
+media:
+  type: video-no-src
+  fileName: tixi-chongchuang.mp4
+tags:
+  - kung-fu/exercises
+title:
+  simplified-chinese: 踢膝冲床

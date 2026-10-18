@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Knee gets up, kick straight to the front with the heel.
+media:
+  type: "image"
+  fileName: "Fig.-16-Deng-tui.jpeg"
+  sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+tags:
+  - kung-fu/kicks
+title:
+  simplified-chinese: 蹬腿

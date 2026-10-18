@@ -7,7 +7,6 @@
  */
 
 import { Exercise } from "../../src/contentDefinitions";
-import { RenderSimplifiedChinese } from "../../templates/chinese";
 
 export const jumps: Exercise[] = [
     //bèi yāo tuǐ 
@@ -68,7 +67,7 @@ export const jumps: Exercise[] = [
     //
     {
         text: `
-        ${RenderSimplifiedChinese("外摆腿")} but with jump.
+        <ref>/kung-fu/kicks/wai-bai-tui</ref> but with jump.
         
         * [Demonstration](https://www.instagram.com/p/By3P9wZA487/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
         `,

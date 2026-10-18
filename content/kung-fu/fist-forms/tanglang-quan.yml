@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: "The Mantis form."
+media:
+  type: "gdrive"
+  url: "https://drive.google.com/file/d/1IXuZyH0Y-QKFWnof0muZQ1h0O3ktPUY5/preview"
+taught-by: li-chen-yun
+tags:
+  - kung-fu/fist-forms
+title:
+  simplified-chinese: 螳螂拳
