@@ -1,0 +1,17 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  The opening move.
+  Go a bit lower, open to the left.
+  Raise then lower arms and keep in sync with your legs.
+media:
+  type: "video-no-src"
+  fileName: "qi_shi.mp4"
+tags:
+  - tai-chi/moves
+title:
+  simplified-chinese: 起势

@@ -4,7 +4,9 @@
 # Licensed under the MIT License.
 # See the LICENSE file in the project root for license information.
 
-description: ""
+description: |
+  Moves:
+  * <ref>/tai-chi/moves/qi-shi</ref>
 media:
   type: gdrive
   url: "https://drive.google.com/file/d/1v6ydXn54CT-wQho6iqrHVjb4FB6WIGp-/preview"

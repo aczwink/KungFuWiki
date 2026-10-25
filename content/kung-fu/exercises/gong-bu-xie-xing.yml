@@ -1,0 +1,26 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  One arm goes directly front and the other one 90 degrees to one of the two sides.
+  In the video, this might be a bit off due to the position of the camera lens.
+media:
+  type: "gallery"
+  composition: "carousel"
+  items: [
+      {
+          type: "video-no-src",
+          fileName: "gongbu_xiexing_front.mp4"
+      },
+      {
+          type: "video-no-src",
+          fileName: "gongbu_xiexing_side.mp4"
+      }
+  ]
+tags:
+  - kung-fu/exercises
+title:
+  simplified-chinese: 弓步斜行

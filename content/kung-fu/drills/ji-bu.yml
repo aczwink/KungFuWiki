@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Jump sideways with arms opening and closing and in the middle of the jump the feet should touch each other.
+media:
+  type: "video-no-src"
+  fileName: "jibu.mp4"
+tags:
+  - kung-fu/drills
+title:
+  simplified-chinese: 击步

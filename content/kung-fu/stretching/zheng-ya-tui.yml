@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Straighten one leg and raise toes. Go with straight back down and reach for the foot.
+media:
+  type: "image-no-src"
+  fileName: "zheng_ya_tui.JPEG"
+tags:
+  - kung-fu/stretching-exercises
+title:
+  simplified-chinese: 正压腿

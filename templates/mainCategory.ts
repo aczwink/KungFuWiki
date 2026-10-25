@@ -5,8 +5,8 @@
  * Licensed under the MIT License.
  * See the LICENSE file in the project root for license information.
  */
-
-import { ContentCategoryPresentationData, MainCategory, MediaDefinition } from "../src/contentDefinitions";
+import { MediaDefinition } from "../src/media";
+import { ContentCategoryPresentationData, MainCategory } from "../src/presentation";
 import { RenderOptionalMedia } from "./media";
 
 async function FindImage(x: ContentCategoryPresentationData): Promise<MediaDefinition | undefined>

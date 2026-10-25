@@ -1,0 +1,16 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  counterclockwise leg sweep.
+media:
+  type: "image"
+  fileName: "Fig.-18-Qian-sao-tui.jpeg"
+  sourceURL: "https://basia.blog/shaolin-kung-fu-basics/"
+tags:
+  - kung-fu/kicks
+title:
+  simplified-chinese: 前扫腿

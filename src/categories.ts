@@ -6,8 +6,8 @@
  * See the LICENSE file in the project root for license information.
  */
 
-import { ContentCategoryPresentationData } from "./contentDefinitions";
 import { ExcersiseCategory, SelectExcersises } from "./excersises";
+import { ContentCategoryPresentationData } from "./presentation";
 
 function Cat2Name(category: ExcersiseCategory)
 {

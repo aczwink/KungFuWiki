@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Translates into "three steps forward".
+media:
+  type: "video-no-src"
+  fileName: "shang_san_bu.mp4"
+tags:
+  - tai-chi/moves
+title:
+  simplified-chinese: 上三步

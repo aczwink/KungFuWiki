@@ -7,10 +7,10 @@
  */
 
 import { GlobalInjector } from "@aczwink/acts-util-node";
-import { ContentCategoryPresentationData } from "../src/contentDefinitions";
 import { RenderMarkdown } from "../src/markdown";
 import { RenderExercise } from "./exercise";
 import { ReferencesManager } from "../src/ReferencesManager";
+import { ContentCategoryPresentationData } from "../src/presentation";
 
 export async function RenderCategory(category: ContentCategoryPresentationData)
 {

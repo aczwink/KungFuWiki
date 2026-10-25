@@ -1,0 +1,113 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Content media definition",
+    "description": "JSON Schema for media for content definitions",
+    "oneOf": [
+        {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "composition": {
+                    "enum": ["carousel", "row"]
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#"
+                    }
+                },
+                "type": {
+                    "const": "gallery"
+                }
+            },
+            "required": ["composition", "items", "type"]
+        },
+        {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "const": "gdrive"
+                },
+                "url": {
+                    "type": "string"
+                }
+            },
+            "required": ["type", "url"]
+        },
+        {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "const": "image"
+                },
+                "fileName": {
+                    "type": "string"
+                },
+                "sourceURL": {
+                    "type": "string"
+                }
+            },
+            "required": ["type", "fileName", "sourceURL"]
+        },
+        {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "const": "image-no-src"
+                },
+                "fileName": {
+                    "type": "string"
+                }
+            },
+            "required": ["type", "fileName"]
+        },
+        {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "const": "images"
+                },
+                "fileNames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "sourceURL": {
+                    "type": "string"
+                }
+            },
+            "required": ["type", "fileNames", "sourceURL"]
+        },
+        {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "const": "video-no-src"
+                },
+                "fileName": {
+                    "type": "string"
+                }
+            },
+            "required": ["type", "fileName"]
+        },
+        {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "const": "youtube"
+                },
+                "videoId": {
+                    "type": "string"
+                }
+            },
+            "required": ["type", "videoId"]
+        }
+    ]
+}

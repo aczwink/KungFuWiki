@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Translates into "Cloud hands".
+media:
+  type: "video-no-src"
+  fileName: "yun_shou.mp4"
+tags:
+  - tai-chi/moves
+title:
+  simplified-chinese: 云手

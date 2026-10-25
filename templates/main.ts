@@ -5,8 +5,7 @@
  * Licensed under the MIT License.
  * See the LICENSE file in the project root for license information.
  */
-
-import { MainCategory } from "../src/contentDefinitions";
+import { MainCategory } from "../src/presentation";
 
 interface MainPageParams
 {

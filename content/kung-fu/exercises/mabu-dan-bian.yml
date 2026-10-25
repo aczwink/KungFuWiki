@@ -1,0 +1,24 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: ""
+media:
+  type: "gallery"
+  composition: "carousel"
+  items: [
+      {
+          type: "video-no-src",
+          fileName: "mabu_danbien_front.mp4"
+      },
+      {
+          type: "video-no-src",
+          fileName: "mabu_danbien_side.mp4"
+      }
+  ]
+tags:
+  - kung-fu/exercises
+title:
+  simplified-chinese: 马步单边

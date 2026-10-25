@@ -1,0 +1,19 @@
+# KungFuWiki
+# Copyright (c) 2025-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Bend down with straight back to the front and reach for the feet
+media:
+  type: "gallery"
+  composition: "row"
+  items: [
+    { type: "image-no-src", fileName: "xia_ba_jin.JPEG" },
+    { type: "image-no-src", fileName: "xia_ba_jin2.JPEG" },
+  ]
+tags:
+  - kung-fu/stretching-exercises
+title:
+  simplified-chinese: 下把筋

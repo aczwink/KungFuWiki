@@ -1,0 +1,15 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Running <ref>/kung-fu/stances/gong-bu</ref> with big steps and straight arms.
+media:
+  type: "video-no-src"
+  fileName: "da_kua_bu.mp4"
+tags:
+  - kung-fu/drills
+title:
+  simplified-chinese: 大跨步

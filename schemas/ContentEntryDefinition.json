@@ -9,120 +9,41 @@
             "type": "string"
         },
         "media": {
-            "oneOf": [
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "type": {
-                            "const": "gdrive"
-                        },
-                        "url": {
-                            "type": "string"
-                        }
-                    },
-                    "required": ["type", "url"]
-                },
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "type": {
-                            "const": "image"
-                        },
-                        "fileName": {
-                            "type": "string"
-                        },
-                        "sourceURL": {
-                            "type": "string"
-                        }
-                    },
-                    "required": ["type", "fileName", "sourceURL"]
-                },
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "type": {
-                            "const": "image-no-src"
-                        },
-                        "fileName": {
-                            "type": "string"
-                        }
-                    },
-                    "required": ["type", "fileName"]
-                },
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "type": {
-                            "const": "images"
-                        },
-                        "fileNames": {
-                            "type": "array",
-                            "items": {
-                                "type": "string"
-                            }
-                        },
-                        "sourceURL": {
-                            "type": "string"
-                        }
-                    },
-                    "required": ["type", "fileNames", "sourceURL"]
-                },
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "type": {
-                            "const": "video-no-src"
-                        },
-                        "fileName": {
-                            "type": "string"
-                        }
-                    },
-                    "required": ["type", "fileName"]
-                },
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "type": {
-                            "const": "youtube"
-                        },
-                        "videoId": {
-                            "type": "string"
-                        }
-                    },
-                    "required": ["type", "videoId"]
-                }
-            ]
+            "$ref": "./ContentMediaDefinition.json"
         },
         "tags": {
             "type": "array",
             "items": {
                 "type": "string",
                 "enum": [
+                    "kung-fu/acrobatics",
                     "kung-fu/arms-technique",
+                    "kung-fu/drills",
                     "kung-fu/exercises",
                     "kung-fu/fist-forms",
+                    "kung-fu/floor-exercises",
                     "kung-fu/hand-technique",
+                    "kung-fu/jumpkicks",
+                    "kung-fu/jumps",
                     "kung-fu/kicks",
                     "kung-fu/punches",
                     "kung-fu/sabre-forms",
+                    "kung-fu/sabre-technique",
                     "kung-fu/spear-forms",
                     "kung-fu/spear-technique",
                     "kung-fu/stances",
                     "kung-fu/stick-forms",
                     "kung-fu/stick-technique",
+                    "kung-fu/stretching-exercises",
                     "kung-fu/sword-forms",
                     "kung-fu/sword-technique",
                     "misc/chinese",
                     "misc/masters",
                     "qi-gong/forms",
                     "sanda/kicks",
-                    "tai-chi/fist-forms"
+                    "tai-chi/fist-forms",
+                    "tai-chi/foot-technique",
+                    "tai-chi/moves"
                 ]
             }
         },

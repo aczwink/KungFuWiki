@@ -4,13 +4,13 @@
 # Licensed under the MIT License.
 # See the LICENSE file in the project root for license information.
 
-description: | #TODO: repair references
+description: |
   Moves:
-  * ${ReferenceExercise(qiShi)}
-  * ${ReferenceExercise(jingangDaoZhui)}
-  * ${ReferenceExercise(baiheLiangChi)}
-  * ${ReferenceExercise(shangSanBu)}
-  * ${ReferenceExercise(xieXing)}
+  * <ref>/tai-chi/moves/qi-shi</ref>
+  * <ref>/tai-chi/moves/jingang-dao-zhui</ref>
+  * <ref>/tai-chi/moves/baihe-liang-chi</ref>
+  * <ref>/tai-chi/moves/shang-san-bu</ref>
+  * <ref>/tai-chi/moves/xie-xing</ref>
 tags:
   - tai-chi/fist-forms
 taught-by: yao-xuan

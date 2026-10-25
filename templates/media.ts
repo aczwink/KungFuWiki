@@ -5,7 +5,8 @@
  * Licensed under the MIT License.
  * See the LICENSE file in the project root for license information.
  */
-import { MediaDefinition } from "../src/contentDefinitions";
+
+import { MediaDefinition } from "../src/media";
 
 export function RenderMedia(media: MediaDefinition): string
 {

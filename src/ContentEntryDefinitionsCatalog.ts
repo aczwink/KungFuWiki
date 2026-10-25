@@ -27,7 +27,7 @@ export class ContentEntryDefinitionsCatalog
     public async GetAllDefinitions()
     {
         await this.EnsureCatalogIsLoaded();
-        return this.catalog.Values();
+        return this.catalog.Entries();
     }
     
     public GetEntry(id: string)

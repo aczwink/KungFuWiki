@@ -5,11 +5,12 @@
  * Licensed under the MIT License.
  * See the LICENSE file in the project root for license information.
  */
+import { createHash } from 'node:crypto';
 import { Injectable } from "@aczwink/acts-util-node";
-import { Exercise } from "./contentDefinitions";
 import { ContentEntryDefinitionsCatalog } from "./ContentEntryDefinitionsCatalog";
 import { BuildCategoryURL } from "./categories";
-import { BuildCommonTitle } from "./excersises";
+import { FindTitles } from "./excersises";
+import { ContentPresentationData } from './presentation';
 
 @Injectable
 export class ReferencesManager
@@ -20,7 +21,13 @@ export class ReferencesManager
     }
 
     //Public methods
-    public DiscoverReferences(exercise: Exercise)
+    public ComputeCrossReferenceId(entryId: string): string
+    {
+        const hash = createHash('md5').update(entryId).digest('hex');
+        return hash;
+    }
+
+    public DiscoverReferences(exercise: ContentPresentationData)
     {
         const matches = this.FindReferences(exercise);
         for (const match of matches)
@@ -38,15 +45,15 @@ export class ReferencesManager
         const entry = this.contentEntryDefinitionsCatalog.GetEntry(id);
 
         const cat = entry.tags[0] as any;
-        const url = BuildCategoryURL(cat); //TODO: fix url
-        const linkMarkdown = "[" + BuildCommonTitle(entry) + "](" + url + ")";
+        const url = BuildCategoryURL(cat) + "#" + this.ComputeCrossReferenceId(id);
+        const linkMarkdown = "[" + FindTitles(entry).commonTitle + "](" + url + ")";
 
         return linkMarkdown;
     }
 
-    public ResolveReferences(exercise: Exercise): void
+    public ResolveReferences(exercise: ContentPresentationData): void
     {
-        let text = (typeof exercise.text === "string") ? exercise.text : exercise.text();
+        let text = exercise.text;
 
         const matches = this.FindReferences(exercise);
         for (const match of matches)
@@ -61,10 +68,9 @@ export class ReferencesManager
     }
 
     //Private methods
-    private FindReferences(exercise: Exercise)
+    private FindReferences(exercise: ContentPresentationData)
     {
-        const text = (typeof exercise.text === "string") ? exercise.text : exercise.text();
-        const matches = text.matchAll(/<ref>(.+?)<\/ref>/g);
+        const matches = exercise.text.matchAll(/<ref>(.+?)<\/ref>/g);
 
         if(matches === null)
             return [];

@@ -1,0 +1,18 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: |
+  Back straight up.
+  Kick up left leg and hold up.
+  Then kick right leg and slap on the hand.
+  Pull the right leg fast downwards and land on it.
+media:
+  type: "video-no-src"
+  fileName: "dan_fei_jiao.mp4"
+tags:
+  - kung-fu/jumpkicks
+title:
+  simplified-chinese: 单飞脚

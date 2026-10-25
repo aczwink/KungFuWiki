@@ -5,15 +5,9 @@
  * Licensed under the MIT License.
  * See the LICENSE file in the project root for license information.
  */
-
-import { MainCategory } from "../src/contentDefinitions";
-import { jumps } from "./kung-fu/jumps";
-import { stretching } from "./stretching";
-import { taiChiMoves } from "./tai-chi/moves";
-import { taiChiBasics } from "./tai-chi/basics";
-import { kungFuExercises } from "./kung-fu/excercises";
 import { SelectExcersises } from "../src/excersises";
 import { CreateCategory } from "../src/categories";
+import { MainCategory } from "../src/presentation";
 
 export const categories: MainCategory[] = [
     {
@@ -25,11 +19,8 @@ export const categories: MainCategory[] = [
                 `
             ),
             CreateCategory("Hand technique", "kung-fu/hand-technique"),
-            {
-                displayText: "Strechting exercises",
-                exercises: stretching,
-                name: "streching-exercises",
-            },
+            CreateCategory("Strechting exercises", "kung-fu/stretching-exercises"),
+            CreateCategory("Drills", "kung-fu/drills"),
             CreateCategory("Kicks", "kung-fu/kicks"),
             CreateCategory("Punches", "kung-fu/punches"),
             {
@@ -42,19 +33,12 @@ export const categories: MainCategory[] = [
                 exercises: SelectExcersises("kung-fu/exercises"),
                 name: "kung-fu-excercises",
             },
-            {
-                description: `
+            CreateCategory("Jumps", "kung-fu/jumps", `
                 [Demonstration of different jumps](https://www.instagram.com/p/B-OnNIxIP9V/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
-                `,
-                displayText: "Jumps",
-                exercises: jumps,
-                name: "jumps",
-            },
-            {
-                displayText: "Exercises",
-                exercises: kungFuExercises,
-                name: "kung-fu-moves",
-            },
+                `),
+            CreateCategory("Jumpkicks", "kung-fu/jumpkicks"),
+            CreateCategory("Acrobatics", "kung-fu/acrobatics"),
+            CreateCategory("Floor exercises", "kung-fu/floor-exercises"),
             {
                 media: {
                     type: "image-no-src",
@@ -63,6 +47,15 @@ export const categories: MainCategory[] = [
                 displayText: "Stick technique",
                 exercises: SelectExcersises("kung-fu/stick-technique"),
                 name: "stick-technique",
+            },
+            {
+                media: {
+                    type: "image-no-src",
+                    fileName: "dao.jpg"
+                },
+                displayText: "Sabre technique",
+                exercises: SelectExcersises("kung-fu/sabre-technique"),
+                name: "sabre-technique",
             },
             {
                 media: {
@@ -140,16 +133,8 @@ export const categories: MainCategory[] = [
     },
     {
         categories: [
-            {
-                displayText: "Tai Chi Basics",
-                exercises: taiChiBasics,
-                name: "tai-chi-basics"
-            },
-            {
-                displayText: "Tai Chi Moves",
-                exercises: taiChiMoves,
-                name: "tai-chi-moves"
-            },
+            CreateCategory("Tai Chi foot technique", "tai-chi/foot-technique"),
+            CreateCategory("Tai Chi Moves", "tai-chi/moves"),
             {
                 displayText: "Tai Chi Forms",
                 exercises: SelectExcersises("tai-chi/fist-forms"),
