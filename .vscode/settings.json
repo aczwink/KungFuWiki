@@ -1,5 +1,6 @@
 {
     "yaml.schemas": {
-        "./schemas/ContentEntryDefinition.json": "/content/**/*.yml"
+        "./schemas/CategoryDefinition.json": "/content/categories.yml",
+        "./schemas/ContentEntryDefinition.json": "/content/*/**/*.yml"
     }
 }

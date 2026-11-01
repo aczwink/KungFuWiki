@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Leaf category definition",
+    "description": "JSON Schema for leaf category definitions",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "description": {
+            "type": "string"
+        },
+        "displayText": {
+            "type": "string"
+        },
+        "image": {
+            "type": "string"
+        },
+        "selector": {
+            "$ref": "./Tag.json"
+        }
+    },
+    "required": ["displayText", "selector"]
+}

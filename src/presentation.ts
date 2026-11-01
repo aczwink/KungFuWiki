@@ -35,7 +35,7 @@ export interface ContentCategoryPresentationData
 {
     description?: string;
     displayText: string;
-    exercises: ContentPresentationData[] | Promise<ContentPresentationData[]>;
+    exercises: Promise<ContentPresentationData[]>;
     media?: MediaDefinition;
     name: string;
 }

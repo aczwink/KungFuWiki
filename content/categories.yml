@@ -1,0 +1,124 @@
+# KungFuWiki
+# Copyright (c) 2024-2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+- displayText: Basics
+  children:
+    - description: |
+        To stretch in a certain stance you add "压腿" to the name of the stance.
+        E.g., "马步压腿".
+      displayText: Stances
+      selector: kung-fu/stances
+
+    - displayText: Hand technique
+      selector: kung-fu/hand-technique
+
+    - displayText: Strechting exercises
+      selector: kung-fu/stretching-exercises
+
+    - displayText: Drills
+      selector: kung-fu/drills
+
+    - displayText: Kicks
+      selector: kung-fu/kicks
+
+    - displayText: Punches
+      selector: kung-fu/punches
+
+    - displayText: Arms technique
+      selector: kung-fu/arms-technique
+
+    - displayText: Kung-Fu Exercises
+      selector: kung-fu/exercises
+
+    - displayText: Jumps
+      selector: kung-fu/jumps
+      description: |
+        [Demonstration of different jumps](https://www.instagram.com/p/B-OnNIxIP9V/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
+
+    - displayText: Jumpkicks
+      selector: kung-fu/jumpkicks
+
+    - displayText: Acrobatics
+      selector: kung-fu/acrobatics
+
+    - displayText: Floor exercises
+      selector: kung-fu/floor-exercises
+
+
+
+- displayText: Weapons technique
+  children:
+    - displayText: Stick technique
+      selector: kung-fu/stick-technique
+      image: gun.jpg
+
+    - displayText: Sabre technique
+      selector: kung-fu/sabre-technique
+      image: dao.jpg
+
+    - displayText: Spear technique
+      selector: kung-fu/spear-technique
+      image: spear.jpg
+
+    - displayText: Sword technique
+      selector: kung-fu/sword-technique
+      image: jian.jpg
+
+
+      
+
+- displayText: Forms
+  children:
+    - displayText: Fist forms
+      selector: kung-fu/fist-forms
+      image: quan.png
+
+    - displayText: Sabre forms
+      image: dao.jpg
+      selector: kung-fu/sabre-forms
+
+    - displayText: Spear forms
+      selector: kung-fu/spear-forms
+      image: spear.jpg
+
+    - displayText: Stick forms
+      selector: kung-fu/stick-forms
+      image: gun.jpg
+
+    - displayText: Sword forms
+      image: jian.jpg
+      selector: kung-fu/sword-forms
+
+
+
+- displayText: Tai Chi
+  children:
+    - displayText: Foot technique
+      selector: tai-chi/foot-technique
+
+    - displayText: Moves
+      selector: tai-chi/moves
+
+    - displayText: Forms
+      selector: tai-chi/fist-forms
+
+
+
+- displayText: Other
+  children:
+    - displayText: Qi Gong forms
+      selector: qi-gong/forms
+
+    - displayText: Sanda kicks
+      selector: sanda/kicks
+
+    - displayText: Chinese vocabulary
+      selector: misc/chinese
+    
+    - displayText: Masters
+      selector: misc/masters
+      description: |
+        This documentation page was written based on the training received from the following masters.

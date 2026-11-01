@@ -14,37 +14,7 @@
         "tags": {
             "type": "array",
             "items": {
-                "type": "string",
-                "enum": [
-                    "kung-fu/acrobatics",
-                    "kung-fu/arms-technique",
-                    "kung-fu/drills",
-                    "kung-fu/exercises",
-                    "kung-fu/fist-forms",
-                    "kung-fu/floor-exercises",
-                    "kung-fu/hand-technique",
-                    "kung-fu/jumpkicks",
-                    "kung-fu/jumps",
-                    "kung-fu/kicks",
-                    "kung-fu/punches",
-                    "kung-fu/sabre-forms",
-                    "kung-fu/sabre-technique",
-                    "kung-fu/spear-forms",
-                    "kung-fu/spear-technique",
-                    "kung-fu/stances",
-                    "kung-fu/stick-forms",
-                    "kung-fu/stick-technique",
-                    "kung-fu/stretching-exercises",
-                    "kung-fu/sword-forms",
-                    "kung-fu/sword-technique",
-                    "misc/chinese",
-                    "misc/masters",
-                    "qi-gong/forms",
-                    "sanda/kicks",
-                    "tai-chi/fist-forms",
-                    "tai-chi/foot-technique",
-                    "tai-chi/moves"
-                ]
+                "$ref": "./Tag.json"
             }
         },
         "taught-by": {

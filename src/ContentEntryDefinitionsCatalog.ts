@@ -10,6 +10,7 @@ import path from "path";
 import { Injectable, Lock, ReadObjectFile } from "@aczwink/acts-util-node";
 import { ContentEntryDefinition } from "./contentDefinitions";
 import { ChineseScriptType, DetectChineseScriptType } from "./chinese";
+import { CategoryDefinition } from "./categories";
 
 @Injectable
 export class ContentEntryDefinitionsCatalog
@@ -18,6 +19,7 @@ export class ContentEntryDefinitionsCatalog
     constructor()
     {
         this.catalog = new Map;
+        this._categories = [];
         this.lock = new Lock;
 
         this.EnsureCatalogIsLoaded();
@@ -28,6 +30,12 @@ export class ContentEntryDefinitionsCatalog
     {
         await this.EnsureCatalogIsLoaded();
         return this.catalog.Entries();
+    }
+
+    public async GetCategoryDefinitions()
+    {
+        await this.EnsureCatalogIsLoaded();
+        return this._categories;
     }
     
     public GetEntry(id: string)
@@ -65,6 +73,10 @@ export class ContentEntryDefinitionsCatalog
             if(stats.isDirectory())
             {
                 await this.LoadExcersisesDirectory(childPath, rootPath);
+            }
+            else if((directoryPath === rootPath) && (child === "categories.yml"))
+            {
+                this._categories = await ReadObjectFile<CategoryDefinition[]>(childPath);
             }
             else if(path.extname(childPath) === ".yml")
             {
@@ -106,5 +118,6 @@ export class ContentEntryDefinitionsCatalog
 
     //State
     private catalog: Map<string, ContentEntryDefinition>;
+    private _categories: CategoryDefinition[];
     private lock: Lock;
 }

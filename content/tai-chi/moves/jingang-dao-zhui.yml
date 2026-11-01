@@ -5,7 +5,11 @@
 # See the LICENSE file in the project root for license information.
 
 description: |
-  <strong class="text-danger">TODO</strong>
+  On the very last move, stomp on the floor to create a sound.
+  However, while the fist also goes fast into the left hand, that should not create any sound.
+media:
+  type: video-no-src
+  fileName: jingang_dao_zhui.mp4
 tags:
   - tai-chi/moves
 title:

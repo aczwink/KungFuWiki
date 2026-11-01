@@ -4,7 +4,8 @@
 # Licensed under the MIT License.
 # See the LICENSE file in the project root for license information.
 
-description: ""
+description: |
+  Similar to <ref>/tai-chi/moves/xie-xing</ref> but hands are switched.
 media:
   type: "video-no-src"
   fileName: "dan_bian.mp4"

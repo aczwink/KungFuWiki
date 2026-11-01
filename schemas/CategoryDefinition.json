@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Category definition",
+    "description": "JSON Schema for category definitions",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "children": {
+                "type": "array",
+                "items": {
+                    "$ref": "./LeafCategoryDefinition.json"
+                }
+            },
+            "displayText": {
+                "type": "string"
+            }
+        },
+        "required": ["children", "displayText"]
+    }
+}

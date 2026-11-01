@@ -5,7 +5,10 @@
 # See the LICENSE file in the project root for license information.
 
 description: |
-  <strong class="text-danger">TODO</strong>
+  Similar to <ref>/tai-chi/moves/dan-bian</ref> but hands are switched.
+media:
+  type: video-no-src
+  fileName: tai_chi_xie_xing.mp4
 tags:
   - tai-chi/moves
 title:

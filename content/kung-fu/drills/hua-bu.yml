@@ -1,0 +1,14 @@
+# KungFuWiki
+# Copyright (c) 2026 Amir Czwink
+#
+# Licensed under the MIT License.
+# See the LICENSE file in the project root for license information.
+
+description: ""
+media:
+  type: video-no-src
+  fileName: "hua_bu.mp4"
+tags:
+  - kung-fu/drills
+title:
+  simplified-chinese: 滑步

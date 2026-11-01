@@ -13,38 +13,7 @@ import { RenderChineseOrdinalNumber } from "../templates/chinese";
 import { ReferencesManager } from "./ReferencesManager";
 import { ContentPresentationData, SubTitleType } from "./presentation";
 
-export type ExcersiseCategory =
-    | "kung-fu/acrobatics"
-    | "kung-fu/arms-technique"
-    | "kung-fu/drills"
-    | "kung-fu/exercises"
-    | "kung-fu/fist-forms"
-    | "kung-fu/floor-exercises"
-    | "kung-fu/hand-technique"
-    | "kung-fu/jumpkicks"
-    | "kung-fu/jumps"
-    | "kung-fu/kicks"
-    | "kung-fu/punches"
-    | "kung-fu/sabre-forms"
-    | "kung-fu/sabre-technique"
-    | "kung-fu/spear-forms"
-    | "kung-fu/spear-technique"
-    | "kung-fu/stances"
-    | "kung-fu/stick-forms"
-    | "kung-fu/stick-technique"
-    | "kung-fu/stretching-exercises"
-    | "kung-fu/sword-forms"
-    | "kung-fu/sword-technique"
-    | "misc/chinese"
-    | "misc/masters"
-    | "qi-gong/forms"
-    | "sanda/kicks"
-    | "tai-chi/fist-forms"
-    | "tai-chi/foot-technique"
-    | "tai-chi/moves"
-;
-
-function FilterBySelector(selector: ExcersiseCategory, entry: ContentEntryDefinition)
+function FilterBySelector(selector: string, entry: ContentEntryDefinition)
 {
     return entry.tags.Contains(selector);
 }
@@ -211,7 +180,7 @@ function ToPresentationOrder(exercise: ContentPresentationData)
     return exercise.title;
 }
 
-export async function SelectExcersises(selector: ExcersiseCategory): Promise<ContentPresentationData[]>
+export async function SelectExcersises(selector: string): Promise<ContentPresentationData[]>
 {
     const allDefinitions = await GlobalInjector().Resolve(ContentEntryDefinitionsCatalog).GetAllDefinitions();
     return allDefinitions.Filter(kv => FilterBySelector(selector, kv.value))

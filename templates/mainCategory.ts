@@ -19,7 +19,10 @@ async function FindImage(x: ContentCategoryPresentationData): Promise<MediaDefin
             {
                 case "image":
                 case "image-no-src":
-                    return exercise.media;
+                    return {
+                        type: "image-no-src",
+                        fileName: exercise.media.fileName
+                    };
                 case "images":
                     return {
                         type: "image-no-src",

@@ -8,13 +8,13 @@
 import fs from "fs";
 import path from "path";
 import { RenderMain } from "../templates/main";
-import { categories } from "../content/categories";
 import { RenderMainCategory } from "../templates/mainCategory";
 import { RenderCategory } from "../templates/category";
 import { RenderAbout } from "../templates/about";
 import { GlobalInjector } from "@aczwink/acts-util-node";
 import { ReferencesManager } from "./ReferencesManager";
 import { MainCategory } from "./presentation";
+import { ReadCategories } from "./categories";
 
 async function CollectExercises(cat: MainCategory)
 {
@@ -27,7 +27,7 @@ async function CollectExercises(cat: MainCategory)
     }
 }
 
-async function BuildMainCatStaticSite(cat: MainCategory, outDirPath: string)
+async function BuildMainCatStaticSite(cat: MainCategory, outDirPath: string, categories: MainCategory[])
 {
     const catPath = path.join(outDirPath, cat.name + ".html");
     const content = RenderMain({
@@ -54,11 +54,13 @@ async function BuildStaticSite(outDirPath: string)
     if(!fs.existsSync(outDirPath))
         await fs.promises.mkdir(outDirPath);
 
+    const categories = await ReadCategories();
+
     for (const cat of categories)
         await CollectExercises(cat);
 
     for (const cat of categories)
-        await BuildMainCatStaticSite(cat, outDirPath);
+        await BuildMainCatStaticSite(cat, outDirPath, categories);
 
     const indexPath = path.join(outDirPath, "index.html");
     const content = RenderMain({
